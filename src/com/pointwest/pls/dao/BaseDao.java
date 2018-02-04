@@ -14,12 +14,12 @@ import com.pointwest.pls.util.SqlCustomException;
 public abstract class BaseDao {
 	Logger logger = Logger.getLogger(BaseDao.class);
 
-	public Connection openDBConnection() throws ClassNotFoundException, SqlCustomException {
+	public Connection openDBConnection() throws ClassNotFoundException, SqlCustomException, Exception {
 		Connection connection = null;
 
 		try {
-			Class.forName(SqlConstants.FORNAME);
-			connection = DriverManager.getConnection(SqlConstants.DATABASE, SqlConstants.DATABASE_USER,
+			Class.forName(SqlConstants.JDBC_DRIVER_CLASS);
+			connection = DriverManager.getConnection(SqlConstants.DATABASE_NETWORK, SqlConstants.DATABASE_USERNAME,
 					SqlConstants.DATABASE_PASSWORD);
 		} catch (ClassNotFoundException e) {
 			ClassNotFoundException classNotFoundException = new ClassNotFoundException(
@@ -27,18 +27,20 @@ public abstract class BaseDao {
 			logger.error(e.getMessage());
 			throw classNotFoundException;
 		} catch (SQLException e) {
-			SqlCustomException sqlCustomException = new SqlCustomException(SqlConstants.SQL_CUSTOM_EXCEPTION);
+			SqlCustomException sqlCustomException = new SqlCustomException(
+					SqlConstants.SQL_CUSTOM_EXCEPTION_CONNECTION_ERROR);
 			logger.error(e.getMessage());
 			throw sqlCustomException;
-		} finally {
-
+		} catch (Exception e) {
+			Exception exception = new Exception(SqlConstants.CUSTOM_EXCEPTION);
+			logger.error(e.getMessage());
+			throw exception;
 		}
-
 		return connection;
 	}
 
 	public void closeConnection(Connection connection, PreparedStatement preparedStatement, ResultSet resultSet)
-			throws SqlCustomException {
+			throws SqlCustomException, Exception {
 		try {
 			if (connection != null) {
 				connection.close();
@@ -52,11 +54,14 @@ public abstract class BaseDao {
 				resultSet.close();
 			}
 		} catch (SQLException e) {
-			SqlCustomException sqlCustomException = new SqlCustomException(SqlConstants.SQL_CUSTOM_EXCEPTION);
+			SqlCustomException sqlCustomException = new SqlCustomException(
+					SqlConstants.SQL_CUSTOM_EXCEPTION_CONNECTION_ERROR);
 			logger.error(e.getMessage());
 			throw sqlCustomException;
-		} finally {
-
+		} catch (Exception e) {
+			Exception exception = new Exception(SqlConstants.CUSTOM_EXCEPTION);
+			logger.error(e.getMessage());
+			throw exception;
 		}
 	}
 }
