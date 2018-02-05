@@ -1,11 +1,10 @@
 package com.pointwest.pls.bean;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class Employee {
+public class Employee extends User {
 	private String employeeId;
-	private String employeeUsername;
-	private String employeePassword;
 	private String employeeFirstName;
 	private String employeeLastName;
 	private String employeeRole;
@@ -13,28 +12,17 @@ public class Employee {
 	private List<Project> employeeProject;
 	private List<Seat> employeeSeat;
 
+	public Employee() {
+		this.employeeProject = new ArrayList<Project>();
+		this.employeeSeat = new ArrayList<Seat>();
+	}
+
 	public String getEmployeeId() {
 		return employeeId;
 	}
 
 	public void setEmployeeId(String employeeId) {
 		this.employeeId = employeeId;
-	}
-
-	public String getEmployeeUsername() {
-		return employeeUsername;
-	}
-
-	public void setEmployeeUsername(String employeeUsername) {
-		this.employeeUsername = employeeUsername;
-	}
-
-	public String getEmployeePassword() {
-		return employeePassword;
-	}
-
-	public void setEmployeePassword(String employeePassword) {
-		this.employeePassword = employeePassword;
 	}
 
 	public String getEmployeeFirstName() {
@@ -73,15 +61,7 @@ public class Employee {
 		return employeeProject;
 	}
 
-	public void setEmployeeProject(List<Project> employeeProject) {
-		this.employeeProject = employeeProject;
-	}
-
 	public List<Seat> getEmployeeSeat() {
 		return employeeSeat;
-	}
-
-	public void setEmployeeSeat(List<Seat> employeeSeat) {
-		this.employeeSeat = employeeSeat;
 	}
 }

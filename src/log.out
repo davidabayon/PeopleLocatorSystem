@@ -1,0 +1,142 @@
+[Time: 14:42:13][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 14:43:42][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 48: Username/Password cannot be left blank! Please try again
+[Time: 14:46:06][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 14:46:13][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 48: Username/Password cannot be left blank! Please try again
+[Time: 15:02:18][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 15:02:19][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 79: END
+[Time: 15:02:40][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 15:02:42][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 79: END
+[Time: 15:02:54][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 15:02:58][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 79: END
+[Time: 15:03:48][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 15:03:50][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 80: END
+[Time: 15:03:56][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 15:04:01][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 80: END
+[Time: 15:04:05][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 15:53:59][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 40: START
+[Time: 15:54:02][Class: com.pointwest.pls.manager.UserInputManager Method: validateInputIfNull] - Line 23: START
+[Time: 15:54:02][Class: com.pointwest.pls.manager.UserInputManager Method: validateInputIfNull] - Line 25: Username/Password cannot be left blank! Please try again,
+Time: 15:54:02][Class: com.pointwest.pls.manager.UserInputManager Method: validateInputIfNull] - Line 26: END
+[Time: 15:54:03][Class: com.pointwest.pls.manager.UserInputManager Method: validateInputIfNull] - Line 23: START
+[Time: 15:54:03][Class: com.pointwest.pls.manager.UserInputManager Method: validateInputIfNull] - Line 25: Username/Password cannot be left blank! Please try again
+[Time: 15:54:03][Class: com.pointwest.pls.manager.UserInputManager Method: validateInputIfNull] - Line 26: END
+[Time: 15:57:04][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 40: START
+[Time: 15:57:06][Class: com.pointwest.pls.manager.UserInputManager Method: validateInputIfNull] - Line 23: START
+[Time: 15:57:06][Class: com.pointwest.pls.manager.UserInputManager Method: validateInputIfNull] - Line 25: Username/Password cannot be left blank! Please try again
+[Time: 15:57:06][Class: com.pointwest.pls.manager.UserInputManager Method: validateInputIfNull] - Line 26: END
+[Time: 15:57:26][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 40: START
+[Time: 15:57:27][Class: com.pointwest.pls.manager.UserInputManager Method: validateInputIfNull] - Line 23: START
+[Time: 15:57:27][Class: com.pointwest.pls.manager.UserInputManager Method: validateInputIfNull] - Line 25: Username/Password cannot be left blank! Please try again
+[Time: 15:57:27][Class: com.pointwest.pls.manager.UserInputManager Method: validateInputIfNull] - Line 26: END
+[Time: 15:57:43][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 40: START
+[Time: 15:58:03][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 40: START
+[Time: 15:58:06][Class: com.pointwest.pls.manager.UserInputManager Method: validateInputIfNull] - Line 23: START
+[Time: 15:58:06][Class: com.pointwest.pls.manager.UserInputManager Method: validateInputIfNull] - Line 25: Username/Password cannot be left blank! Please try again
+[Time: 15:58:06][Class: com.pointwest.pls.manager.UserInputManager Method: validateInputIfNull] - Line 26: END
+[Time: 15:58:32][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 40: START
+[Time: 15:58:36][Class: com.pointwest.pls.manager.UserInputManager Method: validateInputIfNull] - Line 23: START
+[Time: 15:58:36][Class: com.pointwest.pls.manager.UserInputManager Method: validateInputIfNull] - Line 25: Username/Password cannot be left blank! Please try again
+[Time: 15:58:36][Class: com.pointwest.pls.manager.UserInputManager Method: validateInputIfNull] - Line 26: END
+[Time: 15:59:18][Class: com.pointwest.pls.manager.UserInputManager Method: validateInputIfNull] - Line 23: START
+[Time: 15:59:18][Class: com.pointwest.pls.manager.UserInputManager Method: validateInputIfNull] - Line 29: END
+[Time: 16:18:19][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 16:18:25][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 57: Username/Password cannot be left blank! Please try again
+[Time: 16:18:25][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 58: Username/Password cannot be left blank! Please try again
+[Time: 16:23:47][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 16:23:49][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 57: Username/Password cannot be left blank! Please try again
+[Time: 16:23:49][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 58: Username/Password cannot be left blank! Please try again
+[Time: 16:24:22][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 16:24:24][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 57: Username/Password cannot be left blank! Please try again
+[Time: 16:24:24][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 58: Username/Password cannot be left blank! Please try again
+[Time: 16:24:49][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 57: Username/Password cannot be left blank! Please try again
+[Time: 16:24:49][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 58: Username/Password cannot be left blank! Please try again
+[Time: 16:25:26][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 16:25:35][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 16:25:41][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 58: Username/Password cannot be left blank! Please try again
+[Time: 16:25:41][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 59: Username/Password cannot be left blank! Please try again
+[Time: 16:25:42][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 58: Username/Password cannot be left blank! Please try again
+[Time: 16:25:42][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 59: Username/Password cannot be left blank! Please try again
+[Time: 16:29:18][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 16:29:20][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 58: Username/Password cannot be left blank! Please try again
+[Time: 16:29:20][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 59: Username/Password cannot be left blank! Please try again
+[Time: 16:30:13][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 77: Username/Password cannot be left blank! Please try again
+[Time: 16:30:13][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 78: Username/Password cannot be left blank! Please try again
+[Time: 16:31:37][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 16:31:48][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 16:32:08][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 16:32:48][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 16:32:49][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 57: Username/Password cannot be left blank! Please try again
+[Time: 16:32:49][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 58: Username/Password cannot be left blank! Please try again
+[Time: 16:33:03][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 16:33:04][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 57: Username/Password cannot be left blank! Please try again
+[Time: 16:33:04][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 58: Username/Password cannot be left blank! Please try again
+[Time: 16:33:12][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 16:33:13][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 57: Username/Password cannot be left blank! Please try again
+[Time: 16:33:13][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 58: Username/Password cannot be left blank! Please try again
+[Time: 16:33:48][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 16:33:49][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 57: Username/Password cannot be left blank! Please try again
+[Time: 16:33:49][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 58: Username/Password cannot be left blank! Please try again
+[Time: 16:33:50][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 57: Username/Password cannot be left blank! Please try again
+[Time: 16:33:50][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 58: Username/Password cannot be left blank! Please try again
+[Time: 16:34:51][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 16:34:51][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 57: Username/Password is empty. Please try again
+[Time: 16:34:51][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 58: Username/Password is empty. Please try again
+[Time: 16:35:12][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 16:35:13][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 57: Username/Password is empty. Please try again
+[Time: 16:35:13][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 58: Username/Password is empty. Please try again
+[Time: 16:35:25][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 16:35:26][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 57: Username/Password is empty. Please try again
+[Time: 16:35:26][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 58: Username/Password is empty. Please try again
+[Time: 16:35:45][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 16:35:46][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 57: Username/Password is empty. Please try again
+[Time: 16:35:46][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 58: Username/Password is empty. Please try again
+[Time: 16:36:11][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 16:36:12][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 57: Username/Password is empty. Please try again
+[Time: 16:36:12][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 58: Username/Password is empty. Please try again
+[Time: 16:36:26][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 16:36:30][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: Username/Password is empty. Please try again
+[Time: 16:36:30][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 76: Username/Password is empty. Please try again
+[Time: 16:37:18][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 39: START
+[Time: 16:37:24][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 82: END
+[Time: 17:03:14][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 40: START
+[Time: 17:03:24][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveLoginCredentials] - Line 23: START
+[Time: 17:03:24][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 17:03:25][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 33: Access denied for user 'newuser'@'localhost' (using password: YES)
+[Time: 17:03:25][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 34: There's an error/issue with regards to the database connection!
+[Time: 17:03:25][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 83: END
+[Time: 17:04:32][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 40: START
+[Time: 17:04:38][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveLoginCredentials] - Line 23: START
+[Time: 17:04:38][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 17:04:39][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 42: END
+[Time: 17:04:39][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveLoginCredentials] - Line 38: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''password123'' at line 1
+[Time: 17:04:39][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveLoginCredentials] - Line 39: There's an error/issue with regards to the database connection!
+[Time: 17:04:39][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 47: START
+[Time: 17:04:39][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 68: END
+[Time: 17:04:39][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 83: END
+[Time: 17:07:23][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 40: START
+[Time: 17:07:29][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveLoginCredentials] - Line 23: START
+[Time: 17:07:29][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 17:07:29][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 42: END
+[Time: 17:07:29][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveLoginCredentials] - Line 38: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''password123'' at line 1
+[Time: 17:07:29][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveLoginCredentials] - Line 39: An error/issue has occurred while retrieving the database records!
+[Time: 17:07:29][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 47: START
+[Time: 17:07:29][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 68: END
+[Time: 17:07:29][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 83: END
+[Time: 17:09:32][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 40: START
+[Time: 17:09:37][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveLoginCredentials] - Line 23: START
+[Time: 17:09:37][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 17:09:37][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 42: END
+[Time: 17:09:37][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 47: START
+[Time: 17:09:37][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 68: END
+[Time: 17:09:37][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveLoginCredentials] - Line 50: END
+[Time: 17:09:37][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 83: END
+[Time: 17:11:57][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 40: START
+[Time: 17:12:01][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 88: START
+[Time: 17:12:01][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveLoginCredentials] - Line 23: START
+[Time: 17:12:01][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 17:12:01][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 42: END
+[Time: 17:12:02][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 47: START
+[Time: 17:12:02][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 68: END
+[Time: 17:12:02][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveLoginCredentials] - Line 50: END
+[Time: 17:12:02][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 103: END - isValid: false
+[Time: 17:12:02][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 83: END

@@ -8,13 +8,15 @@ import java.sql.SQLException;
 
 import org.apache.log4j.Logger;
 
+import com.pointwest.pls.constant.GenericConstants;
 import com.pointwest.pls.constant.SqlConstants;
-import com.pointwest.pls.util.SqlCustomException;
+import com.pointwest.pls.util.CustomException;
 
 public abstract class BaseDao {
 	Logger logger = Logger.getLogger(BaseDao.class);
 
-	public Connection openDBConnection() throws ClassNotFoundException, SqlCustomException, Exception {
+	public Connection openDBConnection() throws CustomException {
+		logger.info(GenericConstants.START);
 		Connection connection = null;
 
 		try {
@@ -22,25 +24,54 @@ public abstract class BaseDao {
 			connection = DriverManager.getConnection(SqlConstants.DATABASE_NETWORK, SqlConstants.DATABASE_USERNAME,
 					SqlConstants.DATABASE_PASSWORD);
 		} catch (ClassNotFoundException e) {
-			ClassNotFoundException classNotFoundException = new ClassNotFoundException(
-					SqlConstants.CLASS_NOT_FOUND_EXCEPTION);
-			logger.error(e.getMessage());
-			throw classNotFoundException;
+			CustomException customException = new CustomException(GenericConstants.CLASS_NOT_FOUND_EXCEPTION, e);
+			logger.debug(e.getMessage());
+			logger.error(customException.getMessage());
+			throw customException;
 		} catch (SQLException e) {
-			SqlCustomException sqlCustomException = new SqlCustomException(
-					SqlConstants.SQL_CUSTOM_EXCEPTION_CONNECTION_ERROR);
-			logger.error(e.getMessage());
-			throw sqlCustomException;
+			CustomException customException = new CustomException(GenericConstants.SQL_EXCEPTION_CONNECTION_ERROR, e);
+			logger.debug(e.getMessage());
+			logger.error(customException.getMessage());
+			throw customException;
 		} catch (Exception e) {
-			Exception exception = new Exception(SqlConstants.CUSTOM_EXCEPTION);
-			logger.error(e.getMessage());
-			throw exception;
+			CustomException customException = new CustomException(GenericConstants.EXCEPTION, e);
+			logger.debug(e.getMessage());
+			logger.error(customException.getMessage());
+			throw customException;
 		}
+		logger.info(GenericConstants.END);
 		return connection;
 	}
 
+	public void closeConnection(Connection connection, PreparedStatement preparedStatement) throws CustomException {
+		logger.info(GenericConstants.START);
+
+		try {
+			if (connection != null) {
+				connection.close();
+			}
+
+			if (preparedStatement != null) {
+				preparedStatement.close();
+			}
+		} catch (SQLException e) {
+			CustomException customException = new CustomException(GenericConstants.SQL_EXCEPTION_CONNECTION_ERROR, e);
+			logger.debug(e.getMessage());
+			logger.error(customException.getMessage());
+			throw customException;
+		} catch (Exception e) {
+			CustomException customException = new CustomException(GenericConstants.EXCEPTION, e);
+			logger.debug(e.getMessage());
+			logger.error(customException.getMessage());
+			throw customException;
+		}
+		logger.info(GenericConstants.END);
+	}
+
 	public void closeConnection(Connection connection, PreparedStatement preparedStatement, ResultSet resultSet)
-			throws SqlCustomException, Exception {
+			throws CustomException {
+		logger.info(GenericConstants.START);
+
 		try {
 			if (connection != null) {
 				connection.close();
@@ -54,14 +85,16 @@ public abstract class BaseDao {
 				resultSet.close();
 			}
 		} catch (SQLException e) {
-			SqlCustomException sqlCustomException = new SqlCustomException(
-					SqlConstants.SQL_CUSTOM_EXCEPTION_CONNECTION_ERROR);
-			logger.error(e.getMessage());
-			throw sqlCustomException;
+			CustomException customException = new CustomException(GenericConstants.SQL_EXCEPTION_CONNECTION_ERROR, e);
+			logger.debug(e.getMessage());
+			logger.error(customException.getMessage());
+			throw customException;
 		} catch (Exception e) {
-			Exception exception = new Exception(SqlConstants.CUSTOM_EXCEPTION);
-			logger.error(e.getMessage());
-			throw exception;
+			CustomException customException = new CustomException(GenericConstants.EXCEPTION, e);
+			logger.debug(e.getMessage());
+			logger.error(customException.getMessage());
+			throw customException;
 		}
+		logger.info(GenericConstants.END);
 	}
 }

@@ -9,6 +9,10 @@ public class Seat {
 	private String seatColumnNumber;
 	private String seatLocalNumber;
 
+	public Seat() {
+		this.seatBuilding = new Building();
+	}
+
 	public String getSeatId() {
 		return seatId;
 	}
@@ -19,10 +23,6 @@ public class Seat {
 
 	public Building getSeatBuilding() {
 		return seatBuilding;
-	}
-
-	public void setSeatBuilding(Building seatBuilding) {
-		this.seatBuilding = seatBuilding;
 	}
 
 	public String getSeatFloorNumber() {

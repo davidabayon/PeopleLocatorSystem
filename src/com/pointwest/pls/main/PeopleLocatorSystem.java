@@ -2,7 +2,7 @@ package com.pointwest.pls.main;
 
 import java.util.Scanner;
 
-import com.pointwest.pls.constant.GenericConstants;
+import com.pointwest.pls.bean.User;
 import com.pointwest.pls.ui.LoginPageUI;
 
 public class PeopleLocatorSystem {
@@ -11,27 +11,28 @@ public class PeopleLocatorSystem {
 		Scanner scanner = new Scanner(System.in);
 
 		// Declare and instantiate variables
-		String homePageChoice = null;
-		Boolean isLoggedOut = false;
-		Boolean isTerminate = false;
+		String homePageChoice;
+		Boolean isLoggedOut = true;
+		Boolean isTerminate = true;
 
 		// Start the application
-		GenericConstants.displayMainHeader();
+		// GenericConstants.displayMainHeader();
 
 		// Login Page
 		do {
-			LoginPageUI loginPageUI = new LoginPageUI();
+			User user = new User();
+			LoginPageUI loginPageUI = new LoginPageUI(user);
 			loginPageUI.displayPageHeader();
 			loginPageUI.displayPageContent();
-			homePageChoice = loginPageUI.askUserInput();
-
-			switch (homePageChoice) {
-
-			}
-		} while (isLoggedOut || !isTerminate);
+			user = loginPageUI.askUserInput();
+			// homePageChoice = user.getHomePageChoice();
+			// switch (homePageChoice) {
+			//
+			// }
+		} while (!(isLoggedOut && isTerminate));
 
 		// Terminate the application
-		GenericConstants.displayMainFooter();
+		// GenericConstants.displayMainFooter();
 		scanner.close();
 	}
 }
