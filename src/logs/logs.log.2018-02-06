@@ -1,0 +1,846 @@
+[Time: 13:17:33][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 13:18:01][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 51: START
+[Time: 13:18:02][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 13:18:02][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 13:18:02][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 13:18:02][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 82: START
+[Time: 13:18:02][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 96:     Username/Password is empty!
+[Time: 13:18:02][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 109: askAgain: true, triesCounter: 2
+[Time: 13:18:02][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 110: END
+[Time: 13:18:02][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 13:18:02][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 13:18:02][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 13:18:02][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 82: START
+[Time: 13:18:02][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 96:     Username/Password is empty!
+[Time: 13:18:02][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 109: askAgain: true, triesCounter: 1
+[Time: 13:18:02][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 110: END
+[Time: 13:18:03][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 13:18:03][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 13:18:03][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 13:18:03][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 82: START
+[Time: 13:18:03][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 96:     Username/Password is empty!
+[Time: 13:18:03][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 109: askAgain: true, triesCounter: 0
+[Time: 13:18:03][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 110: END
+[Time: 13:18:03][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: Username: null
+[Time: 13:18:03][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 76: END
+[Time: 13:18:03][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 46: askAgain: false, triesCounter: 0
+[Time: 13:18:03][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 144: START
+[Time: 13:18:05][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 168: isTerminate: false
+[Time: 13:18:05][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 169: END
+[Time: 13:18:07][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 51: START
+[Time: 13:18:14][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 13:18:14][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 13:18:14][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 13:18:14][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 82: START
+[Time: 13:18:14][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 103:      Invalid username/password!
+[Time: 13:18:14][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 109: askAgain: true, triesCounter: 2
+[Time: 13:18:14][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 110: END
+[Time: 13:22:35][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 13:22:35][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 13:22:35][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 13:22:35][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 82: START
+[Time: 13:22:35][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 96:     Username/Password is empty!
+[Time: 13:22:35][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 109: askAgain: true, triesCounter: 1
+[Time: 13:22:35][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 110: END
+[Time: 13:22:36][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 13:22:36][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 13:22:36][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 13:22:36][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 82: START
+[Time: 13:22:36][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 96:     Username/Password is empty!
+[Time: 13:22:36][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 109: askAgain: true, triesCounter: 0
+[Time: 13:22:36][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 110: END
+[Time: 13:22:36][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: Username: null
+[Time: 13:22:36][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 76: END
+[Time: 13:22:36][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 46: askAgain: false, triesCounter: 0
+[Time: 13:22:36][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 144: START
+[Time: 13:25:12][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 168: isTerminate: false
+[Time: 13:25:12][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 169: END
+[Time: 13:25:14][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 51: START
+[Time: 13:25:22][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 13:25:22][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 13:25:22][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 13:25:22][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 82: START
+[Time: 13:25:22][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 103:      Invalid username/password!
+[Time: 13:25:22][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 109: askAgain: true, triesCounter: 2
+[Time: 13:25:22][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 110: END
+[Time: 13:25:31][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 13:25:31][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 13:25:31][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 13:25:31][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 82: START
+[Time: 13:25:31][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 103:      Invalid username/password!
+[Time: 13:25:31][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 109: askAgain: true, triesCounter: 1
+[Time: 13:25:31][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 110: END
+[Time: 13:26:44][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 13:26:44][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 13:26:44][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 13:26:44][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 82: START
+[Time: 13:26:44][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 96:     Username/Password is empty!
+[Time: 13:26:44][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 109: askAgain: true, triesCounter: 0
+[Time: 13:26:44][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 110: END
+[Time: 13:26:44][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: Username: null
+[Time: 13:26:44][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 76: END
+[Time: 13:26:44][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 46: askAgain: false, triesCounter: 0
+[Time: 13:26:44][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 144: START
+[Time: 13:26:47][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 168: isTerminate: false
+[Time: 13:26:47][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 169: END
+[Time: 13:26:48][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 51: START
+[Time: 13:26:55][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 13:26:55][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 13:26:55][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 13:26:55][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 82: START
+[Time: 13:26:55][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 103:      Invalid username/password!
+[Time: 13:26:55][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 109: askAgain: true, triesCounter: 2
+[Time: 13:26:55][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 110: END
+[Time: 13:29:01][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 13:29:02][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 51: START
+[Time: 13:29:03][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 13:29:03][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 13:29:03][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 13:29:03][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 82: START
+[Time: 13:29:03][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 96:     Username/Password is empty!
+[Time: 13:29:03][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 109: askAgain: true, triesCounter: 2
+[Time: 13:29:03][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 110: END
+[Time: 13:29:03][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 13:29:03][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 13:29:03][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 13:29:03][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 82: START
+[Time: 13:29:03][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 96:     Username/Password is empty!
+[Time: 13:29:03][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 109: askAgain: true, triesCounter: 1
+[Time: 13:29:03][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 110: END
+[Time: 13:29:03][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 13:29:03][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 13:29:03][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 13:29:03][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 82: START
+[Time: 13:29:03][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 96:     Username/Password is empty!
+[Time: 13:29:03][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 109: askAgain: true, triesCounter: 0
+[Time: 13:29:03][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 110: END
+[Time: 13:29:03][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: Username: null
+[Time: 13:29:03][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 76: END
+[Time: 13:29:03][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 46: askAgain: false, triesCounter: 0
+[Time: 13:29:03][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 144: START
+[Time: 13:29:06][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 168: isTerminate: false
+[Time: 13:29:06][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 169: END
+[Time: 13:29:08][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 51: START
+[Time: 13:29:20][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 13:29:20][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 13:29:20][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 13:29:20][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 82: START
+[Time: 13:29:20][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 109: askAgain: false, triesCounter: 3
+[Time: 13:29:20][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 110: END
+[Time: 13:29:20][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: Username: david.abayon
+[Time: 13:29:20][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 76: END
+[Time: 13:29:20][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 116: START
+[Time: 13:29:20][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 61: START
+[Time: 13:29:20][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveLoginCredentials] - Line 25: START
+[Time: 13:29:20][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 13:29:20][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 42: END
+[Time: 13:29:20][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveLoginCredentials] - Line 47: First Name: David Angelo, Last Name: Abayon
+[Time: 13:29:20][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 47: START
+[Time: 13:29:20][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 68: END
+[Time: 13:29:20][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveLoginCredentials] - Line 73: END
+[Time: 13:29:20][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 66: isValid: true
+[Time: 13:29:20][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 67: END
+[Time: 13:29:20][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 137: isValid: true, triesCounter: 3
+[Time: 13:29:20][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 138: END
+[Time: 13:29:20][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 46: askAgain: true, triesCounter: 3
+[Time: 13:29:43][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 13:29:44][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 51: START
+[Time: 13:29:45][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 13:29:45][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 13:29:45][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 13:29:45][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 82: START
+[Time: 13:29:45][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 96:     Username/Password is empty!
+[Time: 13:29:45][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 109: askAgain: true, triesCounter: 2
+[Time: 13:29:45][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 110: END
+[Time: 13:29:45][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 13:29:45][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 13:29:45][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 13:29:45][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 82: START
+[Time: 13:29:45][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 103:      Invalid username/password!
+[Time: 13:29:45][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 109: askAgain: true, triesCounter: 1
+[Time: 13:29:45][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 110: END
+[Time: 13:29:47][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 13:29:47][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 13:29:47][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 13:29:47][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 82: START
+[Time: 13:29:47][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 96:     Username/Password is empty!
+[Time: 13:29:47][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 109: askAgain: true, triesCounter: 0
+[Time: 13:29:47][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 110: END
+[Time: 13:29:47][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: Username: null
+[Time: 13:29:47][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 76: END
+[Time: 13:29:47][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 46: askAgain: false, triesCounter: 0
+[Time: 13:29:47][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 144: START
+[Time: 13:29:50][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 168: isTerminate: true
+[Time: 13:29:50][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 169: END
+[Time: 13:29:50][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 70: *********************END
+[Time: 14:09:08][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:09:56][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:10:29][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:11:05][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:12:02][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:12:12][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:12:31][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:13:35][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:13:46][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:14:02][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:15:43][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:16:20][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:16:30][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:16:40][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:16:52][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:18:08][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:18:34][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:20:39][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:20:54][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:21:15][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:21:20][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:22:30][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:23:12][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:23:12][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 76: *********************END
+[Time: 14:23:47][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:23:47][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 76: *********************END
+[Time: 14:23:54][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:23:54][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 76: *********************END
+[Time: 14:24:08][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:24:08][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 76: *********************END
+[Time: 14:24:56][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:24:56][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 76: *********************END
+[Time: 14:25:09][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:25:09][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 76: *********************END
+[Time: 14:27:15][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:27:36][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:27:36][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 79: *********************END
+[Time: 14:37:13][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:37:13][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 79: *********************END
+[Time: 14:39:37][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:39:37][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 43: START
+[Time: 14:39:44][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:39:44][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 43: START
+[Time: 14:39:50][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:39:50][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 43: START
+[Time: 14:40:40][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:40:40][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 43: START
+[Time: 14:40:58][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:40:58][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 43: START
+[Time: 14:41:53][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:41:53][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 43: START
+[Time: 14:42:02][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:42:02][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 43: START
+[Time: 14:42:41][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:42:41][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 43: START
+[Time: 14:42:49][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 67: Username: 3
+[Time: 14:42:49][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 68: END
+[Time: 14:42:49][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 80: *********************END
+[Time: 14:45:59][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:45:59][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 43: START
+[Time: 14:46:02][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 69: Username: 3
+[Time: 14:46:02][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 70: END
+[Time: 14:46:02][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 80: *********************END
+[Time: 14:46:16][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:46:16][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 43: START
+[Time: 14:46:17][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 69: Username: 2
+[Time: 14:46:17][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 70: END
+[Time: 14:46:17][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 80: *********************END
+[Time: 14:46:57][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:46:57][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 43: START
+[Time: 14:46:59][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 71: Username: 1
+[Time: 14:46:59][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 72: END
+[Time: 14:46:59][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 80: *********************END
+[Time: 14:47:32][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:47:32][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 43: START
+[Time: 14:47:33][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 71: Username: 1
+[Time: 14:47:33][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 72: END
+[Time: 14:47:33][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 80: *********************END
+[Time: 14:47:40][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:47:40][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 43: START
+[Time: 14:47:42][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 71: Username: 1
+[Time: 14:47:42][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 72: END
+[Time: 14:47:42][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 80: *********************END
+[Time: 14:47:56][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:47:56][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 43: START
+[Time: 14:47:57][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 71: Username: 1
+[Time: 14:47:57][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 72: END
+[Time: 14:47:57][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 80: *********************END
+[Time: 14:48:12][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:48:12][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 43: START
+[Time: 14:48:13][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 71: Username: 1
+[Time: 14:48:13][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 72: END
+[Time: 14:48:13][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 80: *********************END
+[Time: 14:49:04][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:49:04][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 43: START
+[Time: 14:49:08][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 71: Username: 1
+[Time: 14:49:08][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 72: END
+[Time: 14:49:08][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 80: *********************END
+[Time: 14:49:24][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:49:24][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 43: START
+[Time: 14:49:25][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 71: Username: 1
+[Time: 14:49:25][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 72: END
+[Time: 14:49:25][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 80: *********************END
+[Time: 14:50:08][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:50:08][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 43: START
+[Time: 14:50:12][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 71: Username: 1
+[Time: 14:50:12][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 72: END
+[Time: 14:50:12][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 80: *********************END
+[Time: 14:51:38][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:51:38][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 43: START
+[Time: 14:51:42][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 71: Username: 3
+[Time: 14:51:42][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 72: END
+[Time: 14:51:42][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 80: *********************END
+[Time: 14:53:39][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:53:39][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 43: START
+[Time: 14:53:44][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 69: Username: 1
+[Time: 14:53:44][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 70: END
+[Time: 14:53:44][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 80: *********************END
+[Time: 14:54:56][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:54:56][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 43: START
+[Time: 14:55:01][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 69: Username: 1
+[Time: 14:55:01][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 70: END
+[Time: 14:55:01][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 80: *********************END
+[Time: 14:56:09][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 16: *********************START
+[Time: 14:56:09][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 43: START
+[Time: 14:56:10][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 69: Username: 1
+[Time: 14:56:10][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 70: END
+[Time: 14:56:10][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 80: *********************END
+[Time: 15:57:11][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 17: *********************START
+[Time: 15:57:13][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 51: START
+[Time: 15:57:14][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 15:57:14][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 15:57:14][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 15:57:14][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 81: START
+[Time: 15:57:14][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 95: Username/Password is empty!
+[Time: 15:57:14][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: askAgain: true, triesCounter: 2
+[Time: 15:57:14][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 109: END
+[Time: 15:57:51][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 17: *********************START
+[Time: 15:57:56][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 51: START
+[Time: 15:57:57][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 15:57:57][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 15:57:57][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 15:57:57][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 81: START
+[Time: 15:57:57][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 95: Username/Password is empty!
+[Time: 15:57:57][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: askAgain: true, triesCounter: 2
+[Time: 15:57:57][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 109: END
+[Time: 15:57:59][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 15:57:59][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 15:57:59][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 15:57:59][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 81: START
+[Time: 15:57:59][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 95: Username/Password is empty!
+[Time: 15:57:59][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: askAgain: true, triesCounter: 1
+[Time: 15:57:59][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 109: END
+[Time: 15:58:00][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 15:58:00][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 15:58:00][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 15:58:00][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 81: START
+[Time: 15:58:00][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 95: Username/Password is empty!
+[Time: 15:58:00][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: askAgain: true, triesCounter: 0
+[Time: 15:58:00][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 109: END
+[Time: 15:58:00][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: Username: null
+[Time: 15:58:00][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 76: END
+[Time: 16:00:44][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 17: *********************START
+[Time: 16:00:45][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START
+[Time: 16:00:49][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 16:00:49][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 16:00:49][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 16:00:49][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 16:00:49][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 94: Username/Password is empty!
+[Time: 16:00:49][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: true, triesCounter: 2
+[Time: 16:00:49][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 16:00:49][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 16:00:49][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 16:00:49][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 16:00:49][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 16:00:49][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 94: Username/Password is empty!
+[Time: 16:00:49][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: true, triesCounter: 1
+[Time: 16:00:49][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 16:00:50][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 16:00:50][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 16:00:50][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 16:00:50][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 16:00:50][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 94: Username/Password is empty!
+[Time: 16:00:50][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: true, triesCounter: 0
+[Time: 16:00:50][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 16:00:50][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 74: Username: null
+[Time: 16:00:50][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: END
+[Time: 16:00:50][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 45: askAgain: false, triesCounter: 0
+[Time: 16:00:50][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[Time: 16:01:26][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 17: *********************START
+[Time: 16:01:27][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START
+[Time: 16:01:28][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 16:01:28][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 16:01:28][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 16:01:28][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 16:01:28][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 94: Username/Password is empty!
+[Time: 16:01:28][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: true, triesCounter: 2
+[Time: 16:01:28][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 16:01:28][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 16:01:28][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 16:01:28][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 16:01:28][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 16:01:28][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 94: Username/Password is empty!
+[Time: 16:01:28][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: true, triesCounter: 1
+[Time: 16:01:28][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 16:01:29][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 16:01:29][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 16:01:29][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 16:01:29][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 16:01:29][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 94: Username/Password is empty!
+[Time: 16:01:29][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: true, triesCounter: 0
+[Time: 16:01:29][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 16:01:29][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 74: Username: null
+[Time: 16:01:29][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: END
+[Time: 16:01:29][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 45: askAgain: false, triesCounter: 0
+[Time: 16:01:29][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 142: START
+[Time: 16:01:44][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 165: isTerminate: true
+[Time: 16:01:44][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 166: END
+[Time: 16:01:44][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 81: *********************END
+[Time: 16:01:52][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 17: *********************START
+[Time: 16:01:52][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START
+[Time: 16:01:53][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 16:01:53][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 16:01:53][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 16:01:53][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 16:01:53][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 94: Username/Password is empty!
+[Time: 16:01:53][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: true, triesCounter: 2
+[Time: 16:01:53][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 16:01:56][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 16:01:56][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 16:01:56][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 16:01:56][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 16:01:56][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 101: Invalid username/password!
+[Time: 16:01:56][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: true, triesCounter: 1
+[Time: 16:01:56][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 16:02:08][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 16:02:08][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 16:02:08][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 16:02:08][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 16:02:08][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: false, triesCounter: 1
+[Time: 16:02:08][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 16:02:08][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 74: Username: david.abayon
+[Time: 16:02:08][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: END
+[Time: 16:02:08][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 114: START
+[Time: 16:02:08][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 61: START
+[Time: 16:02:08][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 25: START
+[Time: 16:02:08][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 16:02:08][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 42: END
+[Time: 16:02:08][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 47: First Name: David Angelo, Last Name: Abayon
+[Time: 16:02:08][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 47: START
+[Time: 16:02:08][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 68: END
+[Time: 16:02:08][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 73: END
+[Time: 16:02:08][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 66: isValid: true
+[Time: 16:02:08][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 67: END
+[Time: 16:02:08][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 135: isValid: true, triesCounter: 1
+[Time: 16:02:08][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 136: END
+[Time: 16:02:08][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 45: askAgain: true, triesCounter: 1
+[Time: 16:02:08][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[Time: 16:03:05][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 17: *********************START
+[Time: 16:03:06][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START
+[Time: 16:03:16][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 16:03:16][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 16:03:16][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 16:03:16][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 16:03:16][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: false, triesCounter: 3
+[Time: 16:03:16][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 16:03:16][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 74: Username: david.abayon
+[Time: 16:03:16][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: END
+[Time: 16:03:16][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 114: START
+[Time: 16:03:16][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 61: START
+[Time: 16:03:16][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 25: START
+[Time: 16:03:16][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 16:03:16][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 42: END
+[Time: 16:03:16][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 47: First Name: null, Last Name: null
+[Time: 16:03:16][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 47: START
+[Time: 16:03:16][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 68: END
+[Time: 16:03:16][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 73: END
+[Time: 16:03:16][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 66: isValid: false
+[Time: 16:03:16][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 67: END
+[Time: 16:03:16][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 135: isValid: false, triesCounter: 2
+[Time: 16:03:16][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 136: END
+[Time: 16:03:16][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 45: askAgain: true, triesCounter: 2
+[Time: 16:03:16][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START
+[Time: 16:03:51][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 17: *********************START
+[Time: 16:03:53][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START
+[Time: 16:04:00][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 16:04:00][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 16:04:00][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 16:04:00][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 16:04:00][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: false, triesCounter: 3
+[Time: 16:04:00][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 16:04:00][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 74: Username: david.abayon
+[Time: 16:04:00][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: END
+[Time: 16:04:00][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 114: START
+[Time: 16:04:00][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 61: START
+[Time: 16:04:00][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 25: START
+[Time: 16:04:00][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 16:04:00][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 42: END
+[Time: 16:04:00][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 47: First Name: null, Last Name: null
+[Time: 16:04:00][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 47: START
+[Time: 16:04:00][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 68: END
+[Time: 16:04:00][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 73: END
+[Time: 16:04:00][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 66: isValid: false
+[Time: 16:04:00][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 67: END
+[Time: 16:04:00][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 135: isValid: false, triesCounter: 2
+[Time: 16:04:00][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 136: END
+[Time: 16:04:00][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 45: askAgain: true, triesCounter: 2
+[Time: 16:04:00][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START
+[Time: 16:04:13][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 16:04:13][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 16:04:13][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 16:04:13][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 16:04:13][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: false, triesCounter: 2
+[Time: 16:04:13][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 16:04:13][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 74: Username: david.abayon
+[Time: 16:04:13][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: END
+[Time: 16:04:13][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 114: START
+[Time: 16:04:13][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 61: START
+[Time: 16:04:13][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 25: START
+[Time: 16:04:13][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 16:04:13][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 42: END
+[Time: 16:04:13][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 47: First Name: David Angelo, Last Name: Abayon
+[Time: 16:04:13][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 47: START
+[Time: 16:04:13][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 68: END
+[Time: 16:04:13][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 73: END
+[Time: 16:04:13][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 66: isValid: true
+[Time: 16:04:13][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 67: END
+[Time: 16:04:13][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 135: isValid: true, triesCounter: 2
+[Time: 16:04:13][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 136: END
+[Time: 16:04:13][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 45: askAgain: true, triesCounter: 2
+[Time: 16:04:13][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[Time: 16:04:42][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 17: *********************START
+[Time: 16:04:43][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START
+[Time: 16:05:02][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 16:05:02][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 16:05:02][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 16:05:02][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 16:05:02][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: false, triesCounter: 3
+[Time: 16:05:02][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 16:05:02][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 74: Username: d
+[Time: 16:05:02][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: END
+[Time: 16:05:02][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 114: START
+[Time: 16:05:02][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 61: START
+[Time: 16:05:02][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 25: START
+[Time: 16:05:02][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 16:05:02][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 28: com.mysql.jdbc.Diver
+[Time: 16:05:02][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 29: There's an error/issue with the database driver
+[Time: 16:05:02][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 135: isValid: false, triesCounter: 3
+[Time: 16:05:02][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 136: END
+[Time: 16:05:02][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 45: askAgain: true, triesCounter: 3
+[Time: 16:05:02][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START
+[Time: 16:05:14][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 16:05:14][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 16:05:14][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 16:05:14][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 16:05:14][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: false, triesCounter: 3
+[Time: 16:05:14][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 16:05:14][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 74: Username: d
+[Time: 16:05:14][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: END
+[Time: 16:05:14][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 114: START
+[Time: 16:05:14][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 61: START
+[Time: 16:05:14][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 25: START
+[Time: 16:05:14][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 16:05:16][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 33: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[Time: 16:05:16][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 34: There's an error/issue with regards to the database connection!
+[Time: 16:05:16][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 135: isValid: false, triesCounter: 3
+[Time: 16:05:16][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 136: END
+[Time: 16:05:16][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 45: askAgain: true, triesCounter: 3
+[Time: 16:05:16][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START
+[Time: 16:05:34][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 16:05:34][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 16:05:34][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 16:05:34][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 16:05:34][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: false, triesCounter: 3
+[Time: 16:05:34][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 16:05:34][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 74: Username: d
+[Time: 16:05:34][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: END
+[Time: 16:05:34][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 114: START
+[Time: 16:05:34][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 61: START
+[Time: 16:05:34][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 25: START
+[Time: 16:05:34][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 16:05:34][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 42: END
+[Time: 16:05:34][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 61: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '0cc175b9c0f1b6a831c399e269772661'' at line 1
+[Time: 16:05:34][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 62: An error/issue has occurred while retrieving database record/s!
+[Time: 16:05:34][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 47: START
+[Time: 16:05:34][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 68: END
+[Time: 16:05:34][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 135: isValid: false, triesCounter: 3
+[Time: 16:05:34][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 136: END
+[Time: 16:05:34][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 45: askAgain: true, triesCounter: 3
+[Time: 16:05:34][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START
+[Time: 16:07:23][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 17: *********************START
+[Time: 16:07:25][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START
+[Time: 16:07:43][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 16:07:43][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 16:07:43][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 16:07:43][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 16:07:43][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: false, triesCounter: 3
+[Time: 16:07:43][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 16:07:43][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 74: Username: david.abayon
+[Time: 16:07:43][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: END
+[Time: 16:07:43][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 114: START
+[Time: 16:07:43][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 61: START
+[Time: 16:07:43][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 25: START
+[Time: 16:07:43][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 16:07:43][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 42: END
+[Time: 16:07:43][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 61: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '482c811da5d5b4bc6d497ffa98491e38'' at line 1
+[Time: 16:07:43][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 62: An error/issue has occurred while retrieving database record/s!
+[Time: 16:07:43][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 47: START
+[Time: 16:07:43][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 68: END
+[Time: 16:07:43][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 137: isValid: false, triesCounter: 2
+[Time: 16:07:43][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 138: END
+[Time: 16:07:43][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 45: askAgain: true, triesCounter: 2
+[Time: 16:07:43][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START
+[Time: 16:09:19][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 17: *********************START
+[Time: 16:09:20][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START
+[Time: 16:09:27][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 16:09:27][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 16:09:27][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 16:09:27][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 16:09:27][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: false, triesCounter: 3
+[Time: 16:09:27][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 16:09:27][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 74: Username: david.a
+[Time: 16:09:27][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: END
+[Time: 16:09:27][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 114: START
+[Time: 16:09:27][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 61: START
+[Time: 16:09:27][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 25: START
+[Time: 16:09:27][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 16:09:28][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 42: END
+[Time: 16:09:28][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 61: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '7815696ecbf1c96e6894b779456d330e'' at line 1
+[Time: 16:09:28][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 62: An error/issue has occurred while retrieving database record/s!
+[Time: 16:09:28][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 47: START
+[Time: 16:09:28][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 68: END
+[Time: 16:09:28][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 140: isValid: false, triesCounter: 2
+[Time: 16:09:28][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 141: END
+[Time: 16:09:28][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 45: askAgain: true, triesCounter: 2
+[Time: 16:09:28][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START
+[Time: 16:09:49][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 16:09:49][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 16:09:49][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 16:09:49][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 16:09:49][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 94: Username/Password is empty!
+[Time: 16:09:49][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: true, triesCounter: 1
+[Time: 16:09:49][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 16:10:03][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 16:10:03][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 16:10:03][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 16:10:03][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 16:10:03][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: false, triesCounter: 1
+[Time: 16:10:03][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 16:10:03][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 74: Username: ad
+[Time: 16:10:03][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: END
+[Time: 16:10:03][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 114: START
+[Time: 16:10:03][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 61: START
+[Time: 16:10:03][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 25: START
+[Time: 16:10:03][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 16:10:03][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 42: END
+[Time: 16:10:03][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 61: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '7815696ecbf1c96e6894b779456d330e'' at line 1
+[Time: 16:10:03][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 62: An error/issue has occurred while retrieving database record/s!
+[Time: 16:10:03][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 47: START
+[Time: 16:10:03][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 68: END
+[Time: 16:10:03][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 139: isValid: false, triesCounter: 0
+[Time: 16:10:03][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 140: END
+[Time: 16:10:03][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 45: askAgain: true, triesCounter: 0
+[Time: 16:10:03][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START
+[Time: 16:10:03][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 74: Username: ad
+[Time: 16:10:03][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: END
+[Time: 16:10:03][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 45: askAgain: false, triesCounter: 0
+[Time: 16:10:03][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 146: START
+[Time: 16:10:15][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 169: isTerminate: false
+[Time: 16:10:15][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 170: END
+[Time: 16:10:18][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START[Time: 16:31:56][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 18: *********************START
+[Time: 16:31:57][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START
+[Time: 16:32:07][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 16:32:07][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 16:32:07][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 16:32:07][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 16:32:07][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: false, triesCounter: 3
+[Time: 16:32:07][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 16:32:07][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 74: Username: david.abayon
+[Time: 16:32:07][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: END
+[Time: 16:32:07][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 114: START
+[Time: 16:32:07][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 61: START
+[Time: 16:32:07][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 26: START
+[Time: 16:32:07][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 16:37:19][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 18: *********************START
+[Time: 16:37:20][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START
+[Time: 16:37:31][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 16:37:31][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 16:37:31][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 16:37:31][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 16:37:31][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: false, triesCounter: 3
+[Time: 16:37:31][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 16:37:31][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 74: Username: david.abayon
+[Time: 16:37:31][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: END
+[Time: 16:37:31][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 114: START
+[Time: 16:37:31][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 61: START
+[Time: 16:37:31][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 26: START
+[Time: 16:37:31][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 16:37:31][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[Time: 16:37:31][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 49: First Name: David Angelo, Last Name: Abayon
+[Time: 16:37:31][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[Time: 16:37:31][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[Time: 16:37:31][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 75: END
+[Time: 16:37:31][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 66: isValid: true
+[Time: 16:37:31][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 67: END
+[Time: 16:37:31][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 139: isValid: true
+[Time: 16:37:31][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 140: END
+[Time: 16:37:31][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 46: askAgain: true, triesCounter: 3, isLoggedIn: true
+[Time: 16:37:31][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[Time: 16:37:38][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 71: homePageChoice: 1, askAgain: false
+[Time: 16:37:38][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 72: END
+[Time: 16:37:38][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 146: START
+[Time: 16:43:08][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 169: isTerminate: false
+[Time: 16:43:08][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 170: END
+[Time: 16:43:10][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START
+[Time: 16:43:22][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 16:43:22][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 16:43:22][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 16:43:22][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 16:43:22][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: false, triesCounter: 3
+[Time: 16:43:22][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 16:43:22][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 74: Username: david.abayon
+[Time: 16:43:22][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: END
+[Time: 16:43:22][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 114: START
+[Time: 16:43:22][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 61: START
+[Time: 16:43:22][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 26: START
+[Time: 16:43:22][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 16:43:22][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[Time: 16:43:22][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 49: First Name: David Angelo, Last Name: Abayon
+[Time: 16:43:22][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[Time: 16:43:22][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[Time: 16:43:22][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 75: END
+[Time: 16:43:22][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 66: isValid: true
+[Time: 16:43:22][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 67: END
+[Time: 16:43:22][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 139: isValid: true
+[Time: 16:43:22][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 140: END
+[Time: 16:43:22][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 46: askAgain: true, triesCounter: 3, isLoggedIn: true
+[Time: 16:43:22][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[Time: 16:43:26][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 71: homePageChoice: 1, askAgain: false
+[Time: 16:43:26][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 72: END
+[Time: 16:43:26][Class: com.pointwest.pls.ui.SearchEmployeePageUI Method: askUserInput] - Line 45: START
+[Time: 17:03:42][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 18: *********************START
+[Time: 17:03:44][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START
+[Time: 17:03:59][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 24: START
+[Time: 17:03:59][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 55: isEncrpyted: true
+[Time: 17:03:59][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: END
+[Time: 17:03:59][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 17:03:59][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: false, triesCounter: 3
+[Time: 17:03:59][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 17:03:59][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 74: Username: david.abayon
+[Time: 17:03:59][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: END
+[Time: 17:03:59][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 114: START
+[Time: 17:03:59][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 61: START
+[Time: 17:03:59][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 26: START
+[Time: 17:03:59][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 17:03:59][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[Time: 17:03:59][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 49: First Name: David Angelo, Last Name: Abayon
+[Time: 17:03:59][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[Time: 17:03:59][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[Time: 17:03:59][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 75: END
+[Time: 17:03:59][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 66: isValid: true
+[Time: 17:03:59][Class: com.pointwest.pls.manager.LoginPageManager Method: validateLoginCredentials] - Line 67: END
+[Time: 17:03:59][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 139: isValid: true
+[Time: 17:03:59][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 140: END
+[Time: 17:03:59][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 47: askAgain: true, triesCounter: 3, isLoggedIn: true
+[Time: 17:03:59][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 54: START
+[Time: 17:04:00][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[Time: 17:04:03][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 71: homePageChoice: 1, askAgain: false
+[Time: 17:04:03][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 72: END
+[Time: 17:04:03][Class: com.pointwest.pls.ui.SearchEmployeePageUI Method: askUserInput] - Line 45: START
+[Time: 17:04:11][Class: com.pointwest.pls.ui.SearchEmployeePageUI Method: askUserInput] - Line 72: homePageChoice: 4, askAgain: false
+[Time: 17:04:11][Class: com.pointwest.pls.ui.SearchEmployeePageUI Method: askUserInput] - Line 73: END
+[Time: 17:04:11][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 87: isGoBack: true
+[Time: 17:04:11][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 88: END
+[Time: 17:04:11][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 54: START
+[Time: 17:04:11][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[Time: 17:04:55][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 71: homePageChoice: 1, askAgain: false
+[Time: 17:04:55][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 72: END
+[Time: 17:04:55][Class: com.pointwest.pls.ui.SearchEmployeePageUI Method: askUserInput] - Line 46: START
+[Time: 17:05:14][Class: com.pointwest.pls.ui.SearchEmployeePageUI Method: askUserInput] - Line ?: homePageChoice: 4, askAgain: false
+[Time: 17:05:14][Class: com.pointwest.pls.ui.SearchEmployeePageUI Method: askUserInput] - Line ?: END
+[Time: 17:05:14][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 87: isGoBack: true
+[Time: 17:05:14][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 88: END
+[Time: 17:05:14][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 54: START
+[Time: 17:05:14][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[Time: 17:05:15][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 71: homePageChoice: 1, askAgain: false
+[Time: 17:05:15][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 72: END
+[Time: 17:05:15][Class: com.pointwest.pls.ui.SearchEmployeePageUI Method: askUserInput] - Line 46: START
+[Time: 17:06:07][Class: com.pointwest.pls.ui.SearchEmployeePageUI Method: askUserInput] - Line ?: homePageChoice: 4, askAgain: false
+[Time: 17:06:07][Class: com.pointwest.pls.ui.SearchEmployeePageUI Method: askUserInput] - Line ?: END
+[Time: 17:06:07][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 87: isGoBack: true
+[Time: 17:06:07][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 88: END
+[Time: 17:06:07][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 54: START
+[Time: 17:06:07][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[Time: 17:06:09][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 71: homePageChoice: 1, askAgain: false
+[Time: 17:06:09][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 72: END
+[Time: 17:06:09][Class: com.pointwest.pls.ui.SearchEmployeePageUI Method: askUserInput] - Line 46: START
+[Time: 17:06:42][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 18: *********************START
+[Time: 17:06:44][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START
+[Time: 17:06:51][Class: com.pointwest.pls.ui.SearchEmployeePageUI Method: askUserInput] - Line ?: homePageChoice: 4, askAgain: false
+[Time: 17:06:51][Class: com.pointwest.pls.ui.SearchEmployeePageUI Method: askUserInput] - Line ?: END
+[Time: 17:06:51][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 87: isGoBack: true
+[Time: 17:06:51][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 88: END
+[Time: 17:06:51][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 54: START
+[Time: 17:06:51][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[Time: 17:06:52][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 71: homePageChoice: 1, askAgain: false
+[Time: 17:06:52][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 72: END
+[Time: 17:06:52][Class: com.pointwest.pls.ui.SearchEmployeePageUI Method: askUserInput] - Line 46: START
+[Time: 17:07:01][Class: com.pointwest.pls.ui.SearchEmployeePageUI Method: askUserInput] - Line ?: homePageChoice: 4, askAgain: false
+[Time: 17:07:01][Class: com.pointwest.pls.ui.SearchEmployeePageUI Method: askUserInput] - Line ?: END
+[Time: 17:07:01][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 87: isGoBack: true
+[Time: 17:07:01][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 88: END
+[Time: 17:07:01][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 54: START
+[Time: 17:07:01][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[Time: 17:07:01][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 71: homePageChoice: 1, askAgain: false
+[Time: 17:07:01][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 72: END
+[Time: 17:07:01][Class: com.pointwest.pls.ui.SearchEmployeePageUI Method: askUserInput] - Line 46: START
+[Time: 17:07:23][Class: com.pointwest.pls.ui.SearchEmployeePageUI Method: askUserInput] - Line ?: homePageChoice: 4, askAgain: false
+[Time: 17:07:23][Class: com.pointwest.pls.ui.SearchEmployeePageUI Method: askUserInput] - Line ?: END
+[Time: 17:07:23][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 87: isGoBack: true
+[Time: 17:07:23][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 88: END
+[Time: 17:07:23][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 54: START
+[Time: 17:07:23][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[Time: 17:07:24][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 71: homePageChoice: 1, askAgain: false
+[Time: 17:07:24][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 72: END
+[Time: 17:07:24][Class: com.pointwest.pls.ui.SearchEmployeePageUI Method: askUserInput] - Line 46: START
+[Time: 23:07:30][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 18: *********************START
+[Time: 23:07:32][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 50: START
+[Time: 23:07:35][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 25: START
+[Time: 23:07:35][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: isEncrpyted: true
+[Time: 23:07:35][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 57: END
+[Time: 23:07:35][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 23:07:35][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 101: Invalid username/password!
+[Time: 23:07:35][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: true, triesCounter: 2
+[Time: 23:07:35][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 23:14:23][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 25: START
+[Time: 23:14:23][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: isEncrpyted: true
+[Time: 23:14:23][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 57: END
+[Time: 23:14:23][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 23:14:23][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 94: Username/Password is empty!
+[Time: 23:14:23][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: true, triesCounter: 1
+[Time: 23:14:23][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 23:15:04][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 25: START
+[Time: 23:15:04][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: isEncrpyted: true
+[Time: 23:15:04][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 57: END
+[Time: 23:15:04][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 80: START
+[Time: 23:15:04][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 107: askAgain: false, triesCounter: 1
+[Time: 23:15:04][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 108: END
+[Time: 23:15:04][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 74: Username: david.abayon
+[Time: 23:15:04][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 75: END
+[Time: 23:15:04][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 114: START
+[Time: 23:15:04][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 63: START
+[Time: 23:15:04][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 26: START
+[Time: 23:15:04][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 23:15:05][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[Time: 23:15:05][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 49: First Name: David Angelo, Last Name: Abayon
+[Time: 23:15:05][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[Time: 23:15:05][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[Time: 23:15:05][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 75: END
+[Time: 23:15:05][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 68: hasMatched: true
+[Time: 23:15:05][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 69: END
+[Time: 23:15:05][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 139: hasMatched: true
+[Time: 23:15:05][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 140: END
+[Time: 23:15:05][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 48: askAgain: true, triesCounter: 1, isLoggedIn: true
+[Time: 23:15:05][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 55: START
+[Time: 23:15:05][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[Time: 23:15:21][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 71: homePageChoice: 1, askAgain: false
+[Time: 23:15:21][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 72: END
+[Time: 23:15:21][Class: com.pointwest.pls.ui.SearchEmployeePageUI Method: askUserInput] - Line 53: START
