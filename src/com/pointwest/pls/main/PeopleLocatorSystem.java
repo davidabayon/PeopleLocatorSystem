@@ -8,7 +8,7 @@ import com.pointwest.pls.bean.User;
 import com.pointwest.pls.constant.GenericConstants;
 import com.pointwest.pls.ui.HomePageUI;
 import com.pointwest.pls.ui.LoginPageUI;
-import com.pointwest.pls.ui.SearchEmployeePageUI;
+import com.pointwest.pls.ui.SearchPageUI;
 import com.pointwest.pls.util.DisplayHelper;
 
 public class PeopleLocatorSystem {
@@ -65,7 +65,7 @@ public class PeopleLocatorSystem {
 						isLoggedOut = false;
 
 						// Search Employee Page
-						SearchEmployeePageUI searchEmployeePageUI = new SearchEmployeePageUI(user);
+						SearchPageUI searchEmployeePageUI = new SearchPageUI(user);
 						searchEmployeePageUI.displayPageHeader();
 						searchEmployeePageUI.displayPageContent();
 						searchEmployeePageUI.askUserInput();

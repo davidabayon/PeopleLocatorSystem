@@ -1,8 +1,5 @@
 package com.pointwest.pls.bean;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Employee {
 	private String employeeId;
 	private String employeeUsername;
@@ -11,12 +8,12 @@ public class Employee {
 	private String employeeLastName;
 	private String employeeRole;
 	private String employeeShift;
-	private List<Project> employeeProject;
-	private List<Seat> employeeSeat;
+	private Project employeeProject;
+	private Seat employeeSeat;
 
 	public Employee() {
-		this.employeeProject = new ArrayList<Project>();
-		this.employeeSeat = new ArrayList<Seat>();
+		this.employeeProject = new Project();
+		this.employeeSeat = new Seat();
 	}
 
 	public String getEmployeeId() {
@@ -75,11 +72,11 @@ public class Employee {
 		this.employeeShift = employeeShift;
 	}
 
-	public List<Project> getEmployeeProject() {
+	public Project getEmployeeProject() {
 		return employeeProject;
 	}
 
-	public List<Seat> getEmployeeSeat() {
+	public Seat getEmployeeSeat() {
 		return employeeSeat;
 	}
 }

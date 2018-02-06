@@ -1,7 +1,6 @@
 package com.pointwest.pls.ui;
 
 import java.util.Scanner;
-import java.util.regex.Matcher;
 
 import org.apache.log4j.Logger;
 
@@ -15,7 +14,6 @@ public class LoginPageUI implements PageUI {
 	Scanner scanner = new Scanner(System.in);
 	LoginPageManager loginPageManager = null;
 	User user = null;
-	String password = null;
 
 	public LoginPageUI(User user) {
 		this.user = user;
@@ -64,7 +62,7 @@ public class LoginPageUI implements PageUI {
 					System.out.format("%117s", e.getMessage() + "\n");
 				}
 
-				askAgain = validateUserInput(username, password);
+				askAgain = loginPageManager.validateUserInput(username, password);
 			} else {
 				askAgain = false;
 				System.out.format("%117s", GenericConstants.MAX_ATTEMPTS_REACHED + "\n");
@@ -75,50 +73,16 @@ public class LoginPageUI implements PageUI {
 		logger.info(GenericConstants.END);
 	}
 
-	// Validate format for username and password
-	private boolean validateUserInput(String username, String password) {
-		logger.info(GenericConstants.START);
-
-		Matcher matcher = GenericConstants.INPUT_REGEX_EMAIL.matcher(username);
-		boolean askAgain = false;
-
-		if (username.trim().length() > 0 && password.length() > 0 && matcher.find()) {
-			String[] usernameArray = username.split("@");
-			username = usernameArray[0].trim();
-			user.setEmployeeUsername(username);
-			this.password = password;
-			askAgain = false;
-		} else if (username.trim().length() == 0 || password.length() == 0) {
-			askAgain = true;
-			user.setLoginTries(user.getLoginTries() - 1);
-			logger.error(GenericConstants.INPUT_LOGIN_NULL);
-			System.out.format("%117s", GenericConstants.INPUT_LOGIN_NULL + "\n");
-			System.out.format("%87s", "");
-			System.out.format(GenericConstants.ATTEMPTS_REMAINING + "\n", user.getLoginTries());
-		} else if (!matcher.find()) {
-			askAgain = true;
-			user.setLoginTries(user.getLoginTries() - 1);
-			logger.error(GenericConstants.INPUT_LOGIN_INVALID);
-			System.out.format("%117s", GenericConstants.INPUT_LOGIN_INVALID + "\n");
-			System.out.format("%87s", "");
-			System.out.format(GenericConstants.ATTEMPTS_REMAINING + "\n", user.getLoginTries());
-		}
-
-		logger.debug("askAgain: " + askAgain + ", triesCounter: " + user.getLoginTries());
-		logger.info(GenericConstants.END);
-		return askAgain;
-	}
-
 	// Display status for login
 	public boolean displayLoginStatus() {
 		logger.info(GenericConstants.START);
 
-		boolean isValid = false;
+		boolean hasMatched = false;
 
 		try {
-			isValid = loginPageManager.validateLoginCredentials(password);
+			hasMatched = loginPageManager.checkMatchingLoginCredentials();
 
-			if (isValid) {
+			if (hasMatched) {
 				System.out.format("%117s", GenericConstants.INPUT_LOGIN_SUCCESS + "\n");
 			} else {
 				user.setLoginTries(user.getLoginTries() - 1);
@@ -127,7 +91,7 @@ public class LoginPageUI implements PageUI {
 				System.out.format(GenericConstants.ATTEMPTS_REMAINING + "\n", user.getLoginTries());
 			}
 		} catch (CustomException e) {
-			isValid = false;
+			hasMatched = false;
 			user.setLoginTries(user.getLoginTries() - 1);
 			System.out.format("%117s", e.getMessage() + "\n");
 			System.out.format("%117s", GenericConstants.CONTACT_SYSTEM_ADMIN + "\n");
@@ -136,9 +100,9 @@ public class LoginPageUI implements PageUI {
 			System.out.format(GenericConstants.ATTEMPTS_REMAINING + "\n", user.getLoginTries());
 		}
 
-		logger.debug("isValid: " + isValid);
+		logger.debug("hasMatched: " + hasMatched);
 		logger.info(GenericConstants.END);
-		return isValid;
+		return hasMatched;
 	}
 
 	// Display termination confirmation

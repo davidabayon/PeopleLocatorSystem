@@ -1,19 +1,58 @@
 package com.pointwest.pls.constant;
 
-public class SqlConstants {
-	public final static String JDBC_DRIVER_CLASS = "com.mysql.jdbc.Driver";
-	public final static String NETWORK_ADDRESS = "localhost";
-	public final static String DATABASE_SCHEMA = "plsdb";
-	public final static String DATABASE_NETWORK = "jdbc:mysql://" + NETWORK_ADDRESS + ":3306/" + DATABASE_SCHEMA;
-	public final static String DATABASE_USERNAME = "david.abayon";
-	public final static String DATABASE_PASSWORD = "password123";
+public interface SqlConstants {
+	String JDBC_DRIVER_CLASS = "com.mysql.jdbc.Driver";
+	String NETWORK_ADDRESS = "localhost";
+	String DATABASE_SCHEMA = "plsdb";
+	String DATABASE_NETWORK = "jdbc:mysql://" + NETWORK_ADDRESS + ":3306/" + DATABASE_SCHEMA;
+	String DATABASE_USERNAME = "david.abayon";
+	String DATABASE_PASSWORD = "password123";
 
-	public final static int QUERY_TIMEOUT = 180;
-	public final static String EMP_FIRST_NAME = "emp_first_name";
-	public final static String EMP_LAST_NAME = "emp_last_name";
-	public final static String EMP_ROLE = "emp_role";
+	int QUERY_TIMEOUT = 180;
+	String EMP_FIRST_NAME = "emp_first_name";
+	String EMP_LAST_NAME = "emp_last_name";
+	String EMP_ROLE = "emp_role";
 
-	public final static String SELECT_STATEMENT_LOGIN = "SELECT emp_first_name, emp_last_name, emp_role ";
-	public final static String FROM_STATEMENT_LOGIN = "FROM employee ";
-	public final static String WHERE_STATEMENT_LOGIN = "WHERE emp_username = ? AND emp_password = ?";
+	String SELECT_STATEMENT_LOGIN = "SELECT emp_first_name, emp_last_name, emp_role ";
+	String FROM_STATEMENT_LOGIN = "FROM employee ";
+	String WHERE_STATEMENT_LOGIN = "WHERE emp_username = ? AND emp_password = ?";
+
+	// Search Employee queries
+	String SELECT_STATEMENT_SEARCH_EMPLOYEE = "SELECT e.emp_id, " + "e.emp_first_name, " + "e.emp_last_name, "
+			+ "CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant,  s.seat_column_number, '-', s.seat_row_number) AS emp_seat, "
+			+ "s.seat_local_number, " + "e.emp_shift, "
+			+ "GROUP_CONCAT(DISTINCT(CASE WHEN p.proj_name = 'Project Never Exist' THEN NULL ELSE p.proj_name END) SEPARATOR ', ') AS emp_proj ";
+	String FROM_STATEMENT_SEARCH_EMPLOYEE = "FROM employee e " + "LEFT JOIN employee_seat es ON e.emp_id = es.emp_id "
+			+ "LEFT JOIN seat s ON es.seat_id = s.seat_id " + "LEFT JOIN employee_project ep ON e.emp_id = ep.emp_id "
+			+ "LEFT JOIN project p ON ep.proj_alias = p.proj_alias ";
+	String WHERE_STATEMENT_SEARCH_BY_ID_PARTIAL = "WHERE e.emp_id LIKE %?% ";
+	String WHERE_STATEMENT_SEARCH_BY_NAME_PARTIAL = "WHERE e.emp_first_name LIKE %?% OR e.emp_last_name LIKE %?% ";
+	String WHERE_STATEMENT_SEARCH_BY_PROJECT_PARTIAL = "WHERE p.proj_name LIKE %?% ";
+	// String WHERE_STATEMENT_SEARCH_BY_ID_EXACT = "WHERE e.emp_id = ? ";
+	// String WHERE_STATEMENT_SEARCH_BY_NAME_EXACT = "WHERE e.emp_first_name = ? OR
+	// e.emp_last_name = ? ";
+	// String WHERE_STATEMENT_SEARCH_BY_PROJECT_EXACT = "WHERE p.proj_name = ? ";
+	String GROUP_BY_ORDER_BY_EMPLOYEE_ID = "GROUP BY e.emp_id, emp_seat ORDER BY e.emp_id";
+
+	// View Seatplan queries
+	String SELECT_STATEMENT_VIEW_SEATPLAN = "SELECT s.seat_id, "
+			+ "CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant,  s.seat_column_number, '-', s.seat_row_number) AS seat_name "
+			+ "(CASE WHEN e.emp_first_name IS NULL THEN 'Vacant' ELSE e.emp_first_name END) as emp_first_name, "
+			+ "(CASE WHEN e.emp_last_name IS NULL THEN 'seat' ELSE e.emp_last_name END) as emp_last_name, "
+			+ "(CASE WHEN s.seat_local_number = '' THEN '' ELSE CONCAT('Local #', s.seat_local_number) END) as seat_local_number ";
+	String FROM_STATEMENT_VIEW_SEATPLAN = "FROM seat s " + "LEFT JOIN employee_seat es ON s.seat_id = es.seat_id "
+			+ "LEFT JOIN employee e ON es.emp_id = e.emp_id " + "LEFT JOIN employee_project ep ON ep.emp_id = e.emp_id "
+			+ "LEFT JOIN project p ON p.proj_alias = ep.proj_alias ";
+	String WHERE_STATEMENT_VIEW_BY_LOCATION_FLOOR = "WHERE s.seat_floor_number = ? AND s.bldg_id = ?";
+	String WHERE_STATEMENT_VIEW_BY_QUADRANT = "WHERE s.seat_floor_number = ? AND s.bldg_id = ? AND s.seat_quadrant = ?";
+	// String WHERE_STATEMENT_VIEW_BY_ID_PARTIAL = "WHERE e.emp_id LIKE %?% ";
+	// String WHERE_STATEMENT_VIEW_BY_NAME_PARTIAL = "WHERE e.emp_first_name LIKE
+	// %?% OR e.emp_last_name LIKE %?% ";
+	// String WHERE_STATEMENT_VIEW_BY_PROJECT_PARTIAL = "WHERE p.proj_name LIKE %?%
+	// ";
+	// String WHERE_STATEMENT_VIEW_BY_ID_EXACT = "WHERE e.emp_id = ? ";
+	// String WHERE_STATEMENT_VIEW_BY_NAME_EXACT = "WHERE e.emp_first_name = ? OR
+	// e.emp_last_name = ? ";
+	// String WHERE_STATEMENT_VIEW_BY_PROJECT_EXACT = "WHERE p.proj_name = ? ";
+	String GROUP_BY_ORDER_BY_SEAT_ID = "GROUP BY s.seat_id ORDER BY s.seat_id";
 }
