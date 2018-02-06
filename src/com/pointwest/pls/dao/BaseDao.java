@@ -17,6 +17,7 @@ public abstract class BaseDao {
 
 	public Connection openDBConnection() throws CustomException {
 		logger.info(GenericConstants.START);
+
 		Connection connection = null;
 
 		try {
@@ -39,33 +40,9 @@ public abstract class BaseDao {
 			logger.error(customException.getMessage());
 			throw customException;
 		}
+
 		logger.info(GenericConstants.END);
 		return connection;
-	}
-
-	public void closeConnection(Connection connection, PreparedStatement preparedStatement) throws CustomException {
-		logger.info(GenericConstants.START);
-
-		try {
-			if (connection != null) {
-				connection.close();
-			}
-
-			if (preparedStatement != null) {
-				preparedStatement.close();
-			}
-		} catch (SQLException e) {
-			CustomException customException = new CustomException(GenericConstants.SQL_EXCEPTION_CONNECTION_ERROR, e);
-			logger.debug(e.getMessage());
-			logger.error(customException.getMessage());
-			throw customException;
-		} catch (Exception e) {
-			CustomException customException = new CustomException(GenericConstants.EXCEPTION, e);
-			logger.debug(e.getMessage());
-			logger.error(customException.getMessage());
-			throw customException;
-		}
-		logger.info(GenericConstants.END);
 	}
 
 	public void closeConnection(Connection connection, PreparedStatement preparedStatement, ResultSet resultSet)
@@ -95,6 +72,7 @@ public abstract class BaseDao {
 			logger.error(customException.getMessage());
 			throw customException;
 		}
+
 		logger.info(GenericConstants.END);
 	}
 }

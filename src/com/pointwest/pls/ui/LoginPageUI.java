@@ -1,6 +1,7 @@
 package com.pointwest.pls.ui;
 
 import java.util.Scanner;
+import java.util.regex.Matcher;
 
 import org.apache.log4j.Logger;
 
@@ -12,31 +13,40 @@ import com.pointwest.pls.util.CustomException;
 public class LoginPageUI implements PageUI {
 	Logger logger = Logger.getLogger(LoginPageUI.class);
 	Scanner scanner = new Scanner(System.in);
+	LoginPageManager loginPageManager = null;
 	User user = null;
+	String password = null;
 
 	public LoginPageUI(User user) {
 		this.user = user;
+		this.loginPageManager = new LoginPageManager(this.user);
 	}
 
 	@Override
+	// Display Login Page header
 	public void displayPageHeader() {
-		System.out.format("%100s", "=============================================\n");
-		System.out.format("%100s", "            PEOPLE LOCATOR SYSTEM            \n");
-		System.out.format("%101s", "=============================================\n\n");
-		System.out.format("%100s", "---------------------------------------------\n");
-		System.out.format("%100s", "             L O G I N   P A G E             \n");
-		System.out.format("%100s", "---------------------------------------------\n");
-
+		System.out.println();
+		System.out.format("%118s", "=====================================================================\n");
+		System.out.format("%118s", "                        PEOPLE LOCATOR SYSTEM                        \n");
+		System.out.format("%119s", "=====================================================================\n\n");
+		System.out.format("%118s", "---------------------------------------------------------------------\n");
+		System.out.format("%118s", "                         L O G I N   P A G E                         \n");
+		System.out.format("%118s", "---------------------------------------------------------------------\n");
 	}
 
 	@Override
+	// Display Login Page content
 	public void displayPageContent() {
-		System.out.format("%91s", "Welcome to Pointwest PLS!\n\n");
-		System.out.format("%95s", "Login using your user credentials...\n");
+		System.out.format("%96s", "Welcome to Pointwest PLS!\n");
+		System.out.format("%97s", "Press [Enter] to continue...");
+		scanner.nextLine();
+		System.out.println();
+		System.out.format("%86s", "Login using your user credentials...\n");
 	}
 
 	@Override
-	public User askUserInput() {
+	// Ask for user's username and password
+	public void askUserInput() {
 		logger.info(GenericConstants.START);
 
 		boolean askAgain = false;
@@ -44,62 +54,120 @@ public class LoginPageUI implements PageUI {
 		String password = null;
 
 		do {
-			System.out.format("%70s", "Username: ");
-			username = scanner.nextLine();
-			if ("".trim().equalsIgnoreCase(username.trim()))
-				username = null;
-			else
-				askAgain = false;
+			if (user.getLoginTries() > 0) {
+				try {
+					System.out.format("%59s", "Username: ");
+					username = scanner.nextLine();
+					System.out.format("%59s", "Password: ");
+					password = loginPageManager.encryptUserPassword(scanner.nextLine());
+				} catch (CustomException e) {
+					System.out.format("%117s", e.getMessage() + "\n");
+				}
 
-			try {
-				user.setUsername(username);
-			} catch (NullPointerException e) {
-				logger.debug(e.getMessage());
-				logger.error(e.getMessage());
-				System.out.format("%100s", e.getMessage() + "\n\n");
-				askAgain = true;
+				askAgain = validateUserInput(username, password);
+			} else {
+				askAgain = false;
+				System.out.format("%117s", GenericConstants.MAX_ATTEMPTS_REACHED + "\n");
 			}
 		} while (askAgain);
 
-		do {
-			System.out.format("%70s", "Password: ");
-			password = scanner.nextLine();
-			if ("".trim().equalsIgnoreCase(password.trim()))
-				password = null;
-			else
-				askAgain = false;
-
-			try {
-				user.setPassword(password);
-			} catch (NullPointerException e) {
-				logger.debug(e.getMessage());
-				logger.error(e.getMessage());
-				System.out.format("%110s", e.getMessage() + "\n\n");
-				askAgain = true;
-			}
-		} while (askAgain);
-
-		displayLoginStatus();
+		logger.debug("Username: " + user.getEmployeeUsername());
 		logger.info(GenericConstants.END);
-		return null;
 	}
 
-	private void displayLoginStatus() {
+	// Validate format for username and password
+	private boolean validateUserInput(String username, String password) {
 		logger.info(GenericConstants.START);
 
-		LoginPageManager loginPageManager = new LoginPageManager(user);
+		Matcher matcher = GenericConstants.INPUT_REGEX_EMAIL.matcher(username);
+		boolean askAgain = false;
+
+		if (username.trim().length() > 0 && password.length() > 0 && matcher.find()) {
+			String[] usernameArray = username.split("@");
+			username = usernameArray[0].trim();
+			user.setEmployeeUsername(username);
+			this.password = password;
+			askAgain = false;
+		} else if (username.trim().length() == 0 || password.length() == 0) {
+			askAgain = true;
+			user.setLoginTries(user.getLoginTries() - 1);
+			logger.error(GenericConstants.INPUT_LOGIN_NULL);
+			System.out.format("%117s", GenericConstants.INPUT_LOGIN_NULL + "\n");
+			System.out.format("%87s", "");
+			System.out.format(GenericConstants.ATTEMPTS_REMAINING + "\n", user.getLoginTries());
+		} else if (!matcher.find()) {
+			askAgain = true;
+			user.setLoginTries(user.getLoginTries() - 1);
+			logger.error(GenericConstants.INPUT_LOGIN_INVALID);
+			System.out.format("%117s", GenericConstants.INPUT_LOGIN_INVALID + "\n");
+			System.out.format("%87s", "");
+			System.out.format(GenericConstants.ATTEMPTS_REMAINING + "\n", user.getLoginTries());
+		}
+
+		logger.debug("askAgain: " + askAgain + ", triesCounter: " + user.getLoginTries());
+		logger.info(GenericConstants.END);
+		return askAgain;
+	}
+
+	// Display status for login
+	public boolean displayLoginStatus() {
+		logger.info(GenericConstants.START);
+
 		boolean isValid = false;
 
 		try {
-			isValid = loginPageManager.validateLoginCredentials();
+			isValid = loginPageManager.validateLoginCredentials(password);
 
 			if (isValid) {
-				System.out.println("LOGIN SUCCESSFUL");
+				System.out.format("%117s", GenericConstants.INPUT_LOGIN_SUCCESS + "\n");
+			} else {
+				user.setLoginTries(user.getLoginTries() - 1);
+				System.out.format("%117s", GenericConstants.INPUT_LOGIN_INCORRECT + "\n");
+				System.out.format("%87s", "");
+				System.out.format(GenericConstants.ATTEMPTS_REMAINING + "\n", user.getLoginTries());
 			}
 		} catch (CustomException e) {
-			System.out.format("%110s", e.getMessage() + "\n\n");
+			isValid = false;
+			user.setLoginTries(user.getLoginTries() - 1);
+			System.out.format("%117s", e.getMessage() + "\n");
+			System.out.format("%117s", GenericConstants.CONTACT_SYSTEM_ADMIN + "\n");
+			System.out.format("%117s", GenericConstants.EMAIL + "\n");
+			System.out.format("%87s", "");
+			System.out.format(GenericConstants.ATTEMPTS_REMAINING + "\n", user.getLoginTries());
 		}
 
-		logger.info(GenericConstants.END + " - isValid: " + isValid);
+		logger.debug("isValid: " + isValid);
+		logger.info(GenericConstants.END);
+		return isValid;
+	}
+
+	// Display termination confirmation
+	public boolean confirmTermination() {
+		logger.info(GenericConstants.START);
+
+		String inputDecision = null;
+		boolean askAgain = false;
+		boolean isTerminate = false;
+
+		do {
+			System.out.println();
+			System.out.format("%79s", GenericConstants.CONFIRM_TERMINATION);
+			inputDecision = scanner.nextLine();
+			if ("Y".equalsIgnoreCase(inputDecision.trim()) || "Yes".equalsIgnoreCase(inputDecision.trim())) {
+				isTerminate = true;
+				askAgain = false;
+			} else if ("N".equalsIgnoreCase(inputDecision.trim()) || "No".equalsIgnoreCase(inputDecision.trim())) {
+				isTerminate = false;
+				askAgain = false;
+			} else {
+				System.out.format("%116s", GenericConstants.INPUT_NOT_VALID);
+				askAgain = true;
+			}
+		} while (askAgain);
+
+		System.out.println();
+		logger.debug("isTerminate: " + isTerminate);
+		logger.info(GenericConstants.END);
+		return isTerminate;
 	}
 }

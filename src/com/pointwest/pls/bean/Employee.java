@@ -3,8 +3,10 @@ package com.pointwest.pls.bean;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Employee extends User {
+public class Employee {
 	private String employeeId;
+	private String employeeUsername;
+	private String employeePassword;
 	private String employeeFirstName;
 	private String employeeLastName;
 	private String employeeRole;
@@ -23,6 +25,22 @@ public class Employee extends User {
 
 	public void setEmployeeId(String employeeId) {
 		this.employeeId = employeeId;
+	}
+
+	public String getEmployeeUsername() {
+		return employeeUsername;
+	}
+
+	public void setEmployeeUsername(String employeeUsername) {
+		this.employeeUsername = employeeUsername;
+	}
+
+	public String getEmployeePassword() {
+		return employeePassword;
+	}
+
+	public void setEmployeePassword(String employeePassword) {
+		this.employeePassword = employeePassword;
 	}
 
 	public String getEmployeeFirstName() {

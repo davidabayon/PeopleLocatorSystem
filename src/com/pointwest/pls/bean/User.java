@@ -1,12 +1,7 @@
 package com.pointwest.pls.bean;
 
-import java.util.Objects;
-
-import com.pointwest.pls.constant.GenericConstants;
-
-public class User {
-	private String username;
-	private String password;
+public class User extends Employee {
+	private int loginTries = 3;
 	private String homePageChoice;
 	private String searchPageChoice;
 	private String searchByEmployeeIdInput;
@@ -17,96 +12,83 @@ public class User {
 	private String viewByLocationFloorInput;
 	private String viewByQuadrantInput;
 
-	public String getUsername() {
-		return username;
+	public int getLoginTries() {
+		return loginTries;
 	}
 
-	public void setUsername(String username) throws NullPointerException {
-		this.username = Objects.requireNonNull(username, GenericConstants.INPUT_LOGIN_NULL);
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) throws NullPointerException {
-		this.password = Objects.requireNonNull(password, GenericConstants.INPUT_LOGIN_NULL);
+	public void setLoginTries(int loginTries) {
+		this.loginTries = loginTries;
 	}
 
 	public String getHomePageChoice() {
 		return homePageChoice;
 	}
 
-	public void setHomePageChoice(String homePageChoice) throws NullPointerException {
-		this.homePageChoice = Objects.requireNonNull(homePageChoice, GenericConstants.INPUT_CHOICE_NULL);
+	public void setHomePageChoice(String homePageChoice) {
+		this.homePageChoice = homePageChoice;
 	}
 
 	public String getSearchPageChoice() {
 		return searchPageChoice;
 	}
 
-	public void setSearchPageChoice(String searchPageChoice) throws NullPointerException {
-		this.searchPageChoice = Objects.requireNonNull(searchPageChoice, GenericConstants.INPUT_CHOICE_NULL);
+	public void setSearchPageChoice(String searchPageChoice) {
+		this.searchPageChoice = searchPageChoice;
 	}
 
 	public String getSearchByEmployeeIdInput() {
 		return searchByEmployeeIdInput;
 	}
 
-	public void setSearchByEmployeeIdInput(String searchByEmployeeIdInput) throws NullPointerException {
-		this.searchByEmployeeIdInput = Objects.requireNonNull(searchByEmployeeIdInput,
-				GenericConstants.INPUT_CHOICE_NULL);
+	public void setSearchByEmployeeIdInput(String searchByEmployeeIdInput) {
+		this.searchByEmployeeIdInput = searchByEmployeeIdInput;
 	}
 
 	public String getSearchByEmployeeFirstNameInput() {
 		return searchByEmployeeFirstNameInput;
 	}
 
-	public void setSearchByEmployeeFirstNameInput(String searchByEmployeeFirstNameInput) throws NullPointerException {
-		this.searchByEmployeeFirstNameInput = Objects.requireNonNull(searchByEmployeeFirstNameInput,
-				GenericConstants.INPUT_CHOICE_NULL);
+	public void setSearchByEmployeeFirstNameInput(String searchByEmployeeFirstNameInput) {
+		this.searchByEmployeeFirstNameInput = searchByEmployeeFirstNameInput;
 	}
 
 	public String getSearchByEmployeeLastNameInput() {
 		return searchByEmployeeLastNameInput;
 	}
 
-	public void setSearchByEmployeeLastNameInput(String searchByEmployeeLastNameInput) throws NullPointerException {
-		this.searchByEmployeeLastNameInput = Objects.requireNonNull(searchByEmployeeLastNameInput,
-				GenericConstants.INPUT_CHOICE_NULL);
+	public void setSearchByEmployeeLastNameInput(String searchByEmployeeLastNameInput) {
+		this.searchByEmployeeLastNameInput = searchByEmployeeLastNameInput;
 	}
 
 	public String getSearchByEmployeeProjectInput() {
 		return searchByEmployeeProjectInput;
 	}
 
-	public void setSearchByEmployeeProjectInput(String searchByEmployeeProjectInput) throws NullPointerException {
-		this.searchByEmployeeProjectInput = Objects.requireNonNull(searchByEmployeeProjectInput,
-				GenericConstants.INPUT_CHOICE_NULL);
+	public void setSearchByEmployeeProjectInput(String searchByEmployeeProjectInput) {
+		this.searchByEmployeeProjectInput = searchByEmployeeProjectInput;
 	}
 
 	public String getViewPageChoice() {
 		return viewPageChoice;
 	}
 
-	public void setViewPageChoice(String viewPageChoice) throws NullPointerException {
-		this.viewPageChoice = Objects.requireNonNull(viewPageChoice, GenericConstants.INPUT_CHOICE_NULL);
+	public void setViewPageChoice(String viewPageChoice) {
+		this.viewPageChoice = viewPageChoice;
 	}
 
 	public String getViewByLocationFloorInput() {
 		return viewByLocationFloorInput;
 	}
 
-	public void setViewByLocationFloorInput(String viewByLocationFloorInput) throws NullPointerException {
-		this.viewByLocationFloorInput = Objects.requireNonNull(viewByLocationFloorInput,
-				GenericConstants.INPUT_CHOICE_NULL);
+	public void setViewByLocationFloorInput(String viewByLocationFloorInput) {
+		this.viewByLocationFloorInput = viewByLocationFloorInput;
 	}
 
 	public String getViewByQuadrantInput() {
 		return viewByQuadrantInput;
 	}
 
-	public void setViewByQuadrantInput(String viewByQuadrantInput) throws NullPointerException {
-		this.viewByQuadrantInput = Objects.requireNonNull(viewByQuadrantInput, GenericConstants.INPUT_CHOICE_NULL);
+	public void setViewByQuadrantInput(String viewByQuadrantInput) {
+		this.viewByQuadrantInput = viewByQuadrantInput;
 	}
 }
