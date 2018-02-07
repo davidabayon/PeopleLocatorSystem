@@ -38,13 +38,17 @@ public class ViewSeatPlanByLocationFloor extends ViewPageUI {
 		String location = null;
 		String floorNumber = null;
 
-		do {
+		do {// Ask for Location input
 			System.out.format("%65s", GenericConstants.ASK_LOCATION);
 			location = scanner.nextLine();
 			askAgain = viewPageManager.validateLocationInput(location);
+
+		} while (askAgain);
+
+		do {// Ask for Floor number input
 			System.out.format("%66s", GenericConstants.ASK_FLOOR);
 			floorNumber = scanner.nextLine();
-			askAgain = viewPageManager.validateFloorInput(floorNumber) && askAgain;
+			askAgain = viewPageManager.validateFloorInput(floorNumber);
 		} while (askAgain);
 
 		logger.debug("location: " + user.getViewByLocationInput() + ", floorNumber: " + user.getViewByFloorInput());
@@ -52,7 +56,9 @@ public class ViewSeatPlanByLocationFloor extends ViewPageUI {
 	}
 
 	@Override
+	// Display list of searched seats
 	public void displayList(String subPageChoice) {
+		logger.info(GenericConstants.START);
 		super.displayList(subPageChoice);
 
 		if (employees.size() == 0) {
@@ -65,5 +71,8 @@ public class ViewSeatPlanByLocationFloor extends ViewPageUI {
 			System.out.format("%96s", "");
 			System.out.format(GenericConstants.RECORDS_FOUND + "\n", employees.size());
 		}
+
+		logger.debug("employees list size: " + employees.size());
+		logger.info(GenericConstants.END);
 	}
 }

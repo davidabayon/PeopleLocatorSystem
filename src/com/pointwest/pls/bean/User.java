@@ -10,7 +10,6 @@ public class User extends Employee {
 	private String viewByLocationInput;
 	private String viewByFloorInput;
 	private String viewByQuadrantInput;
-	private boolean isViewByEmployeeInput;
 
 	public int getLoginTries() {
 		return loginTries;
@@ -82,13 +81,5 @@ public class User extends Employee {
 
 	public void setViewByQuadrantInput(String viewByQuadrantInput) {
 		this.viewByQuadrantInput = viewByQuadrantInput;
-	}
-
-	public boolean isViewByEmployeeInput() {
-		return isViewByEmployeeInput;
-	}
-
-	public void setViewByEmployeeInput(boolean isViewByEmployeeInput) {
-		this.isViewByEmployeeInput = isViewByEmployeeInput;
 	}
 }

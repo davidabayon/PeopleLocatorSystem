@@ -32,7 +32,7 @@ public interface GenericConstants {
 
 	String ASK_CHOICE = "Enter your choice: ";
 	String ASK_EMPLOYEE_ID = "Enter Employee ID: ";
-	String ASK_EMPLOYEE_FIRST_NAME = "Enter Employee Name: ";
+	String ASK_EMPLOYEE_NAME = "Enter Employee Name: ";
 	String ASK_EMPLOYEE_PROJECT = "Enter Employee Project: ";
 	String ASK_LOCATION = "Enter Location: ";
 	String ASK_FLOOR = "Enter Floor No.: ";

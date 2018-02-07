@@ -27,7 +27,7 @@ public class ViewPageDao extends BaseDao {
 		this.user = user;
 	}
 
-	// Retrieve details of the current user
+	// Retrieve the list of employees for chosen option
 	public List<Employee> retrieveEmployeeList(String subPageChoice) throws CustomException, CustomRuntimeException {
 		logger.info(GenericConstants.START);
 
@@ -110,6 +110,7 @@ public class ViewPageDao extends BaseDao {
 		return query;
 	}
 
+	// Prepare the statement for the chose option
 	private void preparedStatementBuilder(String subPageChoice, String query) throws CustomException {
 		logger.info(GenericConstants.START);
 
@@ -130,7 +131,6 @@ public class ViewPageDao extends BaseDao {
 				break;
 			case GenericConstants.VIEW_SEAT_PLAN_BY_EMPLOYEE:
 				preparedStatement = connection.prepareStatement(query);
-				preparedStatement.setString(1, "%" + user.getSearchByEmployeeProjectInput() + "%");
 				break;
 			}
 		} catch (SQLException e) {

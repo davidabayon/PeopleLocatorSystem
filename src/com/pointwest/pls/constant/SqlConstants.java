@@ -65,7 +65,15 @@ public interface SqlConstants {
 			+ "(CASE WHEN e.emp_first_name IS NULL THEN 'Vacant' ELSE e.emp_first_name END) as emp_first_name, "
 			+ "(CASE WHEN e.emp_last_name IS NULL THEN 'seat' ELSE e.emp_last_name END) as emp_last_name, "
 			+ "(CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE CONCAT('Local #', s.seat_local_number) END) as seat_local_number ";
-	String QUERY_STATEMENT_VIEW_SEATPLAN_EMPLOYEE_BY_ID = "SELECT s.seat_id, s.bldg_id, s.seat_floor_number, "
+	String QUERY_STATEMENT_VIEW_SEATPLAN_EMPLOYEE_BY_ID = "SELECT s.seat_id, " + "s.bldg_id, " + "s.seat_floor_number, "
+			+ "s.seat_quadrant, "
+			+ "CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant, s.seat_row_number, '-', s.seat_column_number) AS seat_name, "
+			+ "se. emp_first_name, " + "se.emp_last_name, " + "se.seat_local_number " + "FROM seat s " + "LEFT JOIN ("
+			+ SELECT_STATEMENT_VIEW_SEATPLAN_EMPLOYEE + FROM_STATEMENT_VIEW_SEATPLAN
+			+ WHERE_STATEMENT_SEARCH_BY_ID_PARTIAL + GROUP_BY_ORDER_BY_SEAT_ID + ") se ON s.seat_id = se.seat_id "
+			+ "WHERE s.bldg_id = ? " + "AND s.seat_floor_number = ?";
+	String QUERY_STATEMENT_VIEW_SEATPLAN_EMPLOYEE_BY_NAME = "SELECT s.seat_id, " + "s.bldg_id, "
+			+ "s.seat_floor_number, " + "s.seat_quadrant, "
 			+ "CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant, s.seat_row_number, '-', s.seat_column_number) AS seat_name, "
 			+ "se. emp_first_name, " + "se.emp_last_name, " + "se.seat_local_number " + "FROM seat s " + "LEFT JOIN ("
 			+ SELECT_STATEMENT_VIEW_SEATPLAN_EMPLOYEE + FROM_STATEMENT_VIEW_SEATPLAN

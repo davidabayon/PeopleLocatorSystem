@@ -30,7 +30,7 @@ public class SearchByEmployeeIdUI extends SearchPageUI {
 	}
 
 	@Override
-	// Ask for user input
+	// Ask for user input on Employee ID
 	public void askUserInput() {
 		logger.info(GenericConstants.START);
 

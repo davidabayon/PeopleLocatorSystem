@@ -1,0 +1,238 @@
+[Time: 00:08:30][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 18: *********************START
+[Time: 00:08:32][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 48: START
+[Time: 00:08:40][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[Time: 00:08:40][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[Time: 00:08:40][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[Time: 00:08:40][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[Time: 00:08:40][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: false, triesCounter: 3
+[Time: 00:08:40][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[Time: 00:08:40][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 72: Username: david.abayon
+[Time: 00:08:40][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 73: END
+[Time: 00:08:40][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 78: START
+[Time: 00:08:40][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 99: START
+[Time: 00:08:40][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 26: START
+[Time: 00:08:40][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 00:08:40][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[Time: 00:08:40][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 49: First Name: David Angelo, Last Name: Abayon
+[Time: 00:08:40][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[Time: 00:08:40][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[Time: 00:08:40][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 75: END
+[Time: 00:08:40][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 104: hasMatched: true
+[Time: 00:08:40][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 105: END
+[Time: 00:08:40][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 103: hasMatched: true
+[Time: 00:08:40][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 104: END
+[Time: 00:08:40][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 48: askAgain: true, triesCounter: 3, isLoggedIn: true
+[Time: 00:08:40][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 55: START
+[Time: 00:08:40][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[Time: 00:08:43][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 71: homePageChoice: 3, askAgain: false
+[Time: 00:08:43][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 72: END
+[Time: 00:08:43][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 105: isGoBack: false
+[Time: 00:08:43][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 106: END
+[Time: 00:08:43][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 110: START
+[Time: 00:08:51][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 133: isTerminate: true
+[Time: 00:08:51][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 134: END
+[Time: 00:08:51][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 118: *********************END
+[Time: 23:54:50][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 26: *********************START
+[Time: 23:54:50][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 43: START: Login Page
+[Time: 23:55:15][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 48: START
+[Time: 23:55:16][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[Time: 23:55:16][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[Time: 23:55:16][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[Time: 23:55:16][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[Time: 23:55:16][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 48: Invalid username/password!
+[Time: 23:55:16][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: true, triesCounter: 2
+[Time: 23:55:16][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[Time: 23:57:17][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[Time: 23:57:17][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[Time: 23:57:17][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[Time: 23:57:17][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[Time: 23:57:17][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 48: Invalid username/password!
+[Time: 23:57:17][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: true, triesCounter: 1
+[Time: 23:57:17][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[Time: 23:58:07][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[Time: 23:58:07][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[Time: 23:58:07][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[Time: 23:58:07][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[Time: 23:58:07][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 41: Username/Password is empty!
+[Time: 23:58:07][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: true, triesCounter: 0
+[Time: 23:58:07][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[Time: 23:58:07][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 72: Username: null
+[Time: 23:58:07][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 73: END
+[Time: 23:58:07][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 57: askAgain: false, triesCounter: 0, isLoggedIn: false
+[Time: 23:58:07][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 110: START
+[Time: 23:58:12][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 133: isTerminate: false
+[Time: 23:58:12][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 134: END
+[Time: 23:58:12][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 163: isTerminate: false
+[Time: 23:58:12][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 164: END: Login Page / End Page
+[Time: 23:58:12][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 43: START: Login Page
+[Time: 23:58:13][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 48: START
+[Time: 23:58:14][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[Time: 23:58:14][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[Time: 23:58:14][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[Time: 23:58:14][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[Time: 23:58:14][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 41: Username/Password is empty!
+[Time: 23:58:14][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: true, triesCounter: 2
+[Time: 23:58:14][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[Time: 23:58:18][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[Time: 23:58:18][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[Time: 23:58:18][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[Time: 23:58:18][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[Time: 23:58:18][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 48: Invalid username/password!
+[Time: 23:58:18][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: true, triesCounter: 1
+[Time: 23:58:18][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[Time: 23:58:25][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[Time: 23:58:25][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[Time: 23:58:25][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[Time: 23:58:25][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[Time: 23:58:25][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: false, triesCounter: 1
+[Time: 23:58:25][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[Time: 23:58:25][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 72: Username: david.abayon
+[Time: 23:58:25][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 73: END
+[Time: 23:58:25][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 78: START
+[Time: 23:58:25][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 99: START
+[Time: 23:58:25][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 26: START
+[Time: 23:58:25][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 23:58:25][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[Time: 23:58:25][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[Time: 23:58:25][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[Time: 23:58:25][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 72: First Name: David Angelo, Last Name: Abayon
+[Time: 23:58:25][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 73: END
+[Time: 23:58:25][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 104: hasMatched: true
+[Time: 23:58:25][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 105: END
+[Time: 23:58:25][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 103: hasMatched: true
+[Time: 23:58:25][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 104: END
+[Time: 23:58:25][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 57: askAgain: true, triesCounter: 1, isLoggedIn: true
+[Time: 23:58:25][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 64: START: Home Page
+[Time: 23:58:25][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[Time: 23:58:29][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 83: homePageChoice: [3]Logout, askAgain: false
+[Time: 23:58:29][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 85: END
+[Time: 23:58:29][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 156: isLoggedIn: false
+[Time: 23:58:29][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 157: END: Home Page
+[Time: 23:58:29][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 110: START
+[Time: 23:58:31][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 133: isTerminate: false
+[Time: 23:58:31][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 134: END
+[Time: 23:58:31][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 163: isTerminate: false
+[Time: 23:58:31][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 164: END: Login Page / End Page
+[Time: 23:58:31][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 43: START: Login Page
+[Time: 23:58:31][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 48: START
+[Time: 23:58:41][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[Time: 23:58:41][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[Time: 23:58:41][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[Time: 23:58:41][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[Time: 23:58:41][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: false, triesCounter: 3
+[Time: 23:58:41][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[Time: 23:58:41][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 72: Username: david.abayon
+[Time: 23:58:41][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 73: END
+[Time: 23:58:41][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 78: START
+[Time: 23:58:41][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 99: START
+[Time: 23:58:41][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 26: START
+[Time: 23:58:41][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 23:58:41][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[Time: 23:58:41][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[Time: 23:58:41][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[Time: 23:58:41][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 72: First Name: David Angelo, Last Name: Abayon
+[Time: 23:58:41][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 73: END
+[Time: 23:58:41][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 104: hasMatched: true
+[Time: 23:58:41][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 105: END
+[Time: 23:58:41][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 103: hasMatched: true
+[Time: 23:58:41][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 104: END
+[Time: 23:58:41][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 57: askAgain: true, triesCounter: 3, isLoggedIn: true
+[Time: 23:58:41][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 64: START: Home Page
+[Time: 23:58:41][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[Time: 23:58:43][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 83: homePageChoice: [2]View Seat Plan, askAgain: false
+[Time: 23:58:43][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 85: END
+[Time: 23:58:43][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 90: START: Sub Page
+[Time: 23:58:43][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 47: START
+[Time: 23:58:45][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 91: viewPageChoice: [2] View Seat Plan by Quadrant, askAgain: false
+[Time: 23:58:45][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 93: END
+[Time: 23:58:45][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: askUserInput] - Line 35: START
+[Time: 23:58:49][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 26: START
+[Time: 23:58:49][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 44: Invalid input!
+[Time: 23:58:49][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 48: askAgain: true
+[Time: 23:58:49][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 49: END
+[Time: 23:58:52][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 26: START
+[Time: 23:58:52][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 48: askAgain: false
+[Time: 23:58:52][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 49: END
+[Time: 23:58:53][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 55: START
+[Time: 23:58:53][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 79: askAgain: false
+[Time: 23:58:53][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 80: END
+[Time: 23:58:55][Class: com.pointwest.pls.manager.ViewPageManager Method: validateQuadrantInput] - Line 86: START
+[Time: 23:58:55][Class: com.pointwest.pls.manager.ViewPageManager Method: validateQuadrantInput] - Line 109: askAgain: false
+[Time: 23:58:55][Class: com.pointwest.pls.manager.ViewPageManager Method: validateQuadrantInput] - Line 110: END
+[Time: 23:58:55][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: askUserInput] - Line 58: location: PLC, floorNumber: 2, quadrant: D
+[Time: 23:58:55][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: askUserInput] - Line 60: END
+[Time: 23:58:55][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 116: START
+[Time: 23:58:55][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 32: START
+[Time: 23:58:55][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 23:58:55][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[Time: 23:58:55][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 91: START
+[Time: 23:58:55][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 108: query: SELECT s.seat_id, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant, s.seat_row_number, '-', s.seat_column_number) AS seat_name, se. emp_first_name, se.emp_last_name, se.seat_local_number FROM seat s LEFT JOIN (SELECT s.seat_id, (CASE WHEN e.emp_first_name IS NULL THEN 'Vacant' ELSE e.emp_first_name END) as emp_first_name, (CASE WHEN e.emp_last_name IS NULL THEN 'seat' ELSE e.emp_last_name END) as emp_last_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE CONCAT('Local #', s.seat_local_number) END) as seat_local_number FROM seat s LEFT JOIN employee_seat es ON s.seat_id = es.seat_id LEFT JOIN employee e ON es.emp_id = e.emp_id LEFT JOIN employee_project ep ON ep.emp_id = e.emp_id LEFT JOIN project p ON p.proj_alias = ep.proj_alias WHERE s.bldg_id = ? AND s.seat_floor_number = ? AND s.seat_quadrant = ?GROUP BY s.seat_id ORDER BY s.seat_id) se ON s.seat_id = se.seat_id WHERE s.bldg_id = ? AND s.seat_floor_number = ?
+[Time: 23:58:55][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 109: END
+[Time: 23:58:55][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 114: START
+[Time: 23:58:55][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 148: END
+[Time: 23:58:55][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[Time: 23:58:55][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[Time: 23:58:55][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 84: employees: 0 records
+[Time: 23:58:55][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 85: END
+[Time: 23:58:55][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 120: employees list: []
+[Time: 23:58:55][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 121: END
+[Time: 23:58:55][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 217: employees: []
+[Time: 23:58:55][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 218: END
+[Time: 23:58:55][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 152: isGoBack: false
+[Time: 23:58:55][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 153: END: Sub Page
+[Time: 23:58:55][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 90: START: Sub Page
+[Time: 23:58:55][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 47: START
+[Time: 23:58:58][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 91: viewPageChoice: [2] View Seat Plan by Quadrant, askAgain: false
+[Time: 23:58:58][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 93: END
+[Time: 23:58:58][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: askUserInput] - Line 35: START
+[Time: 23:59:00][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 26: START
+[Time: 23:59:00][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 48: askAgain: false
+[Time: 23:59:00][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 49: END
+[Time: 23:59:00][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 55: START
+[Time: 23:59:00][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 79: askAgain: false
+[Time: 23:59:00][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 80: END
+[Time: 23:59:02][Class: com.pointwest.pls.manager.ViewPageManager Method: validateQuadrantInput] - Line 86: START
+[Time: 23:59:02][Class: com.pointwest.pls.manager.ViewPageManager Method: validateQuadrantInput] - Line 109: askAgain: false
+[Time: 23:59:02][Class: com.pointwest.pls.manager.ViewPageManager Method: validateQuadrantInput] - Line 110: END
+[Time: 23:59:02][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: askUserInput] - Line 58: location: PIC, floorNumber: 2, quadrant: D
+[Time: 23:59:02][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: askUserInput] - Line 60: END
+[Time: 23:59:02][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 116: START
+[Time: 23:59:02][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 32: START
+[Time: 23:59:02][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[Time: 23:59:02][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[Time: 23:59:02][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 91: START
+[Time: 23:59:02][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 108: query: SELECT s.seat_id, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant, s.seat_row_number, '-', s.seat_column_number) AS seat_name, se. emp_first_name, se.emp_last_name, se.seat_local_number FROM seat s LEFT JOIN (SELECT s.seat_id, (CASE WHEN e.emp_first_name IS NULL THEN 'Vacant' ELSE e.emp_first_name END) as emp_first_name, (CASE WHEN e.emp_last_name IS NULL THEN 'seat' ELSE e.emp_last_name END) as emp_last_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE CONCAT('Local #', s.seat_local_number) END) as seat_local_number FROM seat s LEFT JOIN employee_seat es ON s.seat_id = es.seat_id LEFT JOIN employee e ON es.emp_id = e.emp_id LEFT JOIN employee_project ep ON ep.emp_id = e.emp_id LEFT JOIN project p ON p.proj_alias = ep.proj_alias WHERE s.bldg_id = ? AND s.seat_floor_number = ? AND s.seat_quadrant = ?GROUP BY s.seat_id ORDER BY s.seat_id) se ON s.seat_id = se.seat_id WHERE s.bldg_id = ? AND s.seat_floor_number = ?
+[Time: 23:59:02][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 109: END
+[Time: 23:59:02][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 114: START
+[Time: 23:59:02][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 148: END
+[Time: 23:59:02][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[Time: 23:59:02][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[Time: 23:59:02][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 84: employees: 36 records
+[Time: 23:59:02][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 85: END
+[Time: 23:59:02][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 120: employees list: [com.pointwest.pls.bean.Employee@17776a8, com.pointwest.pls.bean.Employee@69a10787, com.pointwest.pls.bean.Employee@2d127a61, com.pointwest.pls.bean.Employee@2bbaf4f0, com.pointwest.pls.bean.Employee@11c20519, com.pointwest.pls.bean.Employee@70beb599, com.pointwest.pls.bean.Employee@4e41089d, com.pointwest.pls.bean.Employee@32a068d1, com.pointwest.pls.bean.Employee@33cb5951, com.pointwest.pls.bean.Employee@365c30cc, com.pointwest.pls.bean.Employee@701fc37a, com.pointwest.pls.bean.Employee@4148db48, com.pointwest.pls.bean.Employee@282003e1, com.pointwest.pls.bean.Employee@7fad8c79, com.pointwest.pls.bean.Employee@71a794e5, com.pointwest.pls.bean.Employee@76329302, com.pointwest.pls.bean.Employee@5e25a92e, com.pointwest.pls.bean.Employee@4df828d7, com.pointwest.pls.bean.Employee@b59d31, com.pointwest.pls.bean.Employee@62fdb4a6, com.pointwest.pls.bean.Employee@11e21d0e, com.pointwest.pls.bean.Employee@1dd02175, com.pointwest.pls.bean.Employee@31206beb, com.pointwest.pls.bean.Employee@3e77a1ed, com.pointwest.pls.bean.Employee@3ffcd140, com.pointwest.pls.bean.Employee@23bb8443, com.pointwest.pls.bean.Employee@1176dcec, com.pointwest.pls.bean.Employee@120d6fe6, com.pointwest.pls.bean.Employee@4ba2ca36, com.pointwest.pls.bean.Employee@3444d69d, com.pointwest.pls.bean.Employee@1372ed45, com.pointwest.pls.bean.Employee@6a79c292, com.pointwest.pls.bean.Employee@37574691, com.pointwest.pls.bean.Employee@25359ed8, com.pointwest.pls.bean.Employee@21a947fe, com.pointwest.pls.bean.Employee@5606c0b]
+[Time: 23:59:02][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 121: END
+[Time: 23:59:02][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 217: employees: [com.pointwest.pls.bean.Employee@17776a8, com.pointwest.pls.bean.Employee@69a10787, com.pointwest.pls.bean.Employee@2d127a61, com.pointwest.pls.bean.Employee@2bbaf4f0, com.pointwest.pls.bean.Employee@11c20519, com.pointwest.pls.bean.Employee@70beb599, com.pointwest.pls.bean.Employee@4e41089d, com.pointwest.pls.bean.Employee@32a068d1, com.pointwest.pls.bean.Employee@33cb5951, com.pointwest.pls.bean.Employee@365c30cc, com.pointwest.pls.bean.Employee@701fc37a, com.pointwest.pls.bean.Employee@4148db48, com.pointwest.pls.bean.Employee@282003e1, com.pointwest.pls.bean.Employee@7fad8c79, com.pointwest.pls.bean.Employee@71a794e5, com.pointwest.pls.bean.Employee@76329302, com.pointwest.pls.bean.Employee@5e25a92e, com.pointwest.pls.bean.Employee@4df828d7, com.pointwest.pls.bean.Employee@b59d31, com.pointwest.pls.bean.Employee@62fdb4a6, com.pointwest.pls.bean.Employee@11e21d0e, com.pointwest.pls.bean.Employee@1dd02175, com.pointwest.pls.bean.Employee@31206beb, com.pointwest.pls.bean.Employee@3e77a1ed, com.pointwest.pls.bean.Employee@3ffcd140, com.pointwest.pls.bean.Employee@23bb8443, com.pointwest.pls.bean.Employee@1176dcec, com.pointwest.pls.bean.Employee@120d6fe6, com.pointwest.pls.bean.Employee@4ba2ca36, com.pointwest.pls.bean.Employee@3444d69d, com.pointwest.pls.bean.Employee@1372ed45, com.pointwest.pls.bean.Employee@6a79c292, com.pointwest.pls.bean.Employee@37574691, com.pointwest.pls.bean.Employee@25359ed8, com.pointwest.pls.bean.Employee@21a947fe, com.pointwest.pls.bean.Employee@5606c0b]
+[Time: 23:59:02][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 218: END
+[Time: 23:59:02][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 152: isGoBack: false
+[Time: 23:59:02][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 153: END: Sub Page
+[Time: 23:59:02][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 90: START: Sub Page
+[Time: 23:59:02][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 47: START
+[Time: 23:59:46][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 91: viewPageChoice: [1] View Seat Plan by Loc-Floor, askAgain: false
+[Time: 23:59:46][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 93: END
+[Time: 23:59:46][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 35: START
+[Time: 23:59:49][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 26: START
+[Time: 23:59:49][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 44: Invalid input!
+[Time: 23:59:49][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 48: askAgain: true
+[Time: 23:59:49][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 49: END
+[Time: 23:59:51][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 55: START
+[Time: 23:59:51][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 75: Invalid input!
+[Time: 23:59:51][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 79: askAgain: true
+[Time: 23:59:51][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 80: END
+[Time: 23:59:53][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 26: START
+[Time: 23:59:53][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 44: Invalid input!
+[Time: 23:59:53][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 48: askAgain: true
+[Time: 23:59:53][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 49: END
+[Time: 23:59:53][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 55: START
+[Time: 23:59:53][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 75: Invalid input!
+[Time: 23:59:53][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 79: askAgain: true
+[Time: 23:59:53][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 80: END

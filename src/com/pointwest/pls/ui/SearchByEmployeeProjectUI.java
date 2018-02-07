@@ -14,14 +14,14 @@ public class SearchByEmployeeProjectUI extends SearchPageUI {
 	}
 
 	@Override
-	// Display Search Employee by Name header
+	// Display Search Employee by Project header
 	public void displayPageHeader() {
 		System.out.println();
 		System.out.format("%118s", "-------- S E A R C H   B Y   E M P L O Y E E   P R O J E C T --------\n");
 	}
 
 	@Override
-	// Display Search Employee by Name content
+	// Display Search Employee by Project content
 	public void displayPageContent() {
 		System.out.format("%98s", "You can now search for employee by Project" + "\n\n");
 		System.out.format("%117s", "Currently logged in:" + "\n");
@@ -30,7 +30,7 @@ public class SearchByEmployeeProjectUI extends SearchPageUI {
 	}
 
 	@Override
-	// Ask for user input
+	// Ask for user input on Employee Project
 	public void askUserInput() {
 		logger.info(GenericConstants.START);
 

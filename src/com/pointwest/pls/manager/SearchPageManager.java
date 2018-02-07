@@ -96,13 +96,13 @@ public class SearchPageManager {
 		return askAgain;
 	}
 
-	// Get the list of employees
+	// Get the list of employees for chosen option
 	public List<Employee> getEmployeeList(String subPageChoice) throws CustomException {
 		logger.info(GenericConstants.START);
 
 		List<Employee> employees = searchPageDao.retrieveEmployeeList(subPageChoice);
 
-		logger.debug("employees list: " + employees);
+		logger.debug("employees list size: " + employees.size());
 		logger.info(GenericConstants.END);
 		return employees;
 	}

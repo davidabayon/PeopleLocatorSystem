@@ -62,6 +62,7 @@ public class ViewSeatPlanByQuadrant extends ViewPageUI {
 
 	@Override
 	public void displayList(String subPageChoice) {
+		logger.info(GenericConstants.START);
 		super.displayList(subPageChoice);
 
 		if (employees.size() == 0) {
@@ -74,5 +75,8 @@ public class ViewSeatPlanByQuadrant extends ViewPageUI {
 			System.out.format("%96s", "");
 			System.out.format(GenericConstants.RECORDS_FOUND + "\n", employees.size() / 4);
 		}
+
+		logger.debug("employees list size: " + employees.size());
+		logger.info(GenericConstants.END);
 	}
 }

@@ -111,13 +111,13 @@ public class ViewPageManager {
 		return askAgain;
 	}
 
-	// Get the list of employees
+	// Get the list of employees for the chosen option
 	public List<Employee> getEmployeeList(String subPageChoice) throws CustomException, CustomRuntimeException {
 		logger.info(GenericConstants.START);
 
 		List<Employee> employees = viewPageDao.retrieveEmployeeList(subPageChoice);
 
-		logger.debug("employees list: " + employees);
+		logger.debug("employees list size: " + employees.size());
 		logger.info(GenericConstants.END);
 		return employees;
 	}

@@ -94,8 +94,10 @@ public class SearchPageUI extends SubPageUI {
 	}
 
 	@Override
-	// Display list of employees
+	// Display list of searched employees
 	public void displayList(String subPageChoice) {
+		logger.info(GenericConstants.START);
+
 		try {
 			employees = searchPageManager.getEmployeeList(subPageChoice);
 
@@ -149,7 +151,7 @@ public class SearchPageUI extends SubPageUI {
 			System.out.format("%117s", GenericConstants.EMAIL + "\n");
 		}
 
-		logger.debug("employees: " + employees);
+		logger.debug("employees list size: " + employees.size());
 		logger.info(GenericConstants.END);
 	}
 }

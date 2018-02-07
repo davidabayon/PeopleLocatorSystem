@@ -37,8 +37,7 @@ public class ViewPageUI extends SubPageUI {
 		System.out.format("%86s", "Please select an option:            \n");
 		System.out.format("%86s", "[1] View Seat Plan by Location-Floor\n");
 		System.out.format("%86s", "[2] View Seat Plan by Quadrant      \n");
-		System.out.format("%86s", "[3] View Seat Plan by Employee      \n");
-		System.out.format("%87s", "[4] Go back to Home Page            \n\n");
+		System.out.format("%87s", "[3] Go back to Home Page            \n\n");
 	}
 
 	@Override
@@ -69,12 +68,6 @@ public class ViewPageUI extends SubPageUI {
 				break;
 			case "3":
 				askAgain = false;
-				user.setSubPageChoice(GenericConstants.SEARCH_EMPLOYEE);
-				System.out.format("%88s", "");
-				System.out.format(GenericConstants.SELECTED_OPTION + "\n", viewPageChoice.trim());
-				break;
-			case "4":
-				askAgain = false;
 				user.setSubPageChoice(GenericConstants.GO_BACK);
 				System.out.format("%88s", "");
 				System.out.format(GenericConstants.SELECTED_OPTION + "\n", viewPageChoice.trim());
@@ -94,8 +87,10 @@ public class ViewPageUI extends SubPageUI {
 	}
 
 	@Override
-	// Display seat plan list
+	// Display list of searched seats
 	public void displayList(String subPageChoice) {
+		logger.info(GenericConstants.START);
+
 		try {
 			employees = viewPageManager.getEmployeeList(subPageChoice);
 
@@ -103,8 +98,11 @@ public class ViewPageUI extends SubPageUI {
 			int maxNumberOfRow = 3;
 			int maxNumberOfColumn = 3;
 			int index = 0;
+
+			// Check if employee list has returned results
 			if (employees.size() > 0) {
-				// Quadrant A and B
+
+				// Display Quadrant A and B
 				System.out.println();
 				System.out.println(
 						" ==================================================================================  ==================================================================================");
@@ -157,7 +155,8 @@ public class ViewPageUI extends SubPageUI {
 				System.out.println();
 				System.out.println(
 						" ==================================================================================  ==================================================================================");
-				// Quadrant C and D
+
+				// Display Quadrant C and D
 				for (int counterNumber = 0; counterNumber < maxNumberOfRow; counterNumber++) {
 					System.out.format("%1s", "");
 					for (int quadrant = 2; quadrant < 4; quadrant++) {
@@ -214,7 +213,7 @@ public class ViewPageUI extends SubPageUI {
 			System.out.format("%117s", GenericConstants.EMAIL + "\n");
 		}
 
-		logger.debug("employees: " + employees);
+		logger.debug("employees list size: " + employees.size());
 		logger.info(GenericConstants.END);
 	}
 }

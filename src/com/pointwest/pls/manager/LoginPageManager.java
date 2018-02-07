@@ -35,7 +35,7 @@ public class LoginPageManager {
 			user.setEmployeeUsername(username.trim());
 			this.password = password;
 			askAgain = false;
-		} else if (username.trim().length() == 0 && password.length() == 0) {
+		} else if (username.trim().length() == 0 || password.length() == 0) {
 			askAgain = true;
 			user.setLoginTries(user.getLoginTries() - 1);
 			logger.error(GenericConstants.INPUT_LOGIN_NULL);

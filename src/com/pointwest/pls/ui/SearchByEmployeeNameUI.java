@@ -30,7 +30,7 @@ public class SearchByEmployeeNameUI extends SearchPageUI {
 	}
 
 	@Override
-	// Ask for user input
+	// Ask for user input on Employee Name
 	public void askUserInput() {
 		logger.info(GenericConstants.START);
 
@@ -38,7 +38,7 @@ public class SearchByEmployeeNameUI extends SearchPageUI {
 		String employeeName = null;
 
 		do {
-			System.out.format("%70s", GenericConstants.ASK_EMPLOYEE_FIRST_NAME);
+			System.out.format("%70s", GenericConstants.ASK_EMPLOYEE_NAME);
 			employeeName = scanner.nextLine();
 			askAgain = searchPageManager.validateEmployeeNameInput(employeeName);
 		} while (askAgain);

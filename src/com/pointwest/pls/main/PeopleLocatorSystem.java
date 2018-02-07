@@ -14,7 +14,6 @@ import com.pointwest.pls.ui.SearchByEmployeeProjectUI;
 import com.pointwest.pls.ui.SearchPageUI;
 import com.pointwest.pls.ui.SubPageUI;
 import com.pointwest.pls.ui.ViewPageUI;
-import com.pointwest.pls.ui.ViewSeatPlanByEmployee;
 import com.pointwest.pls.ui.ViewSeatPlanByLocationFloor;
 import com.pointwest.pls.ui.ViewSeatPlanByQuadrant;
 import com.pointwest.pls.util.DisplayHelper;
@@ -33,8 +32,6 @@ public class PeopleLocatorSystem {
 		boolean askAgain = false;
 		boolean isTerminate = false;
 		boolean isGoBack = false;
-		String homePageChoice = null;
-		String subPageChoice = null;
 
 		// Start the application
 		DisplayHelper.displayMainHeader();
@@ -63,12 +60,12 @@ public class PeopleLocatorSystem {
 				do {
 					logger.info(GenericConstants.START + ": Home Page");
 
-					// Home Page
+					// Go to Home Page
 					HomePageUI homePageUI = new HomePageUI(user);
 					homePageUI.displayPageHeader();
 					homePageUI.displayPageContent();
 					homePageUI.askUserInput();
-					homePageChoice = user.getHomePageChoice();
+					String homePageChoice = user.getHomePageChoice();
 					SubPageUI subPageUI = null;
 					switch (homePageChoice) {
 					case GenericConstants.SEARCH_EMPLOYEE:
@@ -85,79 +82,90 @@ public class PeopleLocatorSystem {
 						isLoggedIn = false;
 						break;
 					}
+
+					// If user is still logged in, proceed with the next page
 					if (isLoggedIn) {
 						do {
 							logger.info(GenericConstants.START + ": Sub Page");
 
-							// Sub Page - Search Employee or View Seat Plan
+							// Go to Sub Page - Search Employee or View Seat Plan
 							subPageUI.displayPageHeader();
 							subPageUI.displayPageContent();
 							subPageUI.askUserInput();
-							subPageChoice = user.getSubPageChoice();
+							String subPageChoice = user.getSubPageChoice();
 							switch (subPageChoice) {
 							case GenericConstants.SEARCH_EMPLOYEE_BY_ID:
 								isGoBack = false;
+								logger.info(GenericConstants.START + ": SearchByEmployeeIdUI Page");
+
 								SearchByEmployeeIdUI searchByEmployeeIdUI = new SearchByEmployeeIdUI(user);
 								searchByEmployeeIdUI.displayPageHeader();
 								searchByEmployeeIdUI.displayPageContent();
 								searchByEmployeeIdUI.askUserInput();
+								searchByEmployeeIdUI.displayList(subPageChoice);
 
-								if (!user.isViewByEmployeeInput())
-									searchByEmployeeIdUI.displayList(subPageChoice);
-								else {
-									isGoBack = false;
-									user.setSubPageChoice(GenericConstants.VIEW_SEAT_PLAN_BY_EMPLOYEE);
-								}
-
+								logger.info(GenericConstants.END + ": SearchByEmployeeIdUI Page");
 								break;
 							case GenericConstants.SEARCH_EMPLOYEE_BY_NAME:
 								isGoBack = false;
+								logger.info(GenericConstants.START + ": SearchByEmployeeNameUI Page");
+
 								SearchByEmployeeNameUI searchByEmployeeNameUI = new SearchByEmployeeNameUI(user);
 								searchByEmployeeNameUI.displayPageHeader();
 								searchByEmployeeNameUI.displayPageContent();
 								searchByEmployeeNameUI.askUserInput();
 								searchByEmployeeNameUI.displayList(subPageChoice);
+
+								logger.info(GenericConstants.END + ": SearchByEmployeeNameUI Page");
 								break;
 							case GenericConstants.SEARCH_EMPLOYEE_BY_PROJECT:
 								isGoBack = false;
+								logger.info(GenericConstants.START + ": SearchByEmployeeProjectUI Page");
+
 								SearchByEmployeeProjectUI searchByEmployeeProjectUI = new SearchByEmployeeProjectUI(
 										user);
 								searchByEmployeeProjectUI.displayPageHeader();
 								searchByEmployeeProjectUI.displayPageContent();
 								searchByEmployeeProjectUI.askUserInput();
 								searchByEmployeeProjectUI.displayList(subPageChoice);
+
+								logger.info(GenericConstants.END + ": SearchByEmployeeProjectUI Page");
 								break;
 							case GenericConstants.VIEW_SEAT_PLAN_BY_LOC_FLOOR:
 								isGoBack = false;
+								logger.info(GenericConstants.START + ": ViewSeatPlanByLocationFloor Page");
+
 								ViewSeatPlanByLocationFloor viewSeatPlanByLocationFloor = new ViewSeatPlanByLocationFloor(
 										user);
 								viewSeatPlanByLocationFloor.displayPageHeader();
 								viewSeatPlanByLocationFloor.displayPageContent();
 								viewSeatPlanByLocationFloor.askUserInput();
 								viewSeatPlanByLocationFloor.displayList(subPageChoice);
+
+								logger.info(GenericConstants.END + ": ViewSeatPlanByLocationFloor Page");
 								break;
 							case GenericConstants.VIEW_SEAT_PLAN_BY_QUADRANT:
 								isGoBack = false;
+								logger.info(GenericConstants.START + ": ViewSeatPlanByQuadrant Page");
+
 								ViewSeatPlanByQuadrant viewSeatPlanByQuadrant = new ViewSeatPlanByQuadrant(user);
 								viewSeatPlanByQuadrant.displayPageHeader();
 								viewSeatPlanByQuadrant.displayPageContent();
 								viewSeatPlanByQuadrant.askUserInput();
 								viewSeatPlanByQuadrant.displayList(subPageChoice);
-								break;
-							case GenericConstants.VIEW_SEAT_PLAN_BY_EMPLOYEE:
-								isGoBack = false;
-								ViewSeatPlanByEmployee viewSeatPlanByEmployee = new ViewSeatPlanByEmployee(user);
-								viewSeatPlanByEmployee.displayList(subPageChoice);
+
+								logger.info(GenericConstants.END + ": ViewSeatPlanByQuadrant Page");
 								break;
 							case GenericConstants.GO_BACK:
 								isGoBack = true;
 								break;
 							}
 
-							logger.debug("isGoBack: " + isGoBack);
+							logger.debug("isGoBack: " + isGoBack + ", subPageChoice" + subPageChoice);
 							logger.info(GenericConstants.END + ": Sub Page");
 						} while (!isGoBack);
 					}
+
 					logger.debug("isLoggedIn: " + isLoggedIn);
 					logger.info(GenericConstants.END + ": Home Page");
 				} while (isLoggedIn);
