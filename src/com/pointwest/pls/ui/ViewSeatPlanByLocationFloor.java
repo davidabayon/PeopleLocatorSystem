@@ -6,7 +6,7 @@ import com.pointwest.pls.bean.User;
 import com.pointwest.pls.constant.GenericConstants;
 
 public class ViewSeatPlanByLocationFloor extends ViewPageUI {
-	Logger logger = Logger.getLogger(SearchByEmployeeIdUI.class);
+	Logger logger = Logger.getLogger(ViewSeatPlanByLocationFloor.class);
 
 	public ViewSeatPlanByLocationFloor(User user) {
 		super(user);

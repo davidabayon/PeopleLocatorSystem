@@ -6,7 +6,7 @@ import com.pointwest.pls.bean.User;
 import com.pointwest.pls.constant.GenericConstants;
 
 public class SearchByEmployeeProjectUI extends SearchPageUI {
-	Logger logger = Logger.getLogger(SearchByEmployeeIdUI.class);
+	Logger logger = Logger.getLogger(SearchByEmployeeProjectUI.class);
 
 	public SearchByEmployeeProjectUI(User user) {
 		super(user);

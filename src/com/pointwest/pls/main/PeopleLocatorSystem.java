@@ -22,7 +22,7 @@ import com.pointwest.pls.util.DisplayHelper;
 public class PeopleLocatorSystem {
 
 	public static void main(String[] args) {
-		Logger logger = Logger.getLogger(LoginPageUI.class);
+		Logger logger = Logger.getLogger(PeopleLocatorSystem.class);
 		logger.info(GenericConstants.MAIN_START);
 
 		// Instantiate objects needed
