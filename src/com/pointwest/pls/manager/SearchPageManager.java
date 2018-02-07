@@ -12,7 +12,7 @@ import com.pointwest.pls.dao.SearchPageDao;
 import com.pointwest.pls.util.CustomException;
 
 public class SearchPageManager {
-	Logger logger = Logger.getLogger(LoginPageManager.class);
+	Logger logger = Logger.getLogger(SearchPageManager.class);
 	SearchPageDao searchPageDao = null;
 	User user = null;
 
@@ -21,52 +21,89 @@ public class SearchPageManager {
 		this.searchPageDao = new SearchPageDao(user);
 	}
 
-	// Validate format for username and password
-	public boolean validateUserInput(String username, String password) {
+	// Validate Employee ID input
+	public boolean validateEmployeeIdInput(String employeeIdInput) {
 		logger.info(GenericConstants.START);
 
-		Matcher matcher = GenericConstants.INPUT_REGEX_EMAIL.matcher(username);
+		Matcher matcher = GenericConstants.INPUT_REGEX_NUMBER.matcher(employeeIdInput);
 		boolean askAgain = false;
 
-		if (username.trim().length() > 0 && password.length() > 0 && matcher.find()) {
-			String[] usernameArray = username.split("@");
-			username = usernameArray[0].trim();
-			user.setEmployeeUsername(username);
+		if (employeeIdInput.trim().length() > 0 && matcher.find()) {
+			user.setSearchByEmployeeIdInput(employeeIdInput);
 			askAgain = false;
-		} else if (username.trim().length() == 0 || password.length() == 0) {
+		} else if (employeeIdInput.trim().length() == 0) {
 			askAgain = true;
-			user.setLoginTries(user.getLoginTries() - 1);
-			logger.error(GenericConstants.INPUT_LOGIN_NULL);
-			System.out.format("%117s", GenericConstants.INPUT_LOGIN_NULL + "\n");
-			System.out.format("%87s", "");
-			System.out.format(GenericConstants.ATTEMPTS_REMAINING + "\n", user.getLoginTries());
+			logger.error(GenericConstants.INPUT_NULL);
+			System.out.format("%117s", GenericConstants.INPUT_NULL + "\n");
 		} else if (!matcher.find()) {
 			askAgain = true;
-			user.setLoginTries(user.getLoginTries() - 1);
-			logger.error(GenericConstants.INPUT_LOGIN_INVALID);
-			System.out.format("%117s", GenericConstants.INPUT_LOGIN_INVALID + "\n");
-			System.out.format("%87s", "");
-			System.out.format(GenericConstants.ATTEMPTS_REMAINING + "\n", user.getLoginTries());
+			logger.error(GenericConstants.INPUT_INVALID);
+			System.out.format("%117s", GenericConstants.INPUT_INVALID + "\n");
 		}
 
-		logger.debug("askAgain: " + askAgain + ", triesCounter: " + user.getLoginTries());
+		logger.debug("askAgain: " + askAgain);
+		logger.info(GenericConstants.END);
+		return askAgain;
+	}
+
+	// Validate Employee Name input
+	public boolean validateEmployeeNameInput(String name) {
+		logger.info(GenericConstants.START);
+
+		Matcher matcher = GenericConstants.INPUT_REGEX_ALPHABET_CHARS.matcher(name);
+		boolean askAgain = false;
+
+		if (name.trim().length() > 0 && matcher.find()) {
+			user.setSearchByEmployeeNameInput(name);
+			askAgain = false;
+		} else if (name.trim().length() == 0) {
+			askAgain = true;
+			logger.error(GenericConstants.INPUT_NULL);
+			System.out.format("%117s", GenericConstants.INPUT_NULL + "\n");
+		} else if (!matcher.find()) {
+			askAgain = true;
+			logger.error(GenericConstants.INPUT_INVALID);
+			System.out.format("%117s", GenericConstants.INPUT_INVALID + "\n");
+		}
+
+		logger.debug("askAgain: " + askAgain);
+		logger.info(GenericConstants.END);
+		return askAgain;
+	}
+
+	// Validate Employee Project input
+	public boolean validateEmployeeProjectInput(String project) {
+		logger.info(GenericConstants.START);
+
+		Matcher matcher = GenericConstants.INPUT_REGEX_ALPHABET_CHARS.matcher(project);
+		boolean askAgain = false;
+
+		if (project.trim().length() > 0 && matcher.find()) {
+			user.setSearchByEmployeeProjectInput(project);
+			askAgain = false;
+		} else if (project.trim().length() == 0) {
+			askAgain = true;
+			logger.error(GenericConstants.INPUT_NULL);
+			System.out.format("%117s", GenericConstants.INPUT_NULL + "\n");
+		} else if (!matcher.find()) {
+			askAgain = true;
+			logger.error(GenericConstants.INPUT_INVALID);
+			System.out.format("%117s", GenericConstants.INPUT_INVALID + "\n");
+		}
+
+		logger.debug("askAgain: " + askAgain);
 		logger.info(GenericConstants.END);
 		return askAgain;
 	}
 
 	// Get the list of employees
-	public List<Employee> getEmployeeList() throws CustomException {
+	public List<Employee> getEmployeeList(String subPageChoice) throws CustomException {
 		logger.info(GenericConstants.START);
 
-		List<Employee> employees = searchPageDao.retrieveEmployeeList();
+		List<Employee> employees = searchPageDao.retrieveEmployeeList(subPageChoice);
 
 		logger.debug("employees list: " + employees);
 		logger.info(GenericConstants.END);
 		return employees;
-	}
-
-	private String searchEmployeeQueryBuilder() {
-
-		return null;
 	}
 }

@@ -76,7 +76,15 @@ public class Employee {
 		return employeeProject;
 	}
 
+	public void setEmployeeProject(Project employeeProject) {
+		this.employeeProject = employeeProject;
+	}
+
 	public Seat getEmployeeSeat() {
 		return employeeSeat;
+	}
+
+	public void setEmployeeSeat(Seat employeeSeat) {
+		this.employeeSeat = employeeSeat;
 	}
 }

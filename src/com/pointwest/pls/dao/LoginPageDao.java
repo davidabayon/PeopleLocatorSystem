@@ -37,7 +37,6 @@ public class LoginPageDao extends BaseDao {
 			preparedStatement.setQueryTimeout(SqlConstants.QUERY_TIMEOUT);
 			preparedStatement.setString(1, user.getEmployeeUsername());
 			preparedStatement.setString(2, password);
-
 			resultSet = preparedStatement.executeQuery();
 			while (resultSet.next()) {
 				user.setEmployeeFirstName(resultSet.getString(SqlConstants.EMP_FIRST_NAME));
@@ -45,8 +44,6 @@ public class LoginPageDao extends BaseDao {
 				user.setEmployeeRole(resultSet.getString(SqlConstants.EMP_ROLE));
 				hasMatched = true;
 			}
-
-			logger.debug("First Name: " + user.getEmployeeFirstName() + ", Last Name: " + user.getEmployeeLastName());
 		} catch (NullPointerException e) {
 			CustomException customException = new CustomException(GenericConstants.IO_EXCEPTION, e);
 			logger.debug(e.getMessage());
@@ -72,6 +69,7 @@ public class LoginPageDao extends BaseDao {
 			closeConnection(connection, preparedStatement, resultSet);
 		}
 
+		logger.debug("First Name: " + user.getEmployeeFirstName() + ", Last Name: " + user.getEmployeeLastName());
 		logger.info(GenericConstants.END);
 		return hasMatched;
 	}

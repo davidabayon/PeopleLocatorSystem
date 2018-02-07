@@ -124,7 +124,7 @@ public class LoginPageUI implements PageUI {
 				isTerminate = false;
 				askAgain = false;
 			} else {
-				System.out.format("%116s", GenericConstants.INPUT_NOT_VALID);
+				System.out.format("%116s", GenericConstants.INPUT_INVALID);
 				askAgain = true;
 			}
 		} while (askAgain);

@@ -8,6 +8,7 @@ public class Seat {
 	private String seatRowNumber;
 	private String seatColumnNumber;
 	private String seatLocalNumber;
+	private String seatName;
 
 	public Seat() {
 		this.seatBuilding = new Building();
@@ -64,4 +65,13 @@ public class Seat {
 	public void setSeatLocalNumber(String seatLocalNumber) {
 		this.seatLocalNumber = seatLocalNumber;
 	}
+
+	public String getSeatName() {
+		return seatName;
+	}
+
+	public void setSeatName(String seatName) {
+		this.seatName = seatName;
+	}
+
 }

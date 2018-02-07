@@ -3,12 +3,10 @@ package com.pointwest.pls.bean;
 public class User extends Employee {
 	private int loginTries = 3;
 	private String homePageChoice;
-	private String searchPageChoice;
+	private String subPageChoice;
 	private String searchByEmployeeIdInput;
-	private String searchByEmployeeFirstNameInput;
-	private String searchByEmployeeLastNameInput;
+	private String searchByEmployeeNameInput;
 	private String searchByEmployeeProjectInput;
-	private String viewPageChoice;
 	private String viewByLocationFloorInput;
 	private String viewByQuadrantInput;
 
@@ -28,12 +26,12 @@ public class User extends Employee {
 		this.homePageChoice = homePageChoice;
 	}
 
-	public String getSearchPageChoice() {
-		return searchPageChoice;
+	public String getSubPageChoice() {
+		return subPageChoice;
 	}
 
-	public void setSearchPageChoice(String searchPageChoice) {
-		this.searchPageChoice = searchPageChoice;
+	public void setSubPageChoice(String subPageChoice) {
+		this.subPageChoice = subPageChoice;
 	}
 
 	public String getSearchByEmployeeIdInput() {
@@ -44,20 +42,12 @@ public class User extends Employee {
 		this.searchByEmployeeIdInput = searchByEmployeeIdInput;
 	}
 
-	public String getSearchByEmployeeFirstNameInput() {
-		return searchByEmployeeFirstNameInput;
+	public String getSearchByEmployeeNameInput() {
+		return searchByEmployeeNameInput;
 	}
 
-	public void setSearchByEmployeeFirstNameInput(String searchByEmployeeFirstNameInput) {
-		this.searchByEmployeeFirstNameInput = searchByEmployeeFirstNameInput;
-	}
-
-	public String getSearchByEmployeeLastNameInput() {
-		return searchByEmployeeLastNameInput;
-	}
-
-	public void setSearchByEmployeeLastNameInput(String searchByEmployeeLastNameInput) {
-		this.searchByEmployeeLastNameInput = searchByEmployeeLastNameInput;
+	public void setSearchByEmployeeNameInput(String searchByEmployeeNameInput) {
+		this.searchByEmployeeNameInput = searchByEmployeeNameInput;
 	}
 
 	public String getSearchByEmployeeProjectInput() {
@@ -66,14 +56,6 @@ public class User extends Employee {
 
 	public void setSearchByEmployeeProjectInput(String searchByEmployeeProjectInput) {
 		this.searchByEmployeeProjectInput = searchByEmployeeProjectInput;
-	}
-
-	public String getViewPageChoice() {
-		return viewPageChoice;
-	}
-
-	public void setViewPageChoice(String viewPageChoice) {
-		this.viewPageChoice = viewPageChoice;
 	}
 
 	public String getViewByLocationFloorInput() {
