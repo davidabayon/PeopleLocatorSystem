@@ -26,13 +26,13 @@ public class LoginPageManager {
 	public boolean validateUserInput(String username, String password) {
 		logger.info(GenericConstants.START);
 
-		Matcher matcher = GenericConstants.INPUT_REGEX_EMAIL.matcher(username);
+		Matcher matcher = GenericConstants.INPUT_REGEX_EMAIL.matcher(username.trim());
 		boolean askAgain = false;
 
 		if (username.trim().length() > 0 && password.length() > 0 && matcher.find()) {
 			String[] usernameArray = username.split("@");
 			username = usernameArray[0].trim();
-			user.setEmployeeUsername(username);
+			user.setEmployeeUsername(username.trim());
 			this.password = password;
 			askAgain = false;
 		} else if (username.trim().length() == 0 && password.length() == 0) {

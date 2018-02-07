@@ -31,7 +31,7 @@ public class HomePageUI implements PageUI {
 		System.out.format("%99s", "You are now at the Home Page!" + "\n\n");
 		System.out.format("%117s", "Currently logged in:" + "\n");
 		System.out.format("%117s", user.getEmployeeFirstName() + " " + user.getEmployeeLastName() + "\n");
-		System.out.format("%117s", "[" + user.getEmployeeRole() + "]\n");
+		System.out.format("%118s", "[" + user.getEmployeeRole() + "]\n\n");
 
 		System.out.format("%74s", "Please select an option:\n");
 		System.out.format("%74s", "[1] Search Employee     \n");

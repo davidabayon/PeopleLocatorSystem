@@ -14,6 +14,9 @@ public interface GenericConstants {
 	String VIEW_SEAT_PLAN_BY_EMPLOYEE = "View Seat Plan by Employee";
 	String GO_BACK = "Go Back";
 	String LOGOUT = "Logout";
+	String PIC = "PIC";
+	String PTC = "PTC";
+	String PLC = "PLC";
 
 	// Input validation messages
 	String INPUT_LOGIN_NULL = "Username/Password is empty!";
@@ -31,6 +34,9 @@ public interface GenericConstants {
 	String ASK_EMPLOYEE_ID = "Enter Employee ID: ";
 	String ASK_EMPLOYEE_FIRST_NAME = "Enter Employee Name: ";
 	String ASK_EMPLOYEE_PROJECT = "Enter Employee Project: ";
+	String ASK_LOCATION = "Enter Location: ";
+	String ASK_FLOOR = "Enter Floor No.: ";
+	String ASK_QUADRANT = "Enter Quadrant: ";
 	String CONFIRM_TERMINATION = "Do you want to end? [Y or N]: ";
 
 	// Other messages

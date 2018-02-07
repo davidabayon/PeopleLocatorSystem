@@ -7,8 +7,10 @@ public class User extends Employee {
 	private String searchByEmployeeIdInput;
 	private String searchByEmployeeNameInput;
 	private String searchByEmployeeProjectInput;
-	private String viewByLocationFloorInput;
+	private String viewByLocationInput;
+	private String viewByFloorInput;
 	private String viewByQuadrantInput;
+	private boolean isViewByEmployeeInput;
 
 	public int getLoginTries() {
 		return loginTries;
@@ -58,12 +60,20 @@ public class User extends Employee {
 		this.searchByEmployeeProjectInput = searchByEmployeeProjectInput;
 	}
 
-	public String getViewByLocationFloorInput() {
-		return viewByLocationFloorInput;
+	public String getViewByLocationInput() {
+		return viewByLocationInput;
 	}
 
-	public void setViewByLocationFloorInput(String viewByLocationFloorInput) {
-		this.viewByLocationFloorInput = viewByLocationFloorInput;
+	public void setViewByLocationInput(String viewByLocationInput) {
+		this.viewByLocationInput = viewByLocationInput;
+	}
+
+	public String getViewByFloorInput() {
+		return viewByFloorInput;
+	}
+
+	public void setViewByFloorInput(String viewByFloorInput) {
+		this.viewByFloorInput = viewByFloorInput;
 	}
 
 	public String getViewByQuadrantInput() {
@@ -72,5 +82,13 @@ public class User extends Employee {
 
 	public void setViewByQuadrantInput(String viewByQuadrantInput) {
 		this.viewByQuadrantInput = viewByQuadrantInput;
+	}
+
+	public boolean isViewByEmployeeInput() {
+		return isViewByEmployeeInput;
+	}
+
+	public void setViewByEmployeeInput(boolean isViewByEmployeeInput) {
+		this.isViewByEmployeeInput = isViewByEmployeeInput;
 	}
 }

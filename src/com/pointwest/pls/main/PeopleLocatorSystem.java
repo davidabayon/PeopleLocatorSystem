@@ -14,6 +14,9 @@ import com.pointwest.pls.ui.SearchByEmployeeProjectUI;
 import com.pointwest.pls.ui.SearchPageUI;
 import com.pointwest.pls.ui.SubPageUI;
 import com.pointwest.pls.ui.ViewPageUI;
+import com.pointwest.pls.ui.ViewSeatPlanByEmployee;
+import com.pointwest.pls.ui.ViewSeatPlanByLocationFloor;
+import com.pointwest.pls.ui.ViewSeatPlanByQuadrant;
 import com.pointwest.pls.util.DisplayHelper;
 
 public class PeopleLocatorSystem {
@@ -98,7 +101,14 @@ public class PeopleLocatorSystem {
 								searchByEmployeeIdUI.displayPageHeader();
 								searchByEmployeeIdUI.displayPageContent();
 								searchByEmployeeIdUI.askUserInput();
-								searchByEmployeeIdUI.displayList(subPageChoice);
+
+								if (!user.isViewByEmployeeInput())
+									searchByEmployeeIdUI.displayList(subPageChoice);
+								else {
+									isGoBack = false;
+									user.setSubPageChoice(GenericConstants.VIEW_SEAT_PLAN_BY_EMPLOYEE);
+								}
+
 								break;
 							case GenericConstants.SEARCH_EMPLOYEE_BY_NAME:
 								isGoBack = false;
@@ -117,17 +127,27 @@ public class PeopleLocatorSystem {
 								searchByEmployeeProjectUI.askUserInput();
 								searchByEmployeeProjectUI.displayList(subPageChoice);
 								break;
-							case GenericConstants.VIEW_SEAT_PLAN_BY_EMPLOYEE:
-								isGoBack = false;
-								subPageUI.displayList(subPageChoice);
-								break;
 							case GenericConstants.VIEW_SEAT_PLAN_BY_LOC_FLOOR:
 								isGoBack = false;
-								subPageUI.displayList(subPageChoice);
+								ViewSeatPlanByLocationFloor viewSeatPlanByLocationFloor = new ViewSeatPlanByLocationFloor(
+										user);
+								viewSeatPlanByLocationFloor.displayPageHeader();
+								viewSeatPlanByLocationFloor.displayPageContent();
+								viewSeatPlanByLocationFloor.askUserInput();
+								viewSeatPlanByLocationFloor.displayList(subPageChoice);
 								break;
 							case GenericConstants.VIEW_SEAT_PLAN_BY_QUADRANT:
 								isGoBack = false;
-								subPageUI.displayList(subPageChoice);
+								ViewSeatPlanByQuadrant viewSeatPlanByQuadrant = new ViewSeatPlanByQuadrant(user);
+								viewSeatPlanByQuadrant.displayPageHeader();
+								viewSeatPlanByQuadrant.displayPageContent();
+								viewSeatPlanByQuadrant.askUserInput();
+								viewSeatPlanByQuadrant.displayList(subPageChoice);
+								break;
+							case GenericConstants.VIEW_SEAT_PLAN_BY_EMPLOYEE:
+								isGoBack = false;
+								ViewSeatPlanByEmployee viewSeatPlanByEmployee = new ViewSeatPlanByEmployee(user);
+								viewSeatPlanByEmployee.displayList(subPageChoice);
 								break;
 							case GenericConstants.GO_BACK:
 								isGoBack = true;

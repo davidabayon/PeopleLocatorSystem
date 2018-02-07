@@ -22,16 +22,16 @@ public class SearchPageManager {
 	}
 
 	// Validate Employee ID input
-	public boolean validateEmployeeIdInput(String employeeIdInput) {
+	public boolean validateEmployeeIdInput(String employeeId) {
 		logger.info(GenericConstants.START);
 
-		Matcher matcher = GenericConstants.INPUT_REGEX_NUMBER.matcher(employeeIdInput);
+		Matcher matcher = GenericConstants.INPUT_REGEX_NUMBER.matcher(employeeId.trim());
 		boolean askAgain = false;
 
-		if (employeeIdInput.trim().length() > 0 && matcher.find()) {
-			user.setSearchByEmployeeIdInput(employeeIdInput);
+		if (employeeId.trim().length() > 0 && matcher.find()) {
+			user.setSearchByEmployeeIdInput(employeeId.trim());
 			askAgain = false;
-		} else if (employeeIdInput.trim().length() == 0) {
+		} else if (employeeId.trim().length() == 0) {
 			askAgain = true;
 			logger.error(GenericConstants.INPUT_NULL);
 			System.out.format("%117s", GenericConstants.INPUT_NULL + "\n");
@@ -50,11 +50,11 @@ public class SearchPageManager {
 	public boolean validateEmployeeNameInput(String name) {
 		logger.info(GenericConstants.START);
 
-		Matcher matcher = GenericConstants.INPUT_REGEX_ALPHABET_CHARS.matcher(name);
+		Matcher matcher = GenericConstants.INPUT_REGEX_ALPHABET_CHARS.matcher(name.trim());
 		boolean askAgain = false;
 
 		if (name.trim().length() > 0 && matcher.find()) {
-			user.setSearchByEmployeeNameInput(name);
+			user.setSearchByEmployeeNameInput(name.trim());
 			askAgain = false;
 		} else if (name.trim().length() == 0) {
 			askAgain = true;
@@ -75,11 +75,11 @@ public class SearchPageManager {
 	public boolean validateEmployeeProjectInput(String project) {
 		logger.info(GenericConstants.START);
 
-		Matcher matcher = GenericConstants.INPUT_REGEX_ALPHABET_CHARS.matcher(project);
+		Matcher matcher = GenericConstants.INPUT_REGEX_ALPHABET_CHARS.matcher(project.trim());
 		boolean askAgain = false;
 
 		if (project.trim().length() > 0 && matcher.find()) {
-			user.setSearchByEmployeeProjectInput(project);
+			user.setSearchByEmployeeProjectInput(project.trim());
 			askAgain = false;
 		} else if (project.trim().length() == 0) {
 			askAgain = true;
