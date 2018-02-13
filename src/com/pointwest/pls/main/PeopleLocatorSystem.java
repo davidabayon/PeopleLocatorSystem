@@ -15,6 +15,7 @@ import com.pointwest.pls.ui.SearchByEmployeeProjectUI;
 import com.pointwest.pls.ui.SearchPageUI;
 import com.pointwest.pls.ui.SubPageUI;
 import com.pointwest.pls.ui.ViewPageUI;
+import com.pointwest.pls.ui.ViewSeatPlanByEmployee;
 import com.pointwest.pls.ui.ViewSeatPlanByLocationFloor;
 import com.pointwest.pls.ui.ViewSeatPlanByQuadrant;
 import com.pointwest.pls.util.DisplayHelper;
@@ -38,6 +39,7 @@ public class PeopleLocatorSystem {
 		boolean askAgain = false;
 		boolean isTerminate = false;
 		boolean isGoBack = false;
+		boolean isViewByEmployee = false;
 
 		// Start the application
 		DisplayHelper.displayMainHeader();
@@ -100,75 +102,103 @@ public class PeopleLocatorSystem {
 							subPageUI.displayPageContent();
 							subPageUI.askUserInput();
 							String subPageChoice = userInput.getSubPageChoice();
-							switch (subPageChoice) {
-							case GenericConstants.SEARCH_EMPLOYEE_BY_ID:
-								isGoBack = false;
-								logger.info(GenericConstants.START + ": SearchByEmployeeIdUI Page");
+							do {
+								switch (subPageChoice) {
+								case GenericConstants.SEARCH_EMPLOYEE_BY_ID:
+									isGoBack = false;
+									isViewByEmployee = false;
+									logger.info(GenericConstants.START + ": SearchByEmployeeIdUI Page");
 
-								SearchByEmployeeIdUI searchByEmployeeIdUI = new SearchByEmployeeIdUI(user, userInput);
-								searchByEmployeeIdUI.displayPageHeader();
-								searchByEmployeeIdUI.displayPageContent();
-								searchByEmployeeIdUI.askUserInput();
-								searchByEmployeeIdUI.displayList(subPageChoice);
+									SearchByEmployeeIdUI searchByEmployeeIdUI = new SearchByEmployeeIdUI(user,
+											userInput);
+									searchByEmployeeIdUI.displayPageHeader();
+									searchByEmployeeIdUI.displayPageContent();
+									searchByEmployeeIdUI.askUserInput();
+									searchByEmployeeIdUI.displayList(subPageChoice);
 
-								logger.info(GenericConstants.END + ": SearchByEmployeeIdUI Page");
-								break;
-							case GenericConstants.SEARCH_EMPLOYEE_BY_NAME:
-								isGoBack = false;
-								logger.info(GenericConstants.START + ": SearchByEmployeeNameUI Page");
+									if (isViewByEmployee)
+										;
 
-								SearchByEmployeeNameUI searchByEmployeeNameUI = new SearchByEmployeeNameUI(user,
-										userInput);
-								searchByEmployeeNameUI.displayPageHeader();
-								searchByEmployeeNameUI.displayPageContent();
-								searchByEmployeeNameUI.askUserInput();
-								searchByEmployeeNameUI.displayList(subPageChoice);
+									logger.info(GenericConstants.END + ": SearchByEmployeeIdUI Page");
+									break;
+								case GenericConstants.SEARCH_EMPLOYEE_BY_NAME:
+									isGoBack = false;
+									isViewByEmployee = false;
+									logger.info(GenericConstants.START + ": SearchByEmployeeNameUI Page");
 
-								logger.info(GenericConstants.END + ": SearchByEmployeeNameUI Page");
-								break;
-							case GenericConstants.SEARCH_EMPLOYEE_BY_PROJECT:
-								isGoBack = false;
-								logger.info(GenericConstants.START + ": SearchByEmployeeProjectUI Page");
+									SearchByEmployeeNameUI searchByEmployeeNameUI = new SearchByEmployeeNameUI(user,
+											userInput);
+									searchByEmployeeNameUI.displayPageHeader();
+									searchByEmployeeNameUI.displayPageContent();
+									searchByEmployeeNameUI.askUserInput();
+									searchByEmployeeNameUI.displayList(subPageChoice);
 
-								SearchByEmployeeProjectUI searchByEmployeeProjectUI = new SearchByEmployeeProjectUI(
-										user, userInput);
-								searchByEmployeeProjectUI.displayPageHeader();
-								searchByEmployeeProjectUI.displayPageContent();
-								searchByEmployeeProjectUI.askUserInput();
-								searchByEmployeeProjectUI.displayList(subPageChoice);
+									logger.info(GenericConstants.END + ": SearchByEmployeeNameUI Page");
+									break;
+								case GenericConstants.SEARCH_EMPLOYEE_BY_PROJECT:
+									isGoBack = false;
+									isViewByEmployee = false;
+									logger.info(GenericConstants.START + ": SearchByEmployeeProjectUI Page");
 
-								logger.info(GenericConstants.END + ": SearchByEmployeeProjectUI Page");
-								break;
-							case GenericConstants.VIEW_SEAT_PLAN_BY_LOC_FLOOR:
-								isGoBack = false;
-								logger.info(GenericConstants.START + ": ViewSeatPlanByLocationFloor Page");
+									SearchByEmployeeProjectUI searchByEmployeeProjectUI = new SearchByEmployeeProjectUI(
+											user, userInput);
+									searchByEmployeeProjectUI.displayPageHeader();
+									searchByEmployeeProjectUI.displayPageContent();
+									searchByEmployeeProjectUI.askUserInput();
+									searchByEmployeeProjectUI.displayList(subPageChoice);
 
-								ViewSeatPlanByLocationFloor viewSeatPlanByLocationFloor = new ViewSeatPlanByLocationFloor(
-										user, userInput);
-								viewSeatPlanByLocationFloor.displayPageHeader();
-								viewSeatPlanByLocationFloor.displayPageContent();
-								viewSeatPlanByLocationFloor.askUserInput();
-								viewSeatPlanByLocationFloor.displayList(subPageChoice);
+									logger.info(GenericConstants.END + ": SearchByEmployeeProjectUI Page");
+									break;
+								case GenericConstants.VIEW_SEAT_PLAN_BY_LOC_FLOOR:
+									isGoBack = false;
+									isViewByEmployee = false;
+									logger.info(GenericConstants.START + ": ViewSeatPlanByLocationFloor Page");
 
-								logger.info(GenericConstants.END + ": ViewSeatPlanByLocationFloor Page");
-								break;
-							case GenericConstants.VIEW_SEAT_PLAN_BY_QUADRANT:
-								isGoBack = false;
-								logger.info(GenericConstants.START + ": ViewSeatPlanByQuadrant Page");
+									ViewSeatPlanByLocationFloor viewSeatPlanByLocationFloor = new ViewSeatPlanByLocationFloor(
+											user, userInput);
+									viewSeatPlanByLocationFloor.displayPageHeader();
+									viewSeatPlanByLocationFloor.displayPageContent();
+									viewSeatPlanByLocationFloor.askUserInput();
+									viewSeatPlanByLocationFloor.displayList(subPageChoice);
 
-								ViewSeatPlanByQuadrant viewSeatPlanByQuadrant = new ViewSeatPlanByQuadrant(user,
-										userInput);
-								viewSeatPlanByQuadrant.displayPageHeader();
-								viewSeatPlanByQuadrant.displayPageContent();
-								viewSeatPlanByQuadrant.askUserInput();
-								viewSeatPlanByQuadrant.displayList(subPageChoice);
+									logger.info(GenericConstants.END + ": ViewSeatPlanByLocationFloor Page");
+									break;
+								case GenericConstants.VIEW_SEAT_PLAN_BY_QUADRANT:
+									isGoBack = false;
+									isViewByEmployee = false;
+									logger.info(GenericConstants.START + ": ViewSeatPlanByQuadrant Page");
 
-								logger.info(GenericConstants.END + ": ViewSeatPlanByQuadrant Page");
-								break;
-							case GenericConstants.GO_BACK:
-								isGoBack = true;
-								break;
-							}
+									ViewSeatPlanByQuadrant viewSeatPlanByQuadrant = new ViewSeatPlanByQuadrant(user,
+											userInput);
+									viewSeatPlanByQuadrant.displayPageHeader();
+									viewSeatPlanByQuadrant.displayPageContent();
+									viewSeatPlanByQuadrant.askUserInput();
+									viewSeatPlanByQuadrant.displayList(subPageChoice);
+
+									logger.info(GenericConstants.END + ": ViewSeatPlanByQuadrant Page");
+									break;
+								case GenericConstants.VIEW_SEAT_PLAN_BY_EMPLOYEE:
+									isGoBack = false;
+									logger.info(GenericConstants.START + ": ViewSeatPlanByEmployee Page");
+
+									// Create Search Employee Page
+									ViewSeatPlanByEmployee viewSeatPlanByEmployee = new ViewSeatPlanByEmployee(user,
+											userInput);
+									viewSeatPlanByEmployee.displayPageHeader();
+									subPageUI = new SearchPageUI(user, userInput);
+									subPageUI.displayPageHeader();
+									subPageUI.displayPageContent();
+									subPageUI.askUserInput();
+									isViewByEmployee = true;
+
+									logger.debug("isViewByEmployee: " + isViewByEmployee);
+									// logger.info(GenericConstants.END + ": ViewSeatPlanByEmployee Page");
+									break;
+								case GenericConstants.GO_BACK:
+									isGoBack = true;
+									break;
+								}
+							} while (isViewByEmployee);
 
 							logger.debug("isGoBack: " + isGoBack + ", subPageChoice" + subPageChoice);
 							logger.info(GenericConstants.END + ": Sub Page");

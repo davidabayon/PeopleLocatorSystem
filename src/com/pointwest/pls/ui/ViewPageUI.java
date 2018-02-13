@@ -70,6 +70,12 @@ public class ViewPageUI extends SubPageUI {
 				break;
 			case "3":
 				askAgain = false;
+				userInput.setSubPageChoice(GenericConstants.VIEW_SEAT_PLAN_BY_EMPLOYEE);
+				System.out.format("%88s", "");
+				System.out.format(GenericConstants.SELECTED_OPTION + "\n", viewPageChoice.trim());
+				break;
+			case "4":
+				askAgain = false;
 				userInput.setSubPageChoice(GenericConstants.GO_BACK);
 				System.out.format("%88s", "");
 				System.out.format(GenericConstants.SELECTED_OPTION + "\n", viewPageChoice.trim());
