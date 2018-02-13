@@ -16,9 +16,22 @@ public interface SqlConstants {
 	String SEAT_ID = "seat_id";
 	String SEAT_NAME = "seat_name";
 	String SEAT_LOCAL_NUMBER = "seat_local_number";
+	String BLDG_ID = "bldg_id";
+	String SEAT_FLOOR_NUMBER = "seat_floor_number";
+	String SEAT_QUADRANT = "seat_quadrant";
 	String EMP_SHIFT = "emp_shift";
 	String PROJ_NAME = "proj_name";
 
+	// Location Floor Quadrant query
+	String QUERY_STATEMENT_LOCATION_FLOOR_CHOICES = "SELECT DISTINCT (s.bldg_id), "
+			+ "GROUP_CONCAT(DISTINCT (s.seat_floor_number) SEPARATOR ', ') AS seat_floor_number, "
+			+ "GROUP_CONCAT(DISTINCT (s.seat_quadrant) SEPARATOR ', ') AS seat_quadrant "
+			+ "FROM seat s GROUP BY s.bldg_id";
+
+	// Project query
+	String QUERY_STATEMENT_AVAILABLE_PROJECT_CHOICES = "SELECT DISTINCT(proj_name) FROM project";
+
+	// Login query
 	String SELECT_STATEMENT_LOGIN = "SELECT emp_first_name, emp_last_name, emp_role ";
 	String FROM_STATEMENT_LOGIN = "FROM employee ";
 	String WHERE_STATEMENT_LOGIN = "WHERE emp_username = ? AND emp_password = BINARY ?";
@@ -36,6 +49,9 @@ public interface SqlConstants {
 	String WHERE_STATEMENT_SEARCH_BY_NAME_PARTIAL = "WHERE CONCAT(e.emp_first_name, ' ', e.emp_last_name) LIKE ? ";
 	String WHERE_STATEMENT_SEARCH_BY_PROJECT_PARTIAL = "WHERE p.proj_name LIKE ? ";
 	String GROUP_BY_ORDER_BY_EMPLOYEE_ID = "GROUP BY e.emp_id, seat_name ORDER BY e.emp_id";
+	String WHERE_STATEMENT_SEARCH_BY_ID_EXACT = "WHERE e.emp_id = ? ";
+	String WHERE_STATEMENT_SEARCH_BY_NAME_EXACT = "WHERE CONCAT(e.emp_first_name, ' ', e.emp_last_name) = ? ";
+	String WHERE_STATEMENT_SEARCH_BY_PROJECT_EXACT = "WHERE p.proj_name = ? ";
 
 	// View Seatplan queries
 	String SELECT_STATEMENT_VIEW_SEATPLAN = "SELECT s.seat_id, "
@@ -61,6 +77,7 @@ public interface SqlConstants {
 			+ GROUP_BY_ORDER_BY_SEAT_ID + ") se ON s.seat_id = se.seat_id " + "WHERE s.bldg_id = ? "
 			+ "AND s.seat_floor_number = ?";
 
+	// View Seatplan by Employee queries
 	String SELECT_STATEMENT_VIEW_SEATPLAN_EMPLOYEE = "SELECT s.seat_id, "
 			+ "(CASE WHEN e.emp_first_name IS NULL THEN 'Vacant' ELSE e.emp_first_name END) as emp_first_name, "
 			+ "(CASE WHEN e.emp_last_name IS NULL THEN 'seat' ELSE e.emp_last_name END) as emp_last_name, "
@@ -70,13 +87,20 @@ public interface SqlConstants {
 			+ "CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant, s.seat_row_number, '-', s.seat_column_number) AS seat_name, "
 			+ "se. emp_first_name, " + "se.emp_last_name, " + "se.seat_local_number " + "FROM seat s " + "LEFT JOIN ("
 			+ SELECT_STATEMENT_VIEW_SEATPLAN_EMPLOYEE + FROM_STATEMENT_VIEW_SEATPLAN
-			+ WHERE_STATEMENT_SEARCH_BY_ID_PARTIAL + GROUP_BY_ORDER_BY_SEAT_ID + ") se ON s.seat_id = se.seat_id "
+			+ WHERE_STATEMENT_SEARCH_BY_ID_EXACT + GROUP_BY_ORDER_BY_SEAT_ID + ") se ON s.seat_id = se.seat_id "
 			+ "WHERE s.bldg_id = ? " + "AND s.seat_floor_number = ?";
 	String QUERY_STATEMENT_VIEW_SEATPLAN_EMPLOYEE_BY_NAME = "SELECT s.seat_id, " + "s.bldg_id, "
 			+ "s.seat_floor_number, " + "s.seat_quadrant, "
 			+ "CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant, s.seat_row_number, '-', s.seat_column_number) AS seat_name, "
 			+ "se. emp_first_name, " + "se.emp_last_name, " + "se.seat_local_number " + "FROM seat s " + "LEFT JOIN ("
 			+ SELECT_STATEMENT_VIEW_SEATPLAN_EMPLOYEE + FROM_STATEMENT_VIEW_SEATPLAN
-			+ WHERE_STATEMENT_SEARCH_BY_ID_PARTIAL + GROUP_BY_ORDER_BY_SEAT_ID + ") se ON s.seat_id = se.seat_id "
+			+ WHERE_STATEMENT_SEARCH_BY_NAME_EXACT + GROUP_BY_ORDER_BY_SEAT_ID + ") se ON s.seat_id = se.seat_id "
+			+ "WHERE s.bldg_id = ? " + "AND s.seat_floor_number = ?";
+	String QUERY_STATEMENT_VIEW_SEATPLAN_EMPLOYEE_BY_PROJECT = "SELECT s.seat_id, " + "s.bldg_id, "
+			+ "s.seat_floor_number, " + "s.seat_quadrant, "
+			+ "CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant, s.seat_row_number, '-', s.seat_column_number) AS seat_name, "
+			+ "se. emp_first_name, " + "se.emp_last_name, " + "se.seat_local_number " + "FROM seat s " + "LEFT JOIN ("
+			+ SELECT_STATEMENT_VIEW_SEATPLAN_EMPLOYEE + FROM_STATEMENT_VIEW_SEATPLAN
+			+ WHERE_STATEMENT_SEARCH_BY_PROJECT_EXACT + GROUP_BY_ORDER_BY_SEAT_ID + ") se ON s.seat_id = se.seat_id "
 			+ "WHERE s.bldg_id = ? " + "AND s.seat_floor_number = ?";
 }

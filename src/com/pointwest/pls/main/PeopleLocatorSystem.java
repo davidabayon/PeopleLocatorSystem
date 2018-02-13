@@ -5,6 +5,7 @@ import java.util.Scanner;
 import org.apache.log4j.Logger;
 
 import com.pointwest.pls.bean.User;
+import com.pointwest.pls.bean.UserInput;
 import com.pointwest.pls.constant.GenericConstants;
 import com.pointwest.pls.ui.HomePageUI;
 import com.pointwest.pls.ui.LoginPageUI;
@@ -17,6 +18,11 @@ import com.pointwest.pls.ui.ViewPageUI;
 import com.pointwest.pls.ui.ViewSeatPlanByLocationFloor;
 import com.pointwest.pls.ui.ViewSeatPlanByQuadrant;
 import com.pointwest.pls.util.DisplayHelper;
+
+/*
+* Author : David Abayon
+*   Date : February 2, 208
+*/
 
 public class PeopleLocatorSystem {
 
@@ -41,17 +47,18 @@ public class PeopleLocatorSystem {
 
 			// Login Page
 			User user = new User();
-			LoginPageUI loginPageUI = new LoginPageUI(user);
+			UserInput userInput = user.getUserInput();
+			LoginPageUI loginPageUI = new LoginPageUI(user, userInput);
 			loginPageUI.displayPageHeader();
 			loginPageUI.displayPageContent();
 			do {
 				loginPageUI.askUserInput();
-				if (user.getLoginTries() > 0) {
+				if (userInput.getLoginTries() > 0) {
 					isLoggedIn = loginPageUI.displayLoginStatus();
 					askAgain = true;
 				} else
 					askAgain = false;
-				logger.debug("askAgain: " + askAgain + ", triesCounter: " + user.getLoginTries() + ", isLoggedIn: "
+				logger.debug("askAgain: " + askAgain + ", triesCounter: " + userInput.getLoginTries() + ", isLoggedIn: "
 						+ isLoggedIn);
 			} while (askAgain && !isLoggedIn);
 
@@ -61,22 +68,22 @@ public class PeopleLocatorSystem {
 					logger.info(GenericConstants.START + ": Home Page");
 
 					// Go to Home Page
-					HomePageUI homePageUI = new HomePageUI(user);
+					HomePageUI homePageUI = new HomePageUI(user, userInput);
 					homePageUI.displayPageHeader();
 					homePageUI.displayPageContent();
 					homePageUI.askUserInput();
-					String homePageChoice = user.getHomePageChoice();
+					String homePageChoice = userInput.getHomePageChoice();
 					SubPageUI subPageUI = null;
 					switch (homePageChoice) {
 					case GenericConstants.SEARCH_EMPLOYEE:
 
 						// Create Search Employee Page
-						subPageUI = new SearchPageUI(user);
+						subPageUI = new SearchPageUI(user, userInput);
 						break;
 					case GenericConstants.VIEW_SEAT_PLAN:
 
 						// Create View Seat Plan Page
-						subPageUI = new ViewPageUI(user);
+						subPageUI = new ViewPageUI(user, userInput);
 						break;
 					case GenericConstants.LOGOUT:
 						isLoggedIn = false;
@@ -92,13 +99,13 @@ public class PeopleLocatorSystem {
 							subPageUI.displayPageHeader();
 							subPageUI.displayPageContent();
 							subPageUI.askUserInput();
-							String subPageChoice = user.getSubPageChoice();
+							String subPageChoice = userInput.getSubPageChoice();
 							switch (subPageChoice) {
 							case GenericConstants.SEARCH_EMPLOYEE_BY_ID:
 								isGoBack = false;
 								logger.info(GenericConstants.START + ": SearchByEmployeeIdUI Page");
 
-								SearchByEmployeeIdUI searchByEmployeeIdUI = new SearchByEmployeeIdUI(user);
+								SearchByEmployeeIdUI searchByEmployeeIdUI = new SearchByEmployeeIdUI(user, userInput);
 								searchByEmployeeIdUI.displayPageHeader();
 								searchByEmployeeIdUI.displayPageContent();
 								searchByEmployeeIdUI.askUserInput();
@@ -110,7 +117,8 @@ public class PeopleLocatorSystem {
 								isGoBack = false;
 								logger.info(GenericConstants.START + ": SearchByEmployeeNameUI Page");
 
-								SearchByEmployeeNameUI searchByEmployeeNameUI = new SearchByEmployeeNameUI(user);
+								SearchByEmployeeNameUI searchByEmployeeNameUI = new SearchByEmployeeNameUI(user,
+										userInput);
 								searchByEmployeeNameUI.displayPageHeader();
 								searchByEmployeeNameUI.displayPageContent();
 								searchByEmployeeNameUI.askUserInput();
@@ -123,7 +131,7 @@ public class PeopleLocatorSystem {
 								logger.info(GenericConstants.START + ": SearchByEmployeeProjectUI Page");
 
 								SearchByEmployeeProjectUI searchByEmployeeProjectUI = new SearchByEmployeeProjectUI(
-										user);
+										user, userInput);
 								searchByEmployeeProjectUI.displayPageHeader();
 								searchByEmployeeProjectUI.displayPageContent();
 								searchByEmployeeProjectUI.askUserInput();
@@ -136,7 +144,7 @@ public class PeopleLocatorSystem {
 								logger.info(GenericConstants.START + ": ViewSeatPlanByLocationFloor Page");
 
 								ViewSeatPlanByLocationFloor viewSeatPlanByLocationFloor = new ViewSeatPlanByLocationFloor(
-										user);
+										user, userInput);
 								viewSeatPlanByLocationFloor.displayPageHeader();
 								viewSeatPlanByLocationFloor.displayPageContent();
 								viewSeatPlanByLocationFloor.askUserInput();
@@ -148,7 +156,8 @@ public class PeopleLocatorSystem {
 								isGoBack = false;
 								logger.info(GenericConstants.START + ": ViewSeatPlanByQuadrant Page");
 
-								ViewSeatPlanByQuadrant viewSeatPlanByQuadrant = new ViewSeatPlanByQuadrant(user);
+								ViewSeatPlanByQuadrant viewSeatPlanByQuadrant = new ViewSeatPlanByQuadrant(user,
+										userInput);
 								viewSeatPlanByQuadrant.displayPageHeader();
 								viewSeatPlanByQuadrant.displayPageContent();
 								viewSeatPlanByQuadrant.askUserInput();

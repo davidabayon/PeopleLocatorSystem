@@ -15,7 +15,7 @@ import com.pointwest.pls.util.CustomException;
 public abstract class BaseDao {
 	Logger logger = Logger.getLogger(BaseDao.class);
 
-	public Connection openDBConnection() throws CustomException {
+	protected Connection getDbConnection() throws CustomException {
 		logger.info(GenericConstants.START);
 
 		Connection connection = null;
@@ -45,7 +45,7 @@ public abstract class BaseDao {
 		return connection;
 	}
 
-	public void closeConnection(Connection connection, PreparedStatement preparedStatement, ResultSet resultSet)
+	protected void closeDbResources(Connection connection, PreparedStatement preparedStatement, ResultSet resultSet)
 			throws CustomException {
 		logger.info(GenericConstants.START);
 

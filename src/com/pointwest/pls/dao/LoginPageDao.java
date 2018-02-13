@@ -29,7 +29,7 @@ public class LoginPageDao extends BaseDao {
 		ResultSet resultSet = null;
 		boolean hasMatched = false;
 
-		Connection connection = openDBConnection();
+		Connection connection = getDbConnection();
 
 		try {
 			preparedStatement = connection.prepareStatement(SqlConstants.SELECT_STATEMENT_LOGIN
@@ -66,7 +66,7 @@ public class LoginPageDao extends BaseDao {
 			logger.error(customException.getMessage());
 			throw customException;
 		} finally {
-			closeConnection(connection, preparedStatement, resultSet);
+			closeDbResources(connection, preparedStatement, resultSet);
 		}
 
 		logger.debug("First Name: " + user.getEmployeeFirstName() + ", Last Name: " + user.getEmployeeLastName());

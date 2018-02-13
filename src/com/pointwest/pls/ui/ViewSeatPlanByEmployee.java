@@ -3,14 +3,16 @@ package com.pointwest.pls.ui;
 import org.apache.log4j.Logger;
 
 import com.pointwest.pls.bean.User;
+import com.pointwest.pls.bean.UserInput;
 import com.pointwest.pls.constant.GenericConstants;
 
 public class ViewSeatPlanByEmployee extends ViewPageUI {
 	Logger logger = Logger.getLogger(ViewSeatPlanByEmployee.class);
 
-	public ViewSeatPlanByEmployee(User user) {
-		super(user);
+	public ViewSeatPlanByEmployee(User user, UserInput userInput) {
+		super(user, userInput);
 		this.user = user;
+		this.userInput = userInput;
 	}
 
 	@Override
@@ -30,9 +32,9 @@ public class ViewSeatPlanByEmployee extends ViewPageUI {
 			System.out.format("%95s", "");
 			System.out.format(GenericConstants.NO_RECORDS_FOUND + "\n", employees.size());
 		} else {
-			System.out.format("%117s", "Location: " + user.getViewByLocationInput() + "\n");
-			System.out.format("%117s", "Floor: " + user.getViewByFloorInput() + "\n");
-			System.out.format("%117s", "Quadant: " + user.getViewByQuadrantInput() + "\n");
+			System.out.format("%117s", "Location: " + userInput.getViewByLocationInput() + "\n");
+			System.out.format("%117s", "Floor: " + userInput.getViewByFloorInput() + "\n");
+			System.out.format("%117s", "Quadant: " + userInput.getViewByQuadrantInput() + "\n");
 			System.out.format("%96s", "");
 			System.out.format(GenericConstants.RECORDS_FOUND + "\n", employees.size());
 		}

@@ -1,9 +1,14 @@
 package com.pointwest.pls.ui;
 
+import java.util.List;
+import java.util.regex.Matcher;
+
 import org.apache.log4j.Logger;
 
 import com.pointwest.pls.bean.Employee;
+import com.pointwest.pls.bean.Project;
 import com.pointwest.pls.bean.User;
+import com.pointwest.pls.bean.UserInput;
 import com.pointwest.pls.constant.GenericConstants;
 import com.pointwest.pls.manager.SearchPageManager;
 import com.pointwest.pls.util.CustomException;
@@ -11,10 +16,12 @@ import com.pointwest.pls.util.CustomException;
 public class SearchPageUI extends SubPageUI {
 	Logger logger = Logger.getLogger(SearchPageUI.class);
 	SearchPageManager searchPageManager = null;
+	List<Project> projectChoices = null;
 
-	public SearchPageUI(User user) {
+	public SearchPageUI(User user, UserInput userInput) {
 		this.user = user;
-		this.searchPageManager = new SearchPageManager(this.user);
+		this.userInput = userInput;
+		this.searchPageManager = new SearchPageManager(userInput);
 	}
 
 	@Override
@@ -57,25 +64,25 @@ public class SearchPageUI extends SubPageUI {
 			switch (searchPageChoice.trim()) {
 			case "1":
 				askAgain = false;
-				user.setSubPageChoice(GenericConstants.SEARCH_EMPLOYEE_BY_ID);
+				userInput.setSubPageChoice(GenericConstants.SEARCH_EMPLOYEE_BY_ID);
 				System.out.format("%88s", "");
 				System.out.format(GenericConstants.SELECTED_OPTION + "\n", searchPageChoice.trim());
 				break;
 			case "2":
 				askAgain = false;
-				user.setSubPageChoice(GenericConstants.SEARCH_EMPLOYEE_BY_NAME);
+				userInput.setSubPageChoice(GenericConstants.SEARCH_EMPLOYEE_BY_NAME);
 				System.out.format("%88s", "");
 				System.out.format(GenericConstants.SELECTED_OPTION + "\n", searchPageChoice.trim());
 				break;
 			case "3":
 				askAgain = false;
-				user.setSubPageChoice(GenericConstants.SEARCH_EMPLOYEE_BY_PROJECT);
+				userInput.setSubPageChoice(GenericConstants.SEARCH_EMPLOYEE_BY_PROJECT);
 				System.out.format("%88s", "");
 				System.out.format(GenericConstants.SELECTED_OPTION + "\n", searchPageChoice.trim());
 				break;
 			case "4":
 				askAgain = false;
-				user.setSubPageChoice(GenericConstants.GO_BACK);
+				userInput.setSubPageChoice(GenericConstants.GO_BACK);
 				System.out.format("%88s", "");
 				System.out.format(GenericConstants.SELECTED_OPTION + "\n", searchPageChoice.trim());
 				break;
@@ -88,8 +95,8 @@ public class SearchPageUI extends SubPageUI {
 			}
 		} while (askAgain);
 
-		logger.debug("searchPageChoice: [" + searchPageChoice.trim() + "] " + user.getSubPageChoice() + ", askAgain: "
-				+ askAgain);
+		logger.debug("searchPageChoice: [" + searchPageChoice.trim() + "] " + userInput.getSubPageChoice()
+				+ ", askAgain: " + askAgain);
 		logger.info(GenericConstants.END);
 	}
 
@@ -153,5 +160,92 @@ public class SearchPageUI extends SubPageUI {
 
 		logger.debug("employees list size: " + employees.size());
 		logger.info(GenericConstants.END);
+	}
+
+	// Validate Employee ID input
+	protected boolean validateEmployeeIdInput(String employeeId) {
+		logger.info(GenericConstants.START);
+
+		Matcher matcher = GenericConstants.INPUT_REGEX_NUMBER.matcher(employeeId.trim());
+		boolean askAgain = false;
+
+		if (employeeId.trim().length() > 0 && matcher.find()) {
+			userInput.setSearchByEmployeeIdInput(employeeId.trim());
+			askAgain = false;
+		} else if (employeeId.trim().length() == 0) {
+			askAgain = true;
+			logger.error(GenericConstants.INPUT_NULL);
+			System.out.format("%117s", GenericConstants.INPUT_NULL + "\n");
+		} else if (!matcher.find()) {
+			askAgain = true;
+			logger.error(GenericConstants.INPUT_INVALID);
+			System.out.format("%117s", GenericConstants.INPUT_INVALID + "\n");
+		}
+
+		logger.debug("askAgain: " + askAgain);
+		logger.info(GenericConstants.END);
+		return askAgain;
+	}
+
+	// Validate Employee Name input
+	protected boolean validateEmployeeNameInput(String name) {
+		logger.info(GenericConstants.START);
+
+		Matcher matcher = GenericConstants.INPUT_REGEX_ALPHABET_CHARS.matcher(name.trim());
+		boolean askAgain = false;
+
+		if (name.trim().length() > 0 && matcher.find()) {
+			userInput.setSearchByEmployeeNameInput(name.trim());
+			askAgain = false;
+		} else if (name.trim().length() == 0) {
+			askAgain = true;
+			logger.error(GenericConstants.INPUT_NULL);
+			System.out.format("%117s", GenericConstants.INPUT_NULL + "\n");
+		} else if (!matcher.find()) {
+			askAgain = true;
+			logger.error(GenericConstants.INPUT_INVALID);
+			System.out.format("%117s", GenericConstants.INPUT_INVALID + "\n");
+		}
+
+		logger.debug("askAgain: " + askAgain);
+		logger.info(GenericConstants.END);
+		return askAgain;
+	}
+
+	// Validate Employee Project input
+	protected boolean validateEmployeeProjectInput(String project) {
+		logger.info(GenericConstants.START);
+
+		boolean askAgain = false;
+		project = project.trim();
+
+		try {
+			projectChoices = searchPageManager.getProjectChoices();
+			for (int index = 0; index < projectChoices.size(); index++) {
+				if (projectChoices.get(index).getProjectName().equalsIgnoreCase(project) && project.length() > 0) {
+					userInput.setSearchByEmployeeProjectInput(project);
+					askAgain = false;
+					break;
+				} else if (project.length() == 0) {
+					askAgain = true;
+					if (index == projectChoices.size() - 1) {
+						logger.error(GenericConstants.INPUT_NULL);
+						System.out.format("%117s", GenericConstants.INPUT_NULL + "\n");
+					}
+				} else {
+					askAgain = true;
+					if (index == projectChoices.size() - 1) {
+						logger.error(GenericConstants.INPUT_INVALID);
+						System.out.format("%117s", GenericConstants.INPUT_INVALID + "\n");
+					}
+				}
+			}
+		} catch (CustomException e) {
+			System.out.format("%117s", e.getMessage() + "\n");
+		}
+
+		logger.debug("askAgain: " + askAgain);
+		logger.info(GenericConstants.END);
+		return askAgain;
 	}
 }

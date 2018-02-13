@@ -1,12 +1,12 @@
 package com.pointwest.pls.manager;
 
 import java.util.List;
-import java.util.regex.Matcher;
 
 import org.apache.log4j.Logger;
 
 import com.pointwest.pls.bean.Employee;
-import com.pointwest.pls.bean.User;
+import com.pointwest.pls.bean.Project;
+import com.pointwest.pls.bean.UserInput;
 import com.pointwest.pls.constant.GenericConstants;
 import com.pointwest.pls.dao.SearchPageDao;
 import com.pointwest.pls.util.CustomException;
@@ -14,86 +14,22 @@ import com.pointwest.pls.util.CustomException;
 public class SearchPageManager {
 	Logger logger = Logger.getLogger(SearchPageManager.class);
 	SearchPageDao searchPageDao = null;
-	User user = null;
+	UserInput userInput = null;
 
-	public SearchPageManager(User user) {
-		this.user = user;
-		this.searchPageDao = new SearchPageDao(user);
+	public SearchPageManager(UserInput userInput) {
+		this.userInput = userInput;
+		this.searchPageDao = new SearchPageDao(userInput);
 	}
 
-	// Validate Employee ID input
-	public boolean validateEmployeeIdInput(String employeeId) {
+	// Get the available projects
+	public List<Project> getProjectChoices() throws CustomException {
 		logger.info(GenericConstants.START);
 
-		Matcher matcher = GenericConstants.INPUT_REGEX_NUMBER.matcher(employeeId.trim());
-		boolean askAgain = false;
+		List<Project> projectChoices = searchPageDao.retrieveProjectChoices();
 
-		if (employeeId.trim().length() > 0 && matcher.find()) {
-			user.setSearchByEmployeeIdInput(employeeId.trim());
-			askAgain = false;
-		} else if (employeeId.trim().length() == 0) {
-			askAgain = true;
-			logger.error(GenericConstants.INPUT_NULL);
-			System.out.format("%117s", GenericConstants.INPUT_NULL + "\n");
-		} else if (!matcher.find()) {
-			askAgain = true;
-			logger.error(GenericConstants.INPUT_INVALID);
-			System.out.format("%117s", GenericConstants.INPUT_INVALID + "\n");
-		}
-
-		logger.debug("askAgain: " + askAgain);
+		logger.debug("projectChoices list size: " + projectChoices.size());
 		logger.info(GenericConstants.END);
-		return askAgain;
-	}
-
-	// Validate Employee Name input
-	public boolean validateEmployeeNameInput(String name) {
-		logger.info(GenericConstants.START);
-
-		Matcher matcher = GenericConstants.INPUT_REGEX_ALPHABET_CHARS.matcher(name.trim());
-		boolean askAgain = false;
-
-		if (name.trim().length() > 0 && matcher.find()) {
-			user.setSearchByEmployeeNameInput(name.trim());
-			askAgain = false;
-		} else if (name.trim().length() == 0) {
-			askAgain = true;
-			logger.error(GenericConstants.INPUT_NULL);
-			System.out.format("%117s", GenericConstants.INPUT_NULL + "\n");
-		} else if (!matcher.find()) {
-			askAgain = true;
-			logger.error(GenericConstants.INPUT_INVALID);
-			System.out.format("%117s", GenericConstants.INPUT_INVALID + "\n");
-		}
-
-		logger.debug("askAgain: " + askAgain);
-		logger.info(GenericConstants.END);
-		return askAgain;
-	}
-
-	// Validate Employee Project input
-	public boolean validateEmployeeProjectInput(String project) {
-		logger.info(GenericConstants.START);
-
-		Matcher matcher = GenericConstants.INPUT_REGEX_ALPHABET_CHARS.matcher(project.trim());
-		boolean askAgain = false;
-
-		if (project.trim().length() > 0 && matcher.find()) {
-			user.setSearchByEmployeeProjectInput(project.trim());
-			askAgain = false;
-		} else if (project.trim().length() == 0) {
-			askAgain = true;
-			logger.error(GenericConstants.INPUT_NULL);
-			System.out.format("%117s", GenericConstants.INPUT_NULL + "\n");
-		} else if (!matcher.find()) {
-			askAgain = true;
-			logger.error(GenericConstants.INPUT_INVALID);
-			System.out.format("%117s", GenericConstants.INPUT_INVALID + "\n");
-		}
-
-		logger.debug("askAgain: " + askAgain);
-		logger.info(GenericConstants.END);
-		return askAgain;
+		return projectChoices;
 	}
 
 	// Get the list of employees for chosen option

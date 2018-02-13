@@ -1,0 +1,64 @@
+[INFO][Time: 16:49:03][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 31: *********************START
+[INFO][Time: 16:49:03][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 46: START: Login Page
+[INFO][Time: 16:49:09][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 53: START
+[INFO][Time: 16:49:17][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 25: START
+[DEBUG][Time: 16:49:17][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 56: isEncrpyted: true
+[INFO][Time: 16:49:17][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 57: END
+[INFO][Time: 16:49:17][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 83: START
+[DEBUG][Time: 16:49:17][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 110: askAgain: false, triesCounter: 3
+[INFO][Time: 16:49:17][Class: com.pointwest.pls.ui.LoginPageUI Method: validateUserInput] - Line 111: END
+[DEBUG][Time: 16:49:17][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 77: Username: david.abayon
+[INFO][Time: 16:49:17][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 78: END
+[INFO][Time: 16:49:17][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 117: START
+[INFO][Time: 16:49:17][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 63: START
+[INFO][Time: 16:49:17][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 26: START
+[INFO][Time: 16:49:17][Class: com.pointwest.pls.dao.BaseDao Method: getDbConnection] - Line 19: START
+[INFO][Time: 16:49:18][Class: com.pointwest.pls.dao.BaseDao Method: getDbConnection] - Line 44: END
+[INFO][Time: 16:49:18][Class: com.pointwest.pls.dao.BaseDao Method: closeDbResources] - Line 50: START
+[INFO][Time: 16:49:18][Class: com.pointwest.pls.dao.BaseDao Method: closeDbResources] - Line 76: END
+[DEBUG][Time: 16:49:18][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 72: First Name: David Angelo, Last Name: Abayon
+[INFO][Time: 16:49:18][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 73: END
+[DEBUG][Time: 16:49:18][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 68: hasMatched: true
+[INFO][Time: 16:49:18][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 69: END
+[DEBUG][Time: 16:49:18][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 142: hasMatched: true
+[INFO][Time: 16:49:18][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 143: END
+[DEBUG][Time: 16:49:18][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 61: askAgain: true, triesCounter: 3, isLoggedIn: true
+[INFO][Time: 16:49:18][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 68: START: Home Page
+[INFO][Time: 16:49:18][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 48: START
+[DEBUG][Time: 16:49:22][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 86: homePageChoice: [1]Search Employee, askAgain: false
+[INFO][Time: 16:49:22][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 88: END
+[INFO][Time: 16:49:22][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 96: START: Sub Page
+[INFO][Time: 16:49:22][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 54: START
+[DEBUG][Time: 16:49:23][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 98: searchPageChoice: [3] Search Employee by Project, askAgain: false
+[INFO][Time: 16:49:23][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 100: END
+[INFO][Time: 16:49:23][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 131: START: SearchByEmployeeProjectUI Page
+[INFO][Time: 16:49:23][Class: com.pointwest.pls.ui.SearchByEmployeeProjectUI Method: displayPageContent] - Line 30: START
+[INFO][Time: 16:49:23][Class: com.pointwest.pls.manager.SearchPageManager Method: getProjectChoices] - Line 26: START
+[INFO][Time: 16:49:23][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveProjectChoices] - Line 33: START
+[INFO][Time: 16:49:23][Class: com.pointwest.pls.dao.BaseDao Method: getDbConnection] - Line 19: START
+[INFO][Time: 16:49:23][Class: com.pointwest.pls.dao.BaseDao Method: getDbConnection] - Line 44: END
+[INFO][Time: 16:49:24][Class: com.pointwest.pls.dao.BaseDao Method: closeDbResources] - Line 50: START
+[INFO][Time: 16:49:24][Class: com.pointwest.pls.dao.BaseDao Method: closeDbResources] - Line 76: END
+[DEBUG][Time: 16:49:24][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveProjectChoices] - Line 76: projectChoices list size: 4 records
+[INFO][Time: 16:49:24][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveProjectChoices] - Line 77: END
+[DEBUG][Time: 16:49:24][Class: com.pointwest.pls.manager.SearchPageManager Method: getProjectChoices] - Line 30: projectChoices list size: 4
+[INFO][Time: 16:49:24][Class: com.pointwest.pls.manager.SearchPageManager Method: getProjectChoices] - Line 31: END
+[INFO][Time: 16:49:24][Class: com.pointwest.pls.ui.SearchByEmployeeProjectUI Method: displayPageContent] - Line 48: END
+[INFO][Time: 16:49:24][Class: com.pointwest.pls.ui.SearchByEmployeeProjectUI Method: askUserInput] - Line 54: START
+[INFO][Time: 16:49:26][Class: com.pointwest.pls.ui.SearchPageUI Method: validateEmployeeProjectInput] - Line 217: START
+[INFO][Time: 16:49:26][Class: com.pointwest.pls.manager.SearchPageManager Method: getProjectChoices] - Line 26: START
+[INFO][Time: 16:49:26][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveProjectChoices] - Line 33: START
+[INFO][Time: 16:49:26][Class: com.pointwest.pls.dao.BaseDao Method: getDbConnection] - Line 19: START
+[INFO][Time: 16:49:26][Class: com.pointwest.pls.dao.BaseDao Method: getDbConnection] - Line 44: END
+[INFO][Time: 16:49:26][Class: com.pointwest.pls.dao.BaseDao Method: closeDbResources] - Line 50: START
+[INFO][Time: 16:49:26][Class: com.pointwest.pls.dao.BaseDao Method: closeDbResources] - Line 76: END
+[DEBUG][Time: 16:49:26][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveProjectChoices] - Line 76: projectChoices list size: 4 records
+[INFO][Time: 16:49:26][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveProjectChoices] - Line 77: END
+[DEBUG][Time: 16:49:26][Class: com.pointwest.pls.manager.SearchPageManager Method: getProjectChoices] - Line 30: projectChoices list size: 4
+[INFO][Time: 16:49:26][Class: com.pointwest.pls.manager.SearchPageManager Method: getProjectChoices] - Line 31: END
+[ERROR][Time: 16:49:26][Class: com.pointwest.pls.ui.SearchPageUI Method: validateEmployeeProjectInput] - Line 234: Invalid input!
+[ERROR][Time: 16:49:26][Class: com.pointwest.pls.ui.SearchPageUI Method: validateEmployeeProjectInput] - Line 234: Invalid input!
+[ERROR][Time: 16:49:26][Class: com.pointwest.pls.ui.SearchPageUI Method: validateEmployeeProjectInput] - Line 234: Invalid input!
+[ERROR][Time: 16:49:26][Class: com.pointwest.pls.ui.SearchPageUI Method: validateEmployeeProjectInput] - Line 234: Invalid input!
+[DEBUG][Time: 16:49:26][Class: com.pointwest.pls.ui.SearchPageUI Method: validateEmployeeProjectInput] - Line 243: askAgain: true
+[INFO][Time: 16:49:26][Class: com.pointwest.pls.ui.SearchPageUI Method: validateEmployeeProjectInput] - Line 244: END

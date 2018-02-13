@@ -5,15 +5,18 @@ import java.util.Scanner;
 import org.apache.log4j.Logger;
 
 import com.pointwest.pls.bean.User;
+import com.pointwest.pls.bean.UserInput;
 import com.pointwest.pls.constant.GenericConstants;
 
 public class HomePageUI implements PageUI {
 	Logger logger = Logger.getLogger(HomePageUI.class);
 	Scanner scanner = new Scanner(System.in);
 	User user = null;
+	UserInput userInput = null;
 
-	public HomePageUI(User user) {
+	public HomePageUI(User user, UserInput userInput) {
 		this.user = user;
+		this.userInput = userInput;
 	}
 
 	@Override
@@ -55,19 +58,19 @@ public class HomePageUI implements PageUI {
 			switch (homePageChoice.trim()) {
 			case "1":
 				askAgain = false;
-				user.setHomePageChoice(GenericConstants.SEARCH_EMPLOYEE);
+				userInput.setHomePageChoice(GenericConstants.SEARCH_EMPLOYEE);
 				System.out.format("%88s", "");
 				System.out.format(GenericConstants.SELECTED_OPTION + "\n", homePageChoice.trim());
 				break;
 			case "2":
 				askAgain = false;
-				user.setHomePageChoice(GenericConstants.VIEW_SEAT_PLAN);
+				userInput.setHomePageChoice(GenericConstants.VIEW_SEAT_PLAN);
 				System.out.format("%88s", "");
 				System.out.format(GenericConstants.SELECTED_OPTION + "\n", homePageChoice.trim());
 				break;
 			case "3":
 				askAgain = false;
-				user.setHomePageChoice(GenericConstants.LOGOUT);
+				userInput.setHomePageChoice(GenericConstants.LOGOUT);
 				System.out.format("%88s", "");
 				System.out.format(GenericConstants.SELECTED_OPTION + "\n", homePageChoice.trim());
 				break;
@@ -80,7 +83,7 @@ public class HomePageUI implements PageUI {
 			}
 		} while (askAgain);
 
-		logger.debug("homePageChoice: [" + homePageChoice.trim() + "]" + user.getHomePageChoice() + ", askAgain: "
+		logger.debug("homePageChoice: [" + homePageChoice.trim() + "]" + userInput.getHomePageChoice() + ", askAgain: "
 				+ askAgain);
 		logger.info(GenericConstants.END);
 	}

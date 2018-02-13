@@ -2,15 +2,19 @@ package com.pointwest.pls.ui;
 
 import org.apache.log4j.Logger;
 
+import com.pointwest.pls.bean.Project;
 import com.pointwest.pls.bean.User;
+import com.pointwest.pls.bean.UserInput;
 import com.pointwest.pls.constant.GenericConstants;
+import com.pointwest.pls.util.CustomException;
 
 public class SearchByEmployeeProjectUI extends SearchPageUI {
 	Logger logger = Logger.getLogger(SearchByEmployeeProjectUI.class);
 
-	public SearchByEmployeeProjectUI(User user) {
-		super(user);
+	public SearchByEmployeeProjectUI(User user, UserInput userInput) {
+		super(user, userInput);
 		this.user = user;
+		this.userInput = userInput;
 	}
 
 	@Override
@@ -23,10 +27,25 @@ public class SearchByEmployeeProjectUI extends SearchPageUI {
 	@Override
 	// Display Search Employee by Project content
 	public void displayPageContent() {
-		System.out.format("%98s", "You can now search for employee by Project" + "\n\n");
+		logger.info(GenericConstants.START);
+
+		System.out.format("%105s", "You can now search for employee by Project" + "\n\n");
 		System.out.format("%117s", "Currently logged in:" + "\n");
 		System.out.format("%117s", user.getEmployeeFirstName() + " " + user.getEmployeeLastName() + "\n");
 		System.out.format("%118s", "[" + user.getEmployeeRole() + "]\n\n");
+		System.out.format("%67s", "List of Projects:\n");
+		try {
+			projectChoices = searchPageManager.getProjectChoices();
+			for (Project projectChoice : projectChoices) {
+				System.out.format("%49s", "");
+				System.out.println(projectChoice.getProjectName());
+			}
+			System.out.println();
+		} catch (CustomException e) {
+			System.out.format("%117s", e.getMessage() + "\n");
+		}
+
+		logger.info(GenericConstants.END);
 	}
 
 	@Override
@@ -38,12 +57,12 @@ public class SearchByEmployeeProjectUI extends SearchPageUI {
 		String employeeProject = null;
 
 		do {
-			System.out.format("%62s", GenericConstants.ASK_EMPLOYEE_PROJECT);
+			System.out.format("%73s", GenericConstants.ASK_EMPLOYEE_PROJECT);
 			employeeProject = scanner.nextLine();
-			askAgain = searchPageManager.validateEmployeeProjectInput(employeeProject);
+			askAgain = validateEmployeeProjectInput(employeeProject);
 		} while (askAgain);
 
-		logger.debug("employeeProject: " + user.getSearchByEmployeeProjectInput() + ", askAgain: " + askAgain);
+		logger.debug("employeeProject: " + userInput.getSearchByEmployeeProjectInput() + ", askAgain: " + askAgain);
 		logger.info(GenericConstants.END);
 	}
 }

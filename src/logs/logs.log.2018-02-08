@@ -1,0 +1,1456 @@
+[INFO][Time: 13:39:14][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 25: *********************START
+[INFO][Time: 13:39:14][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 40: START: Login Page
+[INFO][Time: 13:39:16][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 48: START
+[INFO][Time: 13:39:24][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[DEBUG][Time: 13:39:24][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[INFO][Time: 13:39:24][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[INFO][Time: 13:39:24][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[DEBUG][Time: 13:39:24][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: false, triesCounter: 3
+[INFO][Time: 13:39:24][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[DEBUG][Time: 13:39:24][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 72: Username: david.abayon
+[INFO][Time: 13:39:24][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 73: END
+[INFO][Time: 13:39:24][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 78: START
+[INFO][Time: 13:39:24][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 99: START
+[INFO][Time: 13:39:24][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 26: START
+[INFO][Time: 13:39:24][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 13:39:24][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 13:39:24][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 13:39:24][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 13:39:24][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 72: First Name: David Angelo, Last Name: Abayon
+[INFO][Time: 13:39:24][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 73: END
+[DEBUG][Time: 13:39:24][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 104: hasMatched: true
+[INFO][Time: 13:39:24][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 105: END
+[DEBUG][Time: 13:39:24][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 103: hasMatched: true
+[INFO][Time: 13:39:24][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 104: END
+[DEBUG][Time: 13:39:24][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 54: askAgain: true, triesCounter: 3, isLoggedIn: true
+[INFO][Time: 13:39:24][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 61: START: Home Page
+[INFO][Time: 13:39:24][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[DEBUG][Time: 13:39:26][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 83: homePageChoice: [2]View Seat Plan, askAgain: false
+[INFO][Time: 13:39:26][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 85: END
+[INFO][Time: 13:39:26][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 89: START: Sub Page
+[INFO][Time: 13:39:26][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 46: START
+[DEBUG][Time: 13:39:27][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 84: viewPageChoice: [1] View Seat Plan by Loc-Floor, askAgain: false
+[INFO][Time: 13:39:27][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 86: END
+[INFO][Time: 13:39:27][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 136: START: ViewSeatPlanByLocationFloor Page
+[INFO][Time: 13:39:27][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 39: START
+[INFO][Time: 13:40:10][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 26: START
+[DEBUG][Time: 13:40:10][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 48: askAgain: false
+[INFO][Time: 13:40:10][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 49: END
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 55: START
+[DEBUG][Time: 13:40:11][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 79: askAgain: false
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 80: END
+[DEBUG][Time: 13:40:11][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line ?: location: PIC, floorNumber: 2
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line ?: END
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 65: START
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 92: START
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 116: START
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 32: START
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 91: START
+[DEBUG][Time: 13:40:11][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 108: query: SELECT s.seat_id, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant, s.seat_row_number, '-', s.seat_column_number) AS seat_name, (CASE WHEN e.emp_first_name IS NULL THEN 'Vacant' ELSE e.emp_first_name END) as emp_first_name, (CASE WHEN e.emp_last_name IS NULL THEN 'seat' ELSE e.emp_last_name END) as emp_last_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE CONCAT('Local #', s.seat_local_number) END) as seat_local_number FROM seat s LEFT JOIN employee_seat es ON s.seat_id = es.seat_id LEFT JOIN employee e ON es.emp_id = e.emp_id LEFT JOIN employee_project ep ON ep.emp_id = e.emp_id LEFT JOIN project p ON p.proj_alias = ep.proj_alias WHERE s.bldg_id = ? AND s.seat_floor_number = ?GROUP BY s.seat_id ORDER BY s.seat_id
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 109: END
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 115: START
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 148: END
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 13:40:11][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 84: employees: 36 records
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 85: END
+[DEBUG][Time: 13:40:11][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 120: employees list size: 36
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 121: END
+[DEBUG][Time: 13:40:11][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 216: employees list size: 36
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 217: END
+[DEBUG][Time: 13:40:11][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 78: employees list size: 36
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 79: END
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 145: END: ViewSeatPlanByLocationFloor Page
+[DEBUG][Time: 13:40:11][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 164: isGoBack: false, subPageChoiceView Seat Plan by Loc-Floor
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 165: END: Sub Page
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 89: START: Sub Page
+[INFO][Time: 13:40:11][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 46: START
+[DEBUG][Time: 13:40:13][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 84: viewPageChoice: [1] View Seat Plan by Loc-Floor, askAgain: false
+[INFO][Time: 13:40:13][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 86: END
+[INFO][Time: 13:40:13][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 136: START: ViewSeatPlanByLocationFloor Page
+[INFO][Time: 13:40:13][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 39: START
+[INFO][Time: 13:40:21][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 26: START
+[DEBUG][Time: 13:40:21][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 48: askAgain: false
+[INFO][Time: 13:40:21][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 49: END
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 55: START
+[DEBUG][Time: 13:40:22][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 79: askAgain: false
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 80: END
+[DEBUG][Time: 13:40:22][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 58: location: PIC, floorNumber: 12
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 59: END
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 65: START
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 92: START
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 116: START
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 32: START
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 91: START
+[DEBUG][Time: 13:40:22][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 108: query: SELECT s.seat_id, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant, s.seat_row_number, '-', s.seat_column_number) AS seat_name, (CASE WHEN e.emp_first_name IS NULL THEN 'Vacant' ELSE e.emp_first_name END) as emp_first_name, (CASE WHEN e.emp_last_name IS NULL THEN 'seat' ELSE e.emp_last_name END) as emp_last_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE CONCAT('Local #', s.seat_local_number) END) as seat_local_number FROM seat s LEFT JOIN employee_seat es ON s.seat_id = es.seat_id LEFT JOIN employee e ON es.emp_id = e.emp_id LEFT JOIN employee_project ep ON ep.emp_id = e.emp_id LEFT JOIN project p ON p.proj_alias = ep.proj_alias WHERE s.bldg_id = ? AND s.seat_floor_number = ?GROUP BY s.seat_id ORDER BY s.seat_id
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 109: END
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 115: START
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 148: END
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 13:40:22][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 84: employees: 0 records
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 85: END
+[DEBUG][Time: 13:40:22][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 120: employees list size: 0
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 121: END
+[DEBUG][Time: 13:40:22][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 216: employees list size: 0
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 217: END
+[DEBUG][Time: 13:40:22][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 78: employees list size: 0
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 79: END
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 145: END: ViewSeatPlanByLocationFloor Page
+[DEBUG][Time: 13:40:22][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 164: isGoBack: false, subPageChoiceView Seat Plan by Loc-Floor
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 165: END: Sub Page
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 89: START: Sub Page
+[INFO][Time: 13:40:22][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 46: START
+[DEBUG][Time: 13:40:28][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 84: viewPageChoice: [2] View Seat Plan by Quadrant, askAgain: false
+[INFO][Time: 13:40:28][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 86: END
+[INFO][Time: 13:40:28][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 149: START: ViewSeatPlanByQuadrant Page
+[INFO][Time: 13:40:28][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: askUserInput] - Line 39: START
+[INFO][Time: 13:40:55][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 26: START
+[DEBUG][Time: 13:40:55][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 48: askAgain: false
+[INFO][Time: 13:40:55][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 49: END
+[INFO][Time: 13:40:58][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 55: START
+[DEBUG][Time: 13:40:58][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 79: askAgain: false
+[INFO][Time: 13:40:58][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 80: END
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.manager.ViewPageManager Method: validateQuadrantInput] - Line 86: START
+[DEBUG][Time: 13:40:59][Class: com.pointwest.pls.manager.ViewPageManager Method: validateQuadrantInput] - Line 109: askAgain: false
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.manager.ViewPageManager Method: validateQuadrantInput] - Line 110: END
+[DEBUG][Time: 13:40:59][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: askUserInput] - Line ?: location: PIC, floorNumber: 3, quadrant: D
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: askUserInput] - Line ?: END
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: displayList] - Line 69: START
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 92: START
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 116: START
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 32: START
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 91: START
+[DEBUG][Time: 13:40:59][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 108: query: SELECT s.seat_id, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant, s.seat_row_number, '-', s.seat_column_number) AS seat_name, se. emp_first_name, se.emp_last_name, se.seat_local_number FROM seat s LEFT JOIN (SELECT s.seat_id, (CASE WHEN e.emp_first_name IS NULL THEN 'Vacant' ELSE e.emp_first_name END) as emp_first_name, (CASE WHEN e.emp_last_name IS NULL THEN 'seat' ELSE e.emp_last_name END) as emp_last_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE CONCAT('Local #', s.seat_local_number) END) as seat_local_number FROM seat s LEFT JOIN employee_seat es ON s.seat_id = es.seat_id LEFT JOIN employee e ON es.emp_id = e.emp_id LEFT JOIN employee_project ep ON ep.emp_id = e.emp_id LEFT JOIN project p ON p.proj_alias = ep.proj_alias WHERE s.bldg_id = ? AND s.seat_floor_number = ? AND s.seat_quadrant = ?GROUP BY s.seat_id ORDER BY s.seat_id) se ON s.seat_id = se.seat_id WHERE s.bldg_id = ? AND s.seat_floor_number = ?
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 109: END
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 115: START
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 148: END
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 13:40:59][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 84: employees: 36 records
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 85: END
+[DEBUG][Time: 13:40:59][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 120: employees list size: 36
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 121: END
+[DEBUG][Time: 13:40:59][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 216: employees list size: 36
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 217: END
+[DEBUG][Time: 13:40:59][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: displayList] - Line 83: employees list size: 36
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: displayList] - Line 84: END
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 157: END: ViewSeatPlanByQuadrant Page
+[DEBUG][Time: 13:40:59][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 164: isGoBack: false, subPageChoiceView Seat Plan by Quadrant
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 165: END: Sub Page
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 89: START: Sub Page
+[INFO][Time: 13:40:59][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 46: START
+[DEBUG][Time: 13:41:54][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 84: viewPageChoice: [1] View Seat Plan by Loc-Floor, askAgain: false
+[INFO][Time: 13:41:54][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 86: END
+[INFO][Time: 13:41:54][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 136: START: ViewSeatPlanByLocationFloor Page
+[INFO][Time: 13:41:54][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 39: START
+[INFO][Time: 13:44:08][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 26: START
+[ERROR][Time: 13:44:08][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 39: Input is empty!
+[DEBUG][Time: 13:44:08][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 48: askAgain: true
+[INFO][Time: 13:44:08][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 49: END
+[INFO][Time: 13:44:11][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 26: START
+[ERROR][Time: 13:44:11][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 44: Invalid input!
+[DEBUG][Time: 13:44:11][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 48: askAgain: true
+[INFO][Time: 13:44:11][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 49: END
+[INFO][Time: 13:44:12][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 26: START
+[DEBUG][Time: 13:44:12][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 48: askAgain: false
+[INFO][Time: 13:44:12][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 49: END
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 55: START
+[DEBUG][Time: 13:44:14][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 79: askAgain: false
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 80: END
+[DEBUG][Time: 13:44:14][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 58: location: PIC, floorNumber: 2
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 59: END
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 65: START
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 92: START
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 116: START
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 32: START
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 91: START
+[DEBUG][Time: 13:44:14][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 108: query: SELECT s.seat_id, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant, s.seat_row_number, '-', s.seat_column_number) AS seat_name, (CASE WHEN e.emp_first_name IS NULL THEN 'Vacant' ELSE e.emp_first_name END) as emp_first_name, (CASE WHEN e.emp_last_name IS NULL THEN 'seat' ELSE e.emp_last_name END) as emp_last_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE CONCAT('Local #', s.seat_local_number) END) as seat_local_number FROM seat s LEFT JOIN employee_seat es ON s.seat_id = es.seat_id LEFT JOIN employee e ON es.emp_id = e.emp_id LEFT JOIN employee_project ep ON ep.emp_id = e.emp_id LEFT JOIN project p ON p.proj_alias = ep.proj_alias WHERE s.bldg_id = ? AND s.seat_floor_number = ?GROUP BY s.seat_id ORDER BY s.seat_id
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 109: END
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 115: START
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 148: END
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 13:44:14][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 84: employees: 36 records
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 85: END
+[DEBUG][Time: 13:44:14][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 120: employees list size: 36
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 121: END
+[DEBUG][Time: 13:44:14][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 216: employees list size: 36
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 217: END
+[DEBUG][Time: 13:44:14][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 78: employees list size: 36
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 79: END
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 150: END: ViewSeatPlanByLocationFloor Page
+[DEBUG][Time: 13:44:14][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceView Seat Plan by Loc-Floor
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 13:44:14][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 46: START
+[DEBUG][Time: 13:44:17][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 84: viewPageChoice: [3] Go Back, askAgain: false
+[INFO][Time: 13:44:17][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 86: END
+[DEBUG][Time: 13:44:17][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: true, subPageChoiceGo Back
+[INFO][Time: 13:44:17][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[DEBUG][Time: 13:44:17][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 174: isLoggedIn: true
+[INFO][Time: 13:44:17][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 175: END: Home Page
+[INFO][Time: 13:44:17][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 66: START: Home Page
+[INFO][Time: 13:44:17][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[DEBUG][Time: 13:44:18][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 83: homePageChoice: [3]Logout, askAgain: false
+[INFO][Time: 13:44:18][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 85: END
+[DEBUG][Time: 13:44:18][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 174: isLoggedIn: false
+[INFO][Time: 13:44:18][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 175: END: Home Page
+[INFO][Time: 13:44:18][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 110: START
+[DEBUG][Time: 13:44:20][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 133: isTerminate: true
+[INFO][Time: 13:44:20][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 134: END
+[DEBUG][Time: 13:44:20][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 181: isTerminate: true
+[INFO][Time: 13:44:20][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 182: END: Login Page / End Page
+[INFO][Time: 13:44:20][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 189: *********************END
+[INFO][Time: 14:03:49][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 30: *********************START
+[INFO][Time: 14:03:49][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 45: START: Login Page
+[INFO][Time: 14:06:25][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 48: START
+[INFO][Time: 14:06:40][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[DEBUG][Time: 14:06:40][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[INFO][Time: 14:06:40][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[INFO][Time: 14:06:40][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[DEBUG][Time: 14:06:40][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: false, triesCounter: 3
+[INFO][Time: 14:06:40][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[DEBUG][Time: 14:06:40][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 72: Username: david.abayon
+[INFO][Time: 14:06:40][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 73: END
+[INFO][Time: 14:06:40][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 78: START
+[INFO][Time: 14:06:40][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 99: START
+[INFO][Time: 14:06:40][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 26: START
+[INFO][Time: 14:06:40][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:06:40][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:06:40][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:06:40][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:06:40][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 72: First Name: David Angelo, Last Name: Abayon
+[INFO][Time: 14:06:40][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 73: END
+[DEBUG][Time: 14:06:40][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 104: hasMatched: true
+[INFO][Time: 14:06:40][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 105: END
+[DEBUG][Time: 14:06:40][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 103: hasMatched: true
+[INFO][Time: 14:06:40][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 104: END
+[DEBUG][Time: 14:06:40][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 59: askAgain: true, triesCounter: 3, isLoggedIn: true
+[INFO][Time: 14:06:40][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 66: START: Home Page
+[INFO][Time: 14:06:40][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[DEBUG][Time: 14:06:55][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 83: homePageChoice: [1]Search Employee, askAgain: false
+[INFO][Time: 14:06:55][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 85: END
+[INFO][Time: 14:06:55][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:06:55][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 47: START
+[DEBUG][Time: 14:07:17][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 91: searchPageChoice: [1] Search Employee by ID, askAgain: false
+[INFO][Time: 14:07:17][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 93: END
+[INFO][Time: 14:07:17][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 104: START: SearchByEmployeeIdUI Page
+[INFO][Time: 14:07:17][Class: com.pointwest.pls.ui.SearchByEmployeeIdUI Method: askUserInput] - Line 35: START
+[INFO][Time: 14:07:32][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 26: START
+[DEBUG][Time: 14:07:32][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 44: askAgain: false
+[INFO][Time: 14:07:32][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 45: END
+[DEBUG][Time: 14:07:32][Class: com.pointwest.pls.ui.SearchByEmployeeIdUI Method: askUserInput] - Line 46: employeeId: 160, askAgain: false
+[INFO][Time: 14:07:32][Class: com.pointwest.pls.ui.SearchByEmployeeIdUI Method: askUserInput] - Line 47: END
+[INFO][Time: 14:07:32][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 99: START
+[INFO][Time: 14:07:32][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 101: START
+[INFO][Time: 14:07:32][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 31: START
+[INFO][Time: 14:07:32][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:07:32][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:07:32][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 86: START
+[DEBUG][Time: 14:07:32][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 106: query: SELECT e.emp_id, e.emp_first_name, e.emp_last_name, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant,  s.seat_column_number, '-', s.seat_row_number) AS seat_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE s.seat_local_number END) as seat_local_number, e.emp_shift, GROUP_CONCAT(DISTINCT(CASE WHEN p.proj_name = 'Project Never Exist' THEN NULL ELSE p.proj_name END) SEPARATOR ', ') AS proj_name FROM employee e LEFT JOIN employee_seat es ON e.emp_id = es.emp_id LEFT JOIN seat s ON es.seat_id = s.seat_id LEFT JOIN employee_project ep ON e.emp_id = ep.emp_id LEFT JOIN project p ON ep.proj_alias = p.proj_alias WHERE e.emp_id LIKE ? GROUP BY e.emp_id, seat_name ORDER BY e.emp_id
+[INFO][Time: 14:07:32][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 107: END
+[INFO][Time: 14:07:32][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 113: START
+[INFO][Time: 14:07:32][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 142: END
+[INFO][Time: 14:07:32][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:07:32][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:07:32][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 79: employees: 3 records
+[INFO][Time: 14:07:32][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 80: END
+[DEBUG][Time: 14:07:32][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 105: employees list size: 3
+[INFO][Time: 14:07:32][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 106: END
+[DEBUG][Time: 14:07:32][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 154: employees list size: 3
+[INFO][Time: 14:07:32][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 155: END
+[INFO][Time: 14:07:32][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 112: END: SearchByEmployeeIdUI Page
+[DEBUG][Time: 14:07:32][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceSearch Employee by ID
+[INFO][Time: 14:07:32][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 14:07:32][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:07:32][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 47: START
+[DEBUG][Time: 14:07:45][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 91: searchPageChoice: [2] Search Employee by Name, askAgain: false
+[INFO][Time: 14:07:45][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 93: END
+[INFO][Time: 14:07:45][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 116: START: SearchByEmployeeNameUI Page
+[INFO][Time: 14:07:45][Class: com.pointwest.pls.ui.SearchByEmployeeNameUI Method: askUserInput] - Line 35: START
+[INFO][Time: 14:07:52][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 51: START
+[DEBUG][Time: 14:07:52][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 69: askAgain: false
+[INFO][Time: 14:07:52][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 70: END
+[DEBUG][Time: 14:07:52][Class: com.pointwest.pls.ui.SearchByEmployeeNameUI Method: askUserInput] - Line 46: employeeName: raf, askAgain: false
+[INFO][Time: 14:07:52][Class: com.pointwest.pls.ui.SearchByEmployeeNameUI Method: askUserInput] - Line 47: END
+[INFO][Time: 14:07:52][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 99: START
+[INFO][Time: 14:07:52][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 101: START
+[INFO][Time: 14:07:52][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 31: START
+[INFO][Time: 14:07:52][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:07:52][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:07:52][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 86: START
+[DEBUG][Time: 14:07:52][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 106: query: SELECT e.emp_id, e.emp_first_name, e.emp_last_name, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant,  s.seat_column_number, '-', s.seat_row_number) AS seat_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE s.seat_local_number END) as seat_local_number, e.emp_shift, GROUP_CONCAT(DISTINCT(CASE WHEN p.proj_name = 'Project Never Exist' THEN NULL ELSE p.proj_name END) SEPARATOR ', ') AS proj_name FROM employee e LEFT JOIN employee_seat es ON e.emp_id = es.emp_id LEFT JOIN seat s ON es.seat_id = s.seat_id LEFT JOIN employee_project ep ON e.emp_id = ep.emp_id LEFT JOIN project p ON ep.proj_alias = p.proj_alias WHERE CONCAT(e.emp_first_name, ' ', e.emp_last_name) LIKE ? GROUP BY e.emp_id, seat_name ORDER BY e.emp_id
+[INFO][Time: 14:07:52][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 107: END
+[INFO][Time: 14:07:52][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 113: START
+[INFO][Time: 14:07:52][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 142: END
+[INFO][Time: 14:07:52][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:07:52][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:07:52][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 79: employees: 1 records
+[INFO][Time: 14:07:52][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 80: END
+[DEBUG][Time: 14:07:52][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 105: employees list size: 1
+[INFO][Time: 14:07:52][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 106: END
+[DEBUG][Time: 14:07:52][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 154: employees list size: 1
+[INFO][Time: 14:07:52][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 155: END
+[INFO][Time: 14:07:52][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 124: END: SearchByEmployeeNameUI Page
+[DEBUG][Time: 14:07:52][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceSearch Employee by Name
+[INFO][Time: 14:07:52][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 14:07:52][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:07:52][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 47: START
+[DEBUG][Time: 14:08:09][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 91: searchPageChoice: [3] Search Employee by Project, askAgain: false
+[INFO][Time: 14:08:09][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 93: END
+[INFO][Time: 14:08:09][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 128: START: SearchByEmployeeProjectUI Page
+[INFO][Time: 14:08:09][Class: com.pointwest.pls.ui.SearchByEmployeeProjectUI Method: askUserInput] - Line 35: START
+[INFO][Time: 14:08:16][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeProjectInput] - Line 76: START
+[DEBUG][Time: 14:08:16][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeProjectInput] - Line 94: askAgain: false
+[INFO][Time: 14:08:16][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeProjectInput] - Line 95: END
+[DEBUG][Time: 14:08:16][Class: com.pointwest.pls.ui.SearchByEmployeeProjectUI Method: askUserInput] - Line 46: employeeProject: axis, askAgain: false
+[INFO][Time: 14:08:16][Class: com.pointwest.pls.ui.SearchByEmployeeProjectUI Method: askUserInput] - Line 47: END
+[INFO][Time: 14:08:16][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 99: START
+[INFO][Time: 14:08:16][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 101: START
+[INFO][Time: 14:08:16][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 31: START
+[INFO][Time: 14:08:16][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:08:16][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:08:16][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 86: START
+[DEBUG][Time: 14:08:16][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 106: query: SELECT e.emp_id, e.emp_first_name, e.emp_last_name, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant,  s.seat_column_number, '-', s.seat_row_number) AS seat_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE s.seat_local_number END) as seat_local_number, e.emp_shift, GROUP_CONCAT(DISTINCT(CASE WHEN p.proj_name = 'Project Never Exist' THEN NULL ELSE p.proj_name END) SEPARATOR ', ') AS proj_name FROM employee e LEFT JOIN employee_seat es ON e.emp_id = es.emp_id LEFT JOIN seat s ON es.seat_id = s.seat_id LEFT JOIN employee_project ep ON e.emp_id = ep.emp_id LEFT JOIN project p ON ep.proj_alias = p.proj_alias WHERE p.proj_name LIKE ? GROUP BY e.emp_id, seat_name ORDER BY e.emp_id
+[INFO][Time: 14:08:16][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 107: END
+[INFO][Time: 14:08:16][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 113: START
+[INFO][Time: 14:08:16][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 142: END
+[INFO][Time: 14:08:16][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:08:16][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:08:16][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 79: employees: 14 records
+[INFO][Time: 14:08:16][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 80: END
+[DEBUG][Time: 14:08:16][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 105: employees list size: 14
+[INFO][Time: 14:08:16][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 106: END
+[DEBUG][Time: 14:08:16][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 154: employees list size: 14
+[INFO][Time: 14:08:16][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 155: END
+[INFO][Time: 14:08:16][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 137: END: SearchByEmployeeProjectUI Page
+[DEBUG][Time: 14:08:16][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceSearch Employee by Project
+[INFO][Time: 14:08:16][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 14:08:16][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:08:16][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 47: START
+[DEBUG][Time: 14:08:31][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 91: searchPageChoice: [4] Go Back, askAgain: false
+[INFO][Time: 14:08:31][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 93: END
+[DEBUG][Time: 14:08:31][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: true, subPageChoiceGo Back
+[INFO][Time: 14:08:31][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[DEBUG][Time: 14:08:31][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 174: isLoggedIn: true
+[INFO][Time: 14:08:31][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 175: END: Home Page
+[INFO][Time: 14:08:31][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 66: START: Home Page
+[INFO][Time: 14:08:31][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[DEBUG][Time: 14:08:34][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 83: homePageChoice: [2]View Seat Plan, askAgain: false
+[INFO][Time: 14:08:34][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 85: END
+[INFO][Time: 14:08:34][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:08:34][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 46: START
+[DEBUG][Time: 14:08:43][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 84: viewPageChoice: [1] View Seat Plan by Loc-Floor, askAgain: false
+[INFO][Time: 14:08:43][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 86: END
+[INFO][Time: 14:08:43][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 141: START: ViewSeatPlanByLocationFloor Page
+[INFO][Time: 14:08:43][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 39: START
+[INFO][Time: 14:08:58][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 26: START
+[DEBUG][Time: 14:08:58][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 48: askAgain: false
+[INFO][Time: 14:08:58][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 49: END
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 55: START
+[DEBUG][Time: 14:09:01][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 79: askAgain: false
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 80: END
+[DEBUG][Time: 14:09:01][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 58: location: PIC, floorNumber: 3
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 59: END
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 65: START
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 92: START
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 116: START
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 32: START
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 91: START
+[DEBUG][Time: 14:09:01][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 108: query: SELECT s.seat_id, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant, s.seat_row_number, '-', s.seat_column_number) AS seat_name, (CASE WHEN e.emp_first_name IS NULL THEN 'Vacant' ELSE e.emp_first_name END) as emp_first_name, (CASE WHEN e.emp_last_name IS NULL THEN 'seat' ELSE e.emp_last_name END) as emp_last_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE CONCAT('Local #', s.seat_local_number) END) as seat_local_number FROM seat s LEFT JOIN employee_seat es ON s.seat_id = es.seat_id LEFT JOIN employee e ON es.emp_id = e.emp_id LEFT JOIN employee_project ep ON ep.emp_id = e.emp_id LEFT JOIN project p ON p.proj_alias = ep.proj_alias WHERE s.bldg_id = ? AND s.seat_floor_number = ?GROUP BY s.seat_id ORDER BY s.seat_id
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 109: END
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 115: START
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 148: END
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:09:01][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 84: employees: 36 records
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 85: END
+[DEBUG][Time: 14:09:01][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 120: employees list size: 36
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 121: END
+[DEBUG][Time: 14:09:01][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 216: employees list size: 36
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 217: END
+[DEBUG][Time: 14:09:01][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 78: employees list size: 36
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 79: END
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 150: END: ViewSeatPlanByLocationFloor Page
+[DEBUG][Time: 14:09:01][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceView Seat Plan by Loc-Floor
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:09:01][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 46: START
+[DEBUG][Time: 14:09:19][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 84: viewPageChoice: [2] View Seat Plan by Quadrant, askAgain: false
+[INFO][Time: 14:09:19][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 86: END
+[INFO][Time: 14:09:19][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 154: START: ViewSeatPlanByQuadrant Page
+[INFO][Time: 14:09:19][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: askUserInput] - Line 39: START
+[INFO][Time: 14:09:24][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 26: START
+[DEBUG][Time: 14:09:24][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 48: askAgain: false
+[INFO][Time: 14:09:24][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 49: END
+[INFO][Time: 14:09:25][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 55: START
+[DEBUG][Time: 14:09:25][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 79: askAgain: false
+[INFO][Time: 14:09:25][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 80: END
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.manager.ViewPageManager Method: validateQuadrantInput] - Line 86: START
+[DEBUG][Time: 14:09:26][Class: com.pointwest.pls.manager.ViewPageManager Method: validateQuadrantInput] - Line 109: askAgain: false
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.manager.ViewPageManager Method: validateQuadrantInput] - Line 110: END
+[DEBUG][Time: 14:09:26][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: askUserInput] - Line 62: location: PTC, floorNumber: 12, quadrant: A
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: askUserInput] - Line 64: END
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: displayList] - Line 69: START
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 92: START
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 116: START
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 32: START
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 91: START
+[DEBUG][Time: 14:09:26][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 108: query: SELECT s.seat_id, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant, s.seat_row_number, '-', s.seat_column_number) AS seat_name, se. emp_first_name, se.emp_last_name, se.seat_local_number FROM seat s LEFT JOIN (SELECT s.seat_id, (CASE WHEN e.emp_first_name IS NULL THEN 'Vacant' ELSE e.emp_first_name END) as emp_first_name, (CASE WHEN e.emp_last_name IS NULL THEN 'seat' ELSE e.emp_last_name END) as emp_last_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE CONCAT('Local #', s.seat_local_number) END) as seat_local_number FROM seat s LEFT JOIN employee_seat es ON s.seat_id = es.seat_id LEFT JOIN employee e ON es.emp_id = e.emp_id LEFT JOIN employee_project ep ON ep.emp_id = e.emp_id LEFT JOIN project p ON p.proj_alias = ep.proj_alias WHERE s.bldg_id = ? AND s.seat_floor_number = ? AND s.seat_quadrant = ?GROUP BY s.seat_id ORDER BY s.seat_id) se ON s.seat_id = se.seat_id WHERE s.bldg_id = ? AND s.seat_floor_number = ?
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 109: END
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 115: START
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 148: END
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:09:26][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 84: employees: 36 records
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 85: END
+[DEBUG][Time: 14:09:26][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 120: employees list size: 36
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 121: END
+[DEBUG][Time: 14:09:26][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 216: employees list size: 36
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 217: END
+[DEBUG][Time: 14:09:26][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: displayList] - Line 83: employees list size: 36
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: displayList] - Line 84: END
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 162: END: ViewSeatPlanByQuadrant Page
+[DEBUG][Time: 14:09:26][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceView Seat Plan by Quadrant
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:09:26][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 46: START
+[DEBUG][Time: 14:09:45][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 84: viewPageChoice: [3] Go Back, askAgain: false
+[INFO][Time: 14:09:45][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 86: END
+[DEBUG][Time: 14:09:45][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: true, subPageChoiceGo Back
+[INFO][Time: 14:09:45][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[DEBUG][Time: 14:09:45][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 174: isLoggedIn: true
+[INFO][Time: 14:09:45][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 175: END: Home Page
+[INFO][Time: 14:09:45][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 66: START: Home Page
+[INFO][Time: 14:09:45][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[DEBUG][Time: 14:09:55][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 83: homePageChoice: [3]Logout, askAgain: false
+[INFO][Time: 14:09:55][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 85: END
+[DEBUG][Time: 14:09:55][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 174: isLoggedIn: false
+[INFO][Time: 14:09:55][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 175: END: Home Page
+[INFO][Time: 14:09:55][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 110: START
+[DEBUG][Time: 14:10:21][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 133: isTerminate: false
+[INFO][Time: 14:10:21][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 134: END
+[DEBUG][Time: 14:10:21][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 181: isTerminate: false
+[INFO][Time: 14:10:21][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 182: END: Login Page / End Page
+[INFO][Time: 14:10:21][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 45: START: Login Page
+[INFO][Time: 14:10:25][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 48: START
+[INFO][Time: 14:10:32][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[DEBUG][Time: 14:10:32][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[INFO][Time: 14:10:32][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[INFO][Time: 14:10:32][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[ERROR][Time: 14:10:32][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 41: Username/Password is empty!
+[DEBUG][Time: 14:10:32][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: true, triesCounter: 2
+[INFO][Time: 14:10:32][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[INFO][Time: 14:11:13][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[DEBUG][Time: 14:11:13][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[INFO][Time: 14:11:13][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[INFO][Time: 14:11:13][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[ERROR][Time: 14:11:13][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 48: Invalid username/password!
+[DEBUG][Time: 14:11:13][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: true, triesCounter: 1
+[INFO][Time: 14:11:13][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[INFO][Time: 14:11:34][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[DEBUG][Time: 14:11:34][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[INFO][Time: 14:11:34][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[INFO][Time: 14:11:34][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[DEBUG][Time: 14:11:34][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: false, triesCounter: 1
+[INFO][Time: 14:11:34][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[DEBUG][Time: 14:11:34][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 72: Username: a
+[INFO][Time: 14:11:34][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 73: END
+[INFO][Time: 14:11:34][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 78: START
+[INFO][Time: 14:11:34][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 99: START
+[INFO][Time: 14:11:34][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 26: START
+[INFO][Time: 14:11:34][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:11:34][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:11:34][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:11:34][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:11:34][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 72: First Name: null, Last Name: null
+[INFO][Time: 14:11:34][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 73: END
+[DEBUG][Time: 14:11:34][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 104: hasMatched: false
+[INFO][Time: 14:11:34][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 105: END
+[DEBUG][Time: 14:11:34][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 103: hasMatched: false
+[INFO][Time: 14:11:34][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 104: END
+[DEBUG][Time: 14:11:34][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 59: askAgain: true, triesCounter: 0, isLoggedIn: false
+[INFO][Time: 14:11:34][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 48: START
+[DEBUG][Time: 14:11:34][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 72: Username: a
+[INFO][Time: 14:11:34][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 73: END
+[DEBUG][Time: 14:11:34][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 59: askAgain: false, triesCounter: 0, isLoggedIn: false
+[INFO][Time: 14:11:34][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 110: START
+[DEBUG][Time: 14:11:45][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 133: isTerminate: false
+[INFO][Time: 14:11:45][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 134: END
+[DEBUG][Time: 14:11:45][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 181: isTerminate: false
+[INFO][Time: 14:11:45][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 182: END: Login Page / End Page
+[INFO][Time: 14:11:45][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 45: START: Login Page
+[INFO][Time: 14:11:46][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 48: START
+[INFO][Time: 14:12:04][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[DEBUG][Time: 14:12:04][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[INFO][Time: 14:12:04][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[INFO][Time: 14:12:04][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[DEBUG][Time: 14:12:04][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: false, triesCounter: 3
+[INFO][Time: 14:12:04][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[DEBUG][Time: 14:12:04][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 72: Username: david.abayon
+[INFO][Time: 14:12:04][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 73: END
+[INFO][Time: 14:12:04][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 78: START
+[INFO][Time: 14:12:04][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 99: START
+[INFO][Time: 14:12:04][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 26: START
+[INFO][Time: 14:12:04][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:12:04][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:12:04][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:12:04][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:12:04][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 72: First Name: null, Last Name: null
+[INFO][Time: 14:12:04][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 73: END
+[DEBUG][Time: 14:12:04][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 104: hasMatched: false
+[INFO][Time: 14:12:04][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 105: END
+[DEBUG][Time: 14:12:04][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 103: hasMatched: false
+[INFO][Time: 14:12:04][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 104: END
+[DEBUG][Time: 14:12:04][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 59: askAgain: true, triesCounter: 2, isLoggedIn: false
+[INFO][Time: 14:12:04][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 48: START
+[INFO][Time: 14:12:46][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[DEBUG][Time: 14:12:46][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[INFO][Time: 14:12:46][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[INFO][Time: 14:12:46][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[DEBUG][Time: 14:12:46][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: false, triesCounter: 2
+[INFO][Time: 14:12:46][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[DEBUG][Time: 14:12:46][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 72: Username: david.abayon
+[INFO][Time: 14:12:46][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 73: END
+[INFO][Time: 14:12:46][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 78: START
+[INFO][Time: 14:12:46][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 99: START
+[INFO][Time: 14:12:46][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 26: START
+[INFO][Time: 14:12:46][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:12:46][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:12:46][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:12:46][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:12:46][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 72: First Name: David Angelo, Last Name: Abayon
+[INFO][Time: 14:12:46][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 73: END
+[DEBUG][Time: 14:12:46][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 104: hasMatched: true
+[INFO][Time: 14:12:46][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 105: END
+[DEBUG][Time: 14:12:46][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 103: hasMatched: true
+[INFO][Time: 14:12:46][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 104: END
+[DEBUG][Time: 14:12:46][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 59: askAgain: true, triesCounter: 2, isLoggedIn: true
+[INFO][Time: 14:12:46][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 66: START: Home Page
+[INFO][Time: 14:12:46][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[DEBUG][Time: 14:12:57][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 83: homePageChoice: [3]Logout, askAgain: false
+[INFO][Time: 14:12:57][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 85: END
+[DEBUG][Time: 14:12:57][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 174: isLoggedIn: false
+[INFO][Time: 14:12:57][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 175: END: Home Page
+[INFO][Time: 14:12:57][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 110: START
+[DEBUG][Time: 14:12:58][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 133: isTerminate: false
+[INFO][Time: 14:12:58][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 134: END
+[DEBUG][Time: 14:12:58][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 181: isTerminate: false
+[INFO][Time: 14:12:58][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 182: END: Login Page / End Page
+[INFO][Time: 14:12:58][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 45: START: Login Page
+[INFO][Time: 14:12:59][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 48: START
+[INFO][Time: 14:13:33][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[DEBUG][Time: 14:13:33][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[INFO][Time: 14:13:33][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[INFO][Time: 14:13:33][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[DEBUG][Time: 14:13:33][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: false, triesCounter: 3
+[INFO][Time: 14:13:33][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[DEBUG][Time: 14:13:33][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 72: Username: david.Abayon
+[INFO][Time: 14:13:33][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 73: END
+[INFO][Time: 14:13:33][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 78: START
+[INFO][Time: 14:13:33][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 99: START
+[INFO][Time: 14:13:33][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 26: START
+[INFO][Time: 14:13:33][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:13:33][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:13:33][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:13:33][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:13:33][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 72: First Name: David Angelo, Last Name: Abayon
+[INFO][Time: 14:13:33][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 73: END
+[DEBUG][Time: 14:13:33][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 104: hasMatched: true
+[INFO][Time: 14:13:33][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 105: END
+[DEBUG][Time: 14:13:33][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 103: hasMatched: true
+[INFO][Time: 14:13:33][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 104: END
+[DEBUG][Time: 14:13:33][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 59: askAgain: true, triesCounter: 3, isLoggedIn: true
+[INFO][Time: 14:13:33][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 66: START: Home Page
+[INFO][Time: 14:13:33][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[DEBUG][Time: 14:13:40][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 83: homePageChoice: [3]Logout, askAgain: false
+[INFO][Time: 14:13:40][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 85: END
+[DEBUG][Time: 14:13:40][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 174: isLoggedIn: false
+[INFO][Time: 14:13:40][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 175: END: Home Page
+[INFO][Time: 14:13:40][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 110: START
+[DEBUG][Time: 14:13:41][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 133: isTerminate: false
+[INFO][Time: 14:13:41][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 134: END
+[DEBUG][Time: 14:13:41][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 181: isTerminate: false
+[INFO][Time: 14:13:41][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 182: END: Login Page / End Page
+[INFO][Time: 14:13:41][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 45: START: Login Page
+[INFO][Time: 14:13:42][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 48: START
+[INFO][Time: 14:13:49][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[DEBUG][Time: 14:13:49][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[INFO][Time: 14:13:49][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[INFO][Time: 14:13:49][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[DEBUG][Time: 14:13:49][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: false, triesCounter: 3
+[INFO][Time: 14:13:49][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[DEBUG][Time: 14:13:49][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 72: Username: david.abayon
+[INFO][Time: 14:13:49][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 73: END
+[INFO][Time: 14:13:49][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 78: START
+[INFO][Time: 14:13:49][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 99: START
+[INFO][Time: 14:13:49][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 26: START
+[INFO][Time: 14:13:49][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:13:49][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:13:49][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:13:49][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:13:49][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 72: First Name: null, Last Name: null
+[INFO][Time: 14:13:49][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 73: END
+[DEBUG][Time: 14:13:49][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 104: hasMatched: false
+[INFO][Time: 14:13:49][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 105: END
+[DEBUG][Time: 14:13:49][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 103: hasMatched: false
+[INFO][Time: 14:13:49][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 104: END
+[DEBUG][Time: 14:13:49][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 59: askAgain: true, triesCounter: 2, isLoggedIn: false
+[INFO][Time: 14:13:49][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 48: START
+[INFO][Time: 14:14:09][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[DEBUG][Time: 14:14:09][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[INFO][Time: 14:14:09][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[INFO][Time: 14:14:09][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[DEBUG][Time: 14:14:09][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: false, triesCounter: 2
+[INFO][Time: 14:14:09][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[DEBUG][Time: 14:14:09][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 72: Username: david.abayon
+[INFO][Time: 14:14:09][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 73: END
+[INFO][Time: 14:14:09][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 78: START
+[INFO][Time: 14:14:09][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 99: START
+[INFO][Time: 14:14:09][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 26: START
+[INFO][Time: 14:14:09][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:14:09][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:14:09][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:14:09][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:14:09][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 72: First Name: David Angelo, Last Name: Abayon
+[INFO][Time: 14:14:09][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 73: END
+[DEBUG][Time: 14:14:09][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 104: hasMatched: true
+[INFO][Time: 14:14:09][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 105: END
+[DEBUG][Time: 14:14:09][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 103: hasMatched: true
+[INFO][Time: 14:14:09][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 104: END
+[DEBUG][Time: 14:14:09][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 59: askAgain: true, triesCounter: 2, isLoggedIn: true
+[INFO][Time: 14:14:09][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 66: START: Home Page
+[INFO][Time: 14:14:09][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[DEBUG][Time: 14:14:27][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 83: homePageChoice: [1]Search Employee, askAgain: false
+[INFO][Time: 14:14:27][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 85: END
+[INFO][Time: 14:14:27][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:14:27][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 47: START
+[DEBUG][Time: 14:14:30][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 91: searchPageChoice: [4] Go Back, askAgain: false
+[INFO][Time: 14:14:30][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 93: END
+[DEBUG][Time: 14:14:30][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: true, subPageChoiceGo Back
+[INFO][Time: 14:14:30][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[DEBUG][Time: 14:14:30][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 174: isLoggedIn: true
+[INFO][Time: 14:14:30][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 175: END: Home Page
+[INFO][Time: 14:14:30][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 66: START: Home Page
+[INFO][Time: 14:14:30][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[DEBUG][Time: 14:14:34][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 83: homePageChoice: [1]Search Employee, askAgain: false
+[INFO][Time: 14:14:34][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 85: END
+[INFO][Time: 14:14:34][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:14:34][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 47: START
+[DEBUG][Time: 14:14:41][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 91: searchPageChoice: [1] Search Employee by ID, askAgain: false
+[INFO][Time: 14:14:41][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 93: END
+[INFO][Time: 14:14:41][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 104: START: SearchByEmployeeIdUI Page
+[INFO][Time: 14:14:41][Class: com.pointwest.pls.ui.SearchByEmployeeIdUI Method: askUserInput] - Line 35: START
+[INFO][Time: 14:14:44][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 26: START
+[ERROR][Time: 14:14:44][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 36: Input is empty!
+[DEBUG][Time: 14:14:44][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 44: askAgain: true
+[INFO][Time: 14:14:44][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 45: END
+[INFO][Time: 14:14:49][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 26: START
+[ERROR][Time: 14:14:49][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 40: Invalid input!
+[DEBUG][Time: 14:14:49][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 44: askAgain: true
+[INFO][Time: 14:14:49][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 45: END
+[INFO][Time: 14:14:52][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 26: START
+[ERROR][Time: 14:14:52][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 40: Invalid input!
+[DEBUG][Time: 14:14:52][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 44: askAgain: true
+[INFO][Time: 14:14:52][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 45: END
+[INFO][Time: 14:14:55][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 26: START
+[DEBUG][Time: 14:14:55][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 44: askAgain: false
+[INFO][Time: 14:14:55][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 45: END
+[DEBUG][Time: 14:14:55][Class: com.pointwest.pls.ui.SearchByEmployeeIdUI Method: askUserInput] - Line 46: employeeId: 1, askAgain: false
+[INFO][Time: 14:14:55][Class: com.pointwest.pls.ui.SearchByEmployeeIdUI Method: askUserInput] - Line 47: END
+[INFO][Time: 14:14:55][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 99: START
+[INFO][Time: 14:14:55][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 101: START
+[INFO][Time: 14:14:55][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 31: START
+[INFO][Time: 14:14:55][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:14:55][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:14:55][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 86: START
+[DEBUG][Time: 14:14:55][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 106: query: SELECT e.emp_id, e.emp_first_name, e.emp_last_name, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant,  s.seat_column_number, '-', s.seat_row_number) AS seat_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE s.seat_local_number END) as seat_local_number, e.emp_shift, GROUP_CONCAT(DISTINCT(CASE WHEN p.proj_name = 'Project Never Exist' THEN NULL ELSE p.proj_name END) SEPARATOR ', ') AS proj_name FROM employee e LEFT JOIN employee_seat es ON e.emp_id = es.emp_id LEFT JOIN seat s ON es.seat_id = s.seat_id LEFT JOIN employee_project ep ON e.emp_id = ep.emp_id LEFT JOIN project p ON ep.proj_alias = p.proj_alias WHERE e.emp_id LIKE ? GROUP BY e.emp_id, seat_name ORDER BY e.emp_id
+[INFO][Time: 14:14:55][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 107: END
+[INFO][Time: 14:14:55][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 113: START
+[INFO][Time: 14:14:55][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 142: END
+[INFO][Time: 14:14:55][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:14:55][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:14:55][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 79: employees: 47 records
+[INFO][Time: 14:14:55][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 80: END
+[DEBUG][Time: 14:14:55][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 105: employees list size: 47
+[INFO][Time: 14:14:55][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 106: END
+[DEBUG][Time: 14:14:55][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 154: employees list size: 47
+[INFO][Time: 14:14:55][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 155: END
+[INFO][Time: 14:14:55][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 112: END: SearchByEmployeeIdUI Page
+[DEBUG][Time: 14:14:55][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceSearch Employee by ID
+[INFO][Time: 14:14:55][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 14:14:55][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:14:55][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 47: START
+[DEBUG][Time: 14:15:04][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 91: searchPageChoice: [2] Search Employee by Name, askAgain: false
+[INFO][Time: 14:15:04][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 93: END
+[INFO][Time: 14:15:04][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 116: START: SearchByEmployeeNameUI Page
+[INFO][Time: 14:15:04][Class: com.pointwest.pls.ui.SearchByEmployeeNameUI Method: askUserInput] - Line 35: START
+[INFO][Time: 14:15:26][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 51: START
+[DEBUG][Time: 14:15:26][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 69: askAgain: false
+[INFO][Time: 14:15:26][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 70: END
+[DEBUG][Time: 14:15:26][Class: com.pointwest.pls.ui.SearchByEmployeeNameUI Method: askUserInput] - Line 46: employeeName: David Angelo Abayon, askAgain: false
+[INFO][Time: 14:15:26][Class: com.pointwest.pls.ui.SearchByEmployeeNameUI Method: askUserInput] - Line 47: END
+[INFO][Time: 14:15:26][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 99: START
+[INFO][Time: 14:15:26][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 101: START
+[INFO][Time: 14:15:26][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 31: START
+[INFO][Time: 14:15:26][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:15:26][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:15:26][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 86: START
+[DEBUG][Time: 14:15:26][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 106: query: SELECT e.emp_id, e.emp_first_name, e.emp_last_name, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant,  s.seat_column_number, '-', s.seat_row_number) AS seat_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE s.seat_local_number END) as seat_local_number, e.emp_shift, GROUP_CONCAT(DISTINCT(CASE WHEN p.proj_name = 'Project Never Exist' THEN NULL ELSE p.proj_name END) SEPARATOR ', ') AS proj_name FROM employee e LEFT JOIN employee_seat es ON e.emp_id = es.emp_id LEFT JOIN seat s ON es.seat_id = s.seat_id LEFT JOIN employee_project ep ON e.emp_id = ep.emp_id LEFT JOIN project p ON ep.proj_alias = p.proj_alias WHERE CONCAT(e.emp_first_name, ' ', e.emp_last_name) LIKE ? GROUP BY e.emp_id, seat_name ORDER BY e.emp_id
+[INFO][Time: 14:15:26][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 107: END
+[INFO][Time: 14:15:26][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 113: START
+[INFO][Time: 14:15:26][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 142: END
+[INFO][Time: 14:15:26][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:15:26][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:15:26][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 79: employees: 1 records
+[INFO][Time: 14:15:26][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 80: END
+[DEBUG][Time: 14:15:26][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 105: employees list size: 1
+[INFO][Time: 14:15:26][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 106: END
+[DEBUG][Time: 14:15:26][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 154: employees list size: 1
+[INFO][Time: 14:15:26][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 155: END
+[INFO][Time: 14:15:26][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 124: END: SearchByEmployeeNameUI Page
+[DEBUG][Time: 14:15:26][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceSearch Employee by Name
+[INFO][Time: 14:15:26][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 14:15:26][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:15:26][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 47: START
+[DEBUG][Time: 14:15:40][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 91: searchPageChoice: [2] Search Employee by Name, askAgain: false
+[INFO][Time: 14:15:40][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 93: END
+[INFO][Time: 14:15:40][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 116: START: SearchByEmployeeNameUI Page
+[INFO][Time: 14:15:40][Class: com.pointwest.pls.ui.SearchByEmployeeNameUI Method: askUserInput] - Line 35: START
+[INFO][Time: 14:15:42][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 51: START
+[ERROR][Time: 14:15:42][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 65: Invalid input!
+[DEBUG][Time: 14:15:42][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 69: askAgain: true
+[INFO][Time: 14:15:42][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 70: END
+[INFO][Time: 14:15:48][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 51: START
+[ERROR][Time: 14:15:48][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 65: Invalid input!
+[DEBUG][Time: 14:15:48][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 69: askAgain: true
+[INFO][Time: 14:15:48][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 70: END
+[INFO][Time: 14:15:54][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 51: START
+[ERROR][Time: 14:15:54][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 65: Invalid input!
+[DEBUG][Time: 14:15:54][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 69: askAgain: true
+[INFO][Time: 14:15:54][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 70: END
+[INFO][Time: 14:16:12][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 51: START
+[ERROR][Time: 14:16:12][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 65: Invalid input!
+[DEBUG][Time: 14:16:12][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 69: askAgain: true
+[INFO][Time: 14:16:12][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 70: END
+[INFO][Time: 14:16:28][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 51: START
+[DEBUG][Time: 14:16:28][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 69: askAgain: false
+[INFO][Time: 14:16:28][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 70: END
+[DEBUG][Time: 14:16:28][Class: com.pointwest.pls.ui.SearchByEmployeeNameUI Method: askUserInput] - Line 46: employeeName: david, askAgain: false
+[INFO][Time: 14:16:28][Class: com.pointwest.pls.ui.SearchByEmployeeNameUI Method: askUserInput] - Line 47: END
+[INFO][Time: 14:16:28][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 99: START
+[INFO][Time: 14:16:28][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 101: START
+[INFO][Time: 14:16:28][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 31: START
+[INFO][Time: 14:16:28][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:16:28][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:16:28][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 86: START
+[DEBUG][Time: 14:16:28][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 106: query: SELECT e.emp_id, e.emp_first_name, e.emp_last_name, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant,  s.seat_column_number, '-', s.seat_row_number) AS seat_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE s.seat_local_number END) as seat_local_number, e.emp_shift, GROUP_CONCAT(DISTINCT(CASE WHEN p.proj_name = 'Project Never Exist' THEN NULL ELSE p.proj_name END) SEPARATOR ', ') AS proj_name FROM employee e LEFT JOIN employee_seat es ON e.emp_id = es.emp_id LEFT JOIN seat s ON es.seat_id = s.seat_id LEFT JOIN employee_project ep ON e.emp_id = ep.emp_id LEFT JOIN project p ON ep.proj_alias = p.proj_alias WHERE CONCAT(e.emp_first_name, ' ', e.emp_last_name) LIKE ? GROUP BY e.emp_id, seat_name ORDER BY e.emp_id
+[INFO][Time: 14:16:28][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 107: END
+[INFO][Time: 14:16:28][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 113: START
+[INFO][Time: 14:16:28][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 142: END
+[INFO][Time: 14:16:28][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:16:28][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:16:28][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 79: employees: 1 records
+[INFO][Time: 14:16:28][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 80: END
+[DEBUG][Time: 14:16:28][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 105: employees list size: 1
+[INFO][Time: 14:16:28][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 106: END
+[DEBUG][Time: 14:16:28][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 154: employees list size: 1
+[INFO][Time: 14:16:28][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 155: END
+[INFO][Time: 14:16:28][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 124: END: SearchByEmployeeNameUI Page
+[DEBUG][Time: 14:16:28][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceSearch Employee by Name
+[INFO][Time: 14:16:28][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 14:16:28][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:16:28][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 47: START
+[DEBUG][Time: 14:16:31][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 91: searchPageChoice: [2] Search Employee by Name, askAgain: false
+[INFO][Time: 14:16:31][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 93: END
+[INFO][Time: 14:16:31][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 116: START: SearchByEmployeeNameUI Page
+[INFO][Time: 14:16:31][Class: com.pointwest.pls.ui.SearchByEmployeeNameUI Method: askUserInput] - Line 35: START
+[INFO][Time: 14:16:34][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 51: START
+[DEBUG][Time: 14:16:34][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 69: askAgain: false
+[INFO][Time: 14:16:34][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 70: END
+[DEBUG][Time: 14:16:34][Class: com.pointwest.pls.ui.SearchByEmployeeNameUI Method: askUserInput] - Line 46: employeeName: david, askAgain: false
+[INFO][Time: 14:16:34][Class: com.pointwest.pls.ui.SearchByEmployeeNameUI Method: askUserInput] - Line 47: END
+[INFO][Time: 14:16:34][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 99: START
+[INFO][Time: 14:16:34][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 101: START
+[INFO][Time: 14:16:34][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 31: START
+[INFO][Time: 14:16:34][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:16:34][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:16:34][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 86: START
+[DEBUG][Time: 14:16:34][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 106: query: SELECT e.emp_id, e.emp_first_name, e.emp_last_name, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant,  s.seat_column_number, '-', s.seat_row_number) AS seat_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE s.seat_local_number END) as seat_local_number, e.emp_shift, GROUP_CONCAT(DISTINCT(CASE WHEN p.proj_name = 'Project Never Exist' THEN NULL ELSE p.proj_name END) SEPARATOR ', ') AS proj_name FROM employee e LEFT JOIN employee_seat es ON e.emp_id = es.emp_id LEFT JOIN seat s ON es.seat_id = s.seat_id LEFT JOIN employee_project ep ON e.emp_id = ep.emp_id LEFT JOIN project p ON ep.proj_alias = p.proj_alias WHERE CONCAT(e.emp_first_name, ' ', e.emp_last_name) LIKE ? GROUP BY e.emp_id, seat_name ORDER BY e.emp_id
+[INFO][Time: 14:16:34][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 107: END
+[INFO][Time: 14:16:34][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 113: START
+[INFO][Time: 14:16:34][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 142: END
+[INFO][Time: 14:16:34][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:16:34][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:16:34][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 79: employees: 1 records
+[INFO][Time: 14:16:34][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 80: END
+[DEBUG][Time: 14:16:34][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 105: employees list size: 1
+[INFO][Time: 14:16:34][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 106: END
+[DEBUG][Time: 14:16:34][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 154: employees list size: 1
+[INFO][Time: 14:16:34][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 155: END
+[INFO][Time: 14:16:34][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 124: END: SearchByEmployeeNameUI Page
+[DEBUG][Time: 14:16:34][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceSearch Employee by Name
+[INFO][Time: 14:16:34][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 14:16:34][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:16:34][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 47: START
+[DEBUG][Time: 14:16:38][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 91: searchPageChoice: [2] Search Employee by Name, askAgain: false
+[INFO][Time: 14:16:38][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 93: END
+[INFO][Time: 14:16:38][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 116: START: SearchByEmployeeNameUI Page
+[INFO][Time: 14:16:38][Class: com.pointwest.pls.ui.SearchByEmployeeNameUI Method: askUserInput] - Line 35: START
+[INFO][Time: 14:16:43][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 51: START
+[DEBUG][Time: 14:16:43][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 69: askAgain: false
+[INFO][Time: 14:16:43][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 70: END
+[DEBUG][Time: 14:16:43][Class: com.pointwest.pls.ui.SearchByEmployeeNameUI Method: askUserInput] - Line 46: employeeName: david  angelo, askAgain: false
+[INFO][Time: 14:16:43][Class: com.pointwest.pls.ui.SearchByEmployeeNameUI Method: askUserInput] - Line 47: END
+[INFO][Time: 14:16:43][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 99: START
+[INFO][Time: 14:16:43][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 101: START
+[INFO][Time: 14:16:43][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 31: START
+[INFO][Time: 14:16:43][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:16:43][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:16:43][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 86: START
+[DEBUG][Time: 14:16:43][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 106: query: SELECT e.emp_id, e.emp_first_name, e.emp_last_name, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant,  s.seat_column_number, '-', s.seat_row_number) AS seat_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE s.seat_local_number END) as seat_local_number, e.emp_shift, GROUP_CONCAT(DISTINCT(CASE WHEN p.proj_name = 'Project Never Exist' THEN NULL ELSE p.proj_name END) SEPARATOR ', ') AS proj_name FROM employee e LEFT JOIN employee_seat es ON e.emp_id = es.emp_id LEFT JOIN seat s ON es.seat_id = s.seat_id LEFT JOIN employee_project ep ON e.emp_id = ep.emp_id LEFT JOIN project p ON ep.proj_alias = p.proj_alias WHERE CONCAT(e.emp_first_name, ' ', e.emp_last_name) LIKE ? GROUP BY e.emp_id, seat_name ORDER BY e.emp_id
+[INFO][Time: 14:16:43][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 107: END
+[INFO][Time: 14:16:43][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 113: START
+[INFO][Time: 14:16:43][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 142: END
+[INFO][Time: 14:16:43][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:16:43][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:16:43][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 79: employees: 0 records
+[INFO][Time: 14:16:43][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 80: END
+[DEBUG][Time: 14:16:43][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 105: employees list size: 0
+[INFO][Time: 14:16:43][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 106: END
+[DEBUG][Time: 14:16:43][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 154: employees list size: 0
+[INFO][Time: 14:16:43][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 155: END
+[INFO][Time: 14:16:43][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 124: END: SearchByEmployeeNameUI Page
+[DEBUG][Time: 14:16:43][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceSearch Employee by Name
+[INFO][Time: 14:16:43][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 14:16:43][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:16:43][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 47: START
+[DEBUG][Time: 14:16:57][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 91: searchPageChoice: [3] Search Employee by Project, askAgain: false
+[INFO][Time: 14:16:57][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 93: END
+[INFO][Time: 14:16:57][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 128: START: SearchByEmployeeProjectUI Page
+[INFO][Time: 14:16:57][Class: com.pointwest.pls.ui.SearchByEmployeeProjectUI Method: askUserInput] - Line 35: START
+[INFO][Time: 14:17:14][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeProjectInput] - Line 76: START
+[DEBUG][Time: 14:17:14][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeProjectInput] - Line 94: askAgain: false
+[INFO][Time: 14:17:14][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeProjectInput] - Line 95: END
+[DEBUG][Time: 14:17:14][Class: com.pointwest.pls.ui.SearchByEmployeeProjectUI Method: askUserInput] - Line 46: employeeProject: axis, askAgain: false
+[INFO][Time: 14:17:14][Class: com.pointwest.pls.ui.SearchByEmployeeProjectUI Method: askUserInput] - Line 47: END
+[INFO][Time: 14:17:14][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 99: START
+[INFO][Time: 14:17:14][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 101: START
+[INFO][Time: 14:17:14][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 31: START
+[INFO][Time: 14:17:14][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:17:14][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:17:14][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 86: START
+[DEBUG][Time: 14:17:14][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 106: query: SELECT e.emp_id, e.emp_first_name, e.emp_last_name, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant,  s.seat_column_number, '-', s.seat_row_number) AS seat_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE s.seat_local_number END) as seat_local_number, e.emp_shift, GROUP_CONCAT(DISTINCT(CASE WHEN p.proj_name = 'Project Never Exist' THEN NULL ELSE p.proj_name END) SEPARATOR ', ') AS proj_name FROM employee e LEFT JOIN employee_seat es ON e.emp_id = es.emp_id LEFT JOIN seat s ON es.seat_id = s.seat_id LEFT JOIN employee_project ep ON e.emp_id = ep.emp_id LEFT JOIN project p ON ep.proj_alias = p.proj_alias WHERE p.proj_name LIKE ? GROUP BY e.emp_id, seat_name ORDER BY e.emp_id
+[INFO][Time: 14:17:14][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 107: END
+[INFO][Time: 14:17:14][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 113: START
+[INFO][Time: 14:17:14][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 142: END
+[INFO][Time: 14:17:14][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:17:14][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:17:14][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 79: employees: 14 records
+[INFO][Time: 14:17:14][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 80: END
+[DEBUG][Time: 14:17:14][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 105: employees list size: 14
+[INFO][Time: 14:17:14][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 106: END
+[DEBUG][Time: 14:17:14][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 154: employees list size: 14
+[INFO][Time: 14:17:14][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 155: END
+[INFO][Time: 14:17:14][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 137: END: SearchByEmployeeProjectUI Page
+[DEBUG][Time: 14:17:14][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceSearch Employee by Project
+[INFO][Time: 14:17:14][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 14:17:14][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:17:14][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 47: START
+[DEBUG][Time: 14:17:15][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 91: searchPageChoice: [2] Search Employee by Name, askAgain: false
+[INFO][Time: 14:17:15][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 93: END
+[INFO][Time: 14:17:15][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 116: START: SearchByEmployeeNameUI Page
+[INFO][Time: 14:17:15][Class: com.pointwest.pls.ui.SearchByEmployeeNameUI Method: askUserInput] - Line 35: START
+[INFO][Time: 14:17:17][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 51: START
+[DEBUG][Time: 14:17:17][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 69: askAgain: false
+[INFO][Time: 14:17:17][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeNameInput] - Line 70: END
+[DEBUG][Time: 14:17:17][Class: com.pointwest.pls.ui.SearchByEmployeeNameUI Method: askUserInput] - Line 46: employeeName: rejie, askAgain: false
+[INFO][Time: 14:17:17][Class: com.pointwest.pls.ui.SearchByEmployeeNameUI Method: askUserInput] - Line 47: END
+[INFO][Time: 14:17:17][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 99: START
+[INFO][Time: 14:17:17][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 101: START
+[INFO][Time: 14:17:17][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 31: START
+[INFO][Time: 14:17:17][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:17:17][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:17:17][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 86: START
+[DEBUG][Time: 14:17:17][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 106: query: SELECT e.emp_id, e.emp_first_name, e.emp_last_name, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant,  s.seat_column_number, '-', s.seat_row_number) AS seat_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE s.seat_local_number END) as seat_local_number, e.emp_shift, GROUP_CONCAT(DISTINCT(CASE WHEN p.proj_name = 'Project Never Exist' THEN NULL ELSE p.proj_name END) SEPARATOR ', ') AS proj_name FROM employee e LEFT JOIN employee_seat es ON e.emp_id = es.emp_id LEFT JOIN seat s ON es.seat_id = s.seat_id LEFT JOIN employee_project ep ON e.emp_id = ep.emp_id LEFT JOIN project p ON ep.proj_alias = p.proj_alias WHERE CONCAT(e.emp_first_name, ' ', e.emp_last_name) LIKE ? GROUP BY e.emp_id, seat_name ORDER BY e.emp_id
+[INFO][Time: 14:17:17][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 107: END
+[INFO][Time: 14:17:17][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 113: START
+[INFO][Time: 14:17:17][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 142: END
+[INFO][Time: 14:17:17][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:17:17][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:17:17][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 79: employees: 1 records
+[INFO][Time: 14:17:17][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 80: END
+[DEBUG][Time: 14:17:17][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 105: employees list size: 1
+[INFO][Time: 14:17:17][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 106: END
+[DEBUG][Time: 14:17:17][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 154: employees list size: 1
+[INFO][Time: 14:17:17][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 155: END
+[INFO][Time: 14:17:17][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 124: END: SearchByEmployeeNameUI Page
+[DEBUG][Time: 14:17:17][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceSearch Employee by Name
+[INFO][Time: 14:17:17][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 14:17:17][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:17:17][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 47: START
+[DEBUG][Time: 14:17:26][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 91: searchPageChoice: [3] Search Employee by Project, askAgain: false
+[INFO][Time: 14:17:26][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 93: END
+[INFO][Time: 14:17:26][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 128: START: SearchByEmployeeProjectUI Page
+[INFO][Time: 14:17:26][Class: com.pointwest.pls.ui.SearchByEmployeeProjectUI Method: askUserInput] - Line 35: START
+[INFO][Time: 14:17:31][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeProjectInput] - Line 76: START
+[DEBUG][Time: 14:17:31][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeProjectInput] - Line 94: askAgain: false
+[INFO][Time: 14:17:31][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeProjectInput] - Line 95: END
+[DEBUG][Time: 14:17:31][Class: com.pointwest.pls.ui.SearchByEmployeeProjectUI Method: askUserInput] - Line 46: employeeProject: No Current Project, askAgain: false
+[INFO][Time: 14:17:31][Class: com.pointwest.pls.ui.SearchByEmployeeProjectUI Method: askUserInput] - Line 47: END
+[INFO][Time: 14:17:31][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 99: START
+[INFO][Time: 14:17:31][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 101: START
+[INFO][Time: 14:17:31][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 31: START
+[INFO][Time: 14:17:31][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:17:31][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:17:31][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 86: START
+[DEBUG][Time: 14:17:31][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 106: query: SELECT e.emp_id, e.emp_first_name, e.emp_last_name, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant,  s.seat_column_number, '-', s.seat_row_number) AS seat_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE s.seat_local_number END) as seat_local_number, e.emp_shift, GROUP_CONCAT(DISTINCT(CASE WHEN p.proj_name = 'Project Never Exist' THEN NULL ELSE p.proj_name END) SEPARATOR ', ') AS proj_name FROM employee e LEFT JOIN employee_seat es ON e.emp_id = es.emp_id LEFT JOIN seat s ON es.seat_id = s.seat_id LEFT JOIN employee_project ep ON e.emp_id = ep.emp_id LEFT JOIN project p ON ep.proj_alias = p.proj_alias WHERE p.proj_name LIKE ? GROUP BY e.emp_id, seat_name ORDER BY e.emp_id
+[INFO][Time: 14:17:31][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 107: END
+[INFO][Time: 14:17:31][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 113: START
+[INFO][Time: 14:17:31][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 142: END
+[INFO][Time: 14:17:31][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:17:31][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:17:31][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 79: employees: 0 records
+[INFO][Time: 14:17:31][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 80: END
+[DEBUG][Time: 14:17:31][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 105: employees list size: 0
+[INFO][Time: 14:17:31][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 106: END
+[DEBUG][Time: 14:17:31][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 154: employees list size: 0
+[INFO][Time: 14:17:31][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 155: END
+[INFO][Time: 14:17:31][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 137: END: SearchByEmployeeProjectUI Page
+[DEBUG][Time: 14:17:31][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceSearch Employee by Project
+[INFO][Time: 14:17:31][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 14:17:31][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:17:31][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 47: START
+[DEBUG][Time: 14:17:38][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 91: searchPageChoice: [3] Search Employee by Project, askAgain: false
+[INFO][Time: 14:17:38][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 93: END
+[INFO][Time: 14:17:38][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 128: START: SearchByEmployeeProjectUI Page
+[INFO][Time: 14:17:38][Class: com.pointwest.pls.ui.SearchByEmployeeProjectUI Method: askUserInput] - Line 35: START
+[INFO][Time: 14:17:42][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeProjectInput] - Line 76: START
+[DEBUG][Time: 14:17:42][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeProjectInput] - Line 94: askAgain: false
+[INFO][Time: 14:17:42][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeProjectInput] - Line 95: END
+[DEBUG][Time: 14:17:42][Class: com.pointwest.pls.ui.SearchByEmployeeProjectUI Method: askUserInput] - Line 46: employeeProject: b, askAgain: false
+[INFO][Time: 14:17:42][Class: com.pointwest.pls.ui.SearchByEmployeeProjectUI Method: askUserInput] - Line 47: END
+[INFO][Time: 14:17:42][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 99: START
+[INFO][Time: 14:17:42][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 101: START
+[INFO][Time: 14:17:42][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 31: START
+[INFO][Time: 14:17:42][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:17:42][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:17:42][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 86: START
+[DEBUG][Time: 14:17:42][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 106: query: SELECT e.emp_id, e.emp_first_name, e.emp_last_name, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant,  s.seat_column_number, '-', s.seat_row_number) AS seat_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE s.seat_local_number END) as seat_local_number, e.emp_shift, GROUP_CONCAT(DISTINCT(CASE WHEN p.proj_name = 'Project Never Exist' THEN NULL ELSE p.proj_name END) SEPARATOR ', ') AS proj_name FROM employee e LEFT JOIN employee_seat es ON e.emp_id = es.emp_id LEFT JOIN seat s ON es.seat_id = s.seat_id LEFT JOIN employee_project ep ON e.emp_id = ep.emp_id LEFT JOIN project p ON ep.proj_alias = p.proj_alias WHERE p.proj_name LIKE ? GROUP BY e.emp_id, seat_name ORDER BY e.emp_id
+[INFO][Time: 14:17:42][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 107: END
+[INFO][Time: 14:17:42][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 113: START
+[INFO][Time: 14:17:42][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 142: END
+[INFO][Time: 14:17:42][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:17:42][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:17:42][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 79: employees: 0 records
+[INFO][Time: 14:17:42][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 80: END
+[DEBUG][Time: 14:17:42][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 105: employees list size: 0
+[INFO][Time: 14:17:42][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 106: END
+[DEBUG][Time: 14:17:42][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 154: employees list size: 0
+[INFO][Time: 14:17:42][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 155: END
+[INFO][Time: 14:17:42][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 137: END: SearchByEmployeeProjectUI Page
+[DEBUG][Time: 14:17:42][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceSearch Employee by Project
+[INFO][Time: 14:17:42][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 14:17:42][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:17:42][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 47: START
+[DEBUG][Time: 14:17:50][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 91: searchPageChoice: [3] Search Employee by Project, askAgain: false
+[INFO][Time: 14:17:50][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 93: END
+[INFO][Time: 14:17:50][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 128: START: SearchByEmployeeProjectUI Page
+[INFO][Time: 14:17:50][Class: com.pointwest.pls.ui.SearchByEmployeeProjectUI Method: askUserInput] - Line 35: START
+[INFO][Time: 14:17:51][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeProjectInput] - Line 76: START
+[DEBUG][Time: 14:17:51][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeProjectInput] - Line 94: askAgain: false
+[INFO][Time: 14:17:51][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeProjectInput] - Line 95: END
+[DEBUG][Time: 14:17:51][Class: com.pointwest.pls.ui.SearchByEmployeeProjectUI Method: askUserInput] - Line 46: employeeProject: e, askAgain: false
+[INFO][Time: 14:17:51][Class: com.pointwest.pls.ui.SearchByEmployeeProjectUI Method: askUserInput] - Line 47: END
+[INFO][Time: 14:17:51][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 99: START
+[INFO][Time: 14:17:51][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 101: START
+[INFO][Time: 14:17:51][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 31: START
+[INFO][Time: 14:17:51][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:17:51][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:17:51][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 86: START
+[DEBUG][Time: 14:17:51][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 106: query: SELECT e.emp_id, e.emp_first_name, e.emp_last_name, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant,  s.seat_column_number, '-', s.seat_row_number) AS seat_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE s.seat_local_number END) as seat_local_number, e.emp_shift, GROUP_CONCAT(DISTINCT(CASE WHEN p.proj_name = 'Project Never Exist' THEN NULL ELSE p.proj_name END) SEPARATOR ', ') AS proj_name FROM employee e LEFT JOIN employee_seat es ON e.emp_id = es.emp_id LEFT JOIN seat s ON es.seat_id = s.seat_id LEFT JOIN employee_project ep ON e.emp_id = ep.emp_id LEFT JOIN project p ON ep.proj_alias = p.proj_alias WHERE p.proj_name LIKE ? GROUP BY e.emp_id, seat_name ORDER BY e.emp_id
+[INFO][Time: 14:17:51][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 107: END
+[INFO][Time: 14:17:51][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 113: START
+[INFO][Time: 14:17:51][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 142: END
+[INFO][Time: 14:17:51][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:17:51][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:17:51][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 79: employees: 28 records
+[INFO][Time: 14:17:51][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 80: END
+[DEBUG][Time: 14:17:51][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 105: employees list size: 28
+[INFO][Time: 14:17:51][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 106: END
+[DEBUG][Time: 14:17:51][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 154: employees list size: 28
+[INFO][Time: 14:17:51][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 155: END
+[INFO][Time: 14:17:51][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 137: END: SearchByEmployeeProjectUI Page
+[DEBUG][Time: 14:17:51][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceSearch Employee by Project
+[INFO][Time: 14:17:51][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 14:17:51][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:17:51][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 47: START
+[DEBUG][Time: 14:18:23][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 91: searchPageChoice: [3] Search Employee by Project, askAgain: false
+[INFO][Time: 14:18:23][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 93: END
+[INFO][Time: 14:18:23][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 128: START: SearchByEmployeeProjectUI Page
+[INFO][Time: 14:18:23][Class: com.pointwest.pls.ui.SearchByEmployeeProjectUI Method: askUserInput] - Line 35: START
+[INFO][Time: 14:18:25][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeProjectInput] - Line 76: START
+[DEBUG][Time: 14:18:25][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeProjectInput] - Line 94: askAgain: false
+[INFO][Time: 14:18:25][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeProjectInput] - Line 95: END
+[DEBUG][Time: 14:18:25][Class: com.pointwest.pls.ui.SearchByEmployeeProjectUI Method: askUserInput] - Line 46: employeeProject: exist, askAgain: false
+[INFO][Time: 14:18:25][Class: com.pointwest.pls.ui.SearchByEmployeeProjectUI Method: askUserInput] - Line 47: END
+[INFO][Time: 14:18:25][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 99: START
+[INFO][Time: 14:18:25][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 101: START
+[INFO][Time: 14:18:25][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 31: START
+[INFO][Time: 14:18:25][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:18:25][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:18:25][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 86: START
+[DEBUG][Time: 14:18:25][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 106: query: SELECT e.emp_id, e.emp_first_name, e.emp_last_name, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant,  s.seat_column_number, '-', s.seat_row_number) AS seat_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE s.seat_local_number END) as seat_local_number, e.emp_shift, GROUP_CONCAT(DISTINCT(CASE WHEN p.proj_name = 'Project Never Exist' THEN NULL ELSE p.proj_name END) SEPARATOR ', ') AS proj_name FROM employee e LEFT JOIN employee_seat es ON e.emp_id = es.emp_id LEFT JOIN seat s ON es.seat_id = s.seat_id LEFT JOIN employee_project ep ON e.emp_id = ep.emp_id LEFT JOIN project p ON ep.proj_alias = p.proj_alias WHERE p.proj_name LIKE ? GROUP BY e.emp_id, seat_name ORDER BY e.emp_id
+[INFO][Time: 14:18:25][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 107: END
+[INFO][Time: 14:18:25][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 113: START
+[INFO][Time: 14:18:25][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 142: END
+[INFO][Time: 14:18:25][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:18:25][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:18:25][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 79: employees: 14 records
+[INFO][Time: 14:18:25][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 80: END
+[DEBUG][Time: 14:18:25][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 105: employees list size: 14
+[INFO][Time: 14:18:25][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 106: END
+[DEBUG][Time: 14:18:25][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 154: employees list size: 14
+[INFO][Time: 14:18:25][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 155: END
+[INFO][Time: 14:18:25][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 137: END: SearchByEmployeeProjectUI Page
+[DEBUG][Time: 14:18:25][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceSearch Employee by Project
+[INFO][Time: 14:18:25][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 14:18:25][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:18:25][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 47: START
+[DEBUG][Time: 14:22:22][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 91: searchPageChoice: [4] Go Back, askAgain: false
+[INFO][Time: 14:22:22][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 93: END
+[DEBUG][Time: 14:22:22][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: true, subPageChoiceGo Back
+[INFO][Time: 14:22:22][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[DEBUG][Time: 14:22:22][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 174: isLoggedIn: true
+[INFO][Time: 14:22:22][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 175: END: Home Page
+[INFO][Time: 14:22:22][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 66: START: Home Page
+[INFO][Time: 14:22:22][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[DEBUG][Time: 14:22:31][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 83: homePageChoice: [2]View Seat Plan, askAgain: false
+[INFO][Time: 14:22:31][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 85: END
+[INFO][Time: 14:22:31][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:22:31][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 46: START
+[DEBUG][Time: 14:22:48][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 84: viewPageChoice: [1] View Seat Plan by Loc-Floor, askAgain: false
+[INFO][Time: 14:22:48][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 86: END
+[INFO][Time: 14:22:48][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 141: START: ViewSeatPlanByLocationFloor Page
+[INFO][Time: 14:22:48][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 39: START
+[INFO][Time: 14:22:53][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 26: START
+[DEBUG][Time: 14:22:53][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 48: askAgain: false
+[INFO][Time: 14:22:53][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 49: END
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 55: START
+[DEBUG][Time: 14:22:55][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 79: askAgain: false
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 80: END
+[DEBUG][Time: 14:22:55][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 58: location: PIC, floorNumber: 9
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 59: END
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 65: START
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 92: START
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 116: START
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 32: START
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 91: START
+[DEBUG][Time: 14:22:55][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 108: query: SELECT s.seat_id, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant, s.seat_row_number, '-', s.seat_column_number) AS seat_name, (CASE WHEN e.emp_first_name IS NULL THEN 'Vacant' ELSE e.emp_first_name END) as emp_first_name, (CASE WHEN e.emp_last_name IS NULL THEN 'seat' ELSE e.emp_last_name END) as emp_last_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE CONCAT('Local #', s.seat_local_number) END) as seat_local_number FROM seat s LEFT JOIN employee_seat es ON s.seat_id = es.seat_id LEFT JOIN employee e ON es.emp_id = e.emp_id LEFT JOIN employee_project ep ON ep.emp_id = e.emp_id LEFT JOIN project p ON p.proj_alias = ep.proj_alias WHERE s.bldg_id = ? AND s.seat_floor_number = ?GROUP BY s.seat_id ORDER BY s.seat_id
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 109: END
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 115: START
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 148: END
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:22:55][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 84: employees: 0 records
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 85: END
+[DEBUG][Time: 14:22:55][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 120: employees list size: 0
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 121: END
+[DEBUG][Time: 14:22:55][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 216: employees list size: 0
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 217: END
+[DEBUG][Time: 14:22:55][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 78: employees list size: 0
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 79: END
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 150: END: ViewSeatPlanByLocationFloor Page
+[DEBUG][Time: 14:22:55][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceView Seat Plan by Loc-Floor
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:22:55][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 46: START
+[DEBUG][Time: 14:23:10][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 84: viewPageChoice: [1] View Seat Plan by Loc-Floor, askAgain: false
+[INFO][Time: 14:23:10][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 86: END
+[INFO][Time: 14:23:10][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 141: START: ViewSeatPlanByLocationFloor Page
+[INFO][Time: 14:23:10][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 39: START
+[INFO][Time: 14:24:07][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 26: START
+[DEBUG][Time: 14:24:07][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 48: askAgain: false
+[INFO][Time: 14:24:07][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 49: END
+[INFO][Time: 14:24:08][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 55: START
+[ERROR][Time: 14:24:08][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 75: Invalid input!
+[DEBUG][Time: 14:24:08][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 79: askAgain: true
+[INFO][Time: 14:24:08][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 80: END
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 55: START
+[DEBUG][Time: 14:24:24][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 79: askAgain: false
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 80: END
+[DEBUG][Time: 14:24:24][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 58: location: PIC, floorNumber: 2
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 59: END
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 65: START
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 92: START
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 116: START
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 32: START
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 91: START
+[DEBUG][Time: 14:24:24][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 108: query: SELECT s.seat_id, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant, s.seat_row_number, '-', s.seat_column_number) AS seat_name, (CASE WHEN e.emp_first_name IS NULL THEN 'Vacant' ELSE e.emp_first_name END) as emp_first_name, (CASE WHEN e.emp_last_name IS NULL THEN 'seat' ELSE e.emp_last_name END) as emp_last_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE CONCAT('Local #', s.seat_local_number) END) as seat_local_number FROM seat s LEFT JOIN employee_seat es ON s.seat_id = es.seat_id LEFT JOIN employee e ON es.emp_id = e.emp_id LEFT JOIN employee_project ep ON ep.emp_id = e.emp_id LEFT JOIN project p ON p.proj_alias = ep.proj_alias WHERE s.bldg_id = ? AND s.seat_floor_number = ?GROUP BY s.seat_id ORDER BY s.seat_id
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 109: END
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 115: START
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 148: END
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:24:24][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 84: employees: 36 records
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 85: END
+[DEBUG][Time: 14:24:24][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 120: employees list size: 36
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 121: END
+[DEBUG][Time: 14:24:24][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 216: employees list size: 36
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 217: END
+[DEBUG][Time: 14:24:24][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 78: employees list size: 36
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 79: END
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 150: END: ViewSeatPlanByLocationFloor Page
+[DEBUG][Time: 14:24:24][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceView Seat Plan by Loc-Floor
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:24:24][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 46: START
+[DEBUG][Time: 14:24:25][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 84: viewPageChoice: [1] View Seat Plan by Loc-Floor, askAgain: false
+[INFO][Time: 14:24:25][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 86: END
+[INFO][Time: 14:24:25][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 141: START: ViewSeatPlanByLocationFloor Page
+[INFO][Time: 14:24:25][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 39: START
+[INFO][Time: 14:24:27][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 26: START
+[ERROR][Time: 14:24:27][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 44: Invalid input!
+[DEBUG][Time: 14:24:27][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 48: askAgain: true
+[INFO][Time: 14:24:27][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 49: END
+[INFO][Time: 14:24:32][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 26: START
+[DEBUG][Time: 14:24:32][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 48: askAgain: false
+[INFO][Time: 14:24:32][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 49: END
+[INFO][Time: 14:24:33][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 55: START
+[ERROR][Time: 14:24:33][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 75: Invalid input!
+[DEBUG][Time: 14:24:33][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 79: askAgain: true
+[INFO][Time: 14:24:33][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 80: END
+[INFO][Time: 14:24:36][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 55: START
+[ERROR][Time: 14:24:36][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 75: Invalid input!
+[DEBUG][Time: 14:24:36][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 79: askAgain: true
+[INFO][Time: 14:24:36][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 80: END
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 55: START
+[DEBUG][Time: 14:24:39][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 79: askAgain: false
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 80: END
+[DEBUG][Time: 14:24:39][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 58: location: PIC, floorNumber: 2
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 59: END
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 65: START
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 92: START
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 116: START
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 32: START
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 91: START
+[DEBUG][Time: 14:24:39][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 108: query: SELECT s.seat_id, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant, s.seat_row_number, '-', s.seat_column_number) AS seat_name, (CASE WHEN e.emp_first_name IS NULL THEN 'Vacant' ELSE e.emp_first_name END) as emp_first_name, (CASE WHEN e.emp_last_name IS NULL THEN 'seat' ELSE e.emp_last_name END) as emp_last_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE CONCAT('Local #', s.seat_local_number) END) as seat_local_number FROM seat s LEFT JOIN employee_seat es ON s.seat_id = es.seat_id LEFT JOIN employee e ON es.emp_id = e.emp_id LEFT JOIN employee_project ep ON ep.emp_id = e.emp_id LEFT JOIN project p ON p.proj_alias = ep.proj_alias WHERE s.bldg_id = ? AND s.seat_floor_number = ?GROUP BY s.seat_id ORDER BY s.seat_id
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 109: END
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 115: START
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 148: END
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:24:39][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 84: employees: 36 records
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 85: END
+[DEBUG][Time: 14:24:39][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 120: employees list size: 36
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 121: END
+[DEBUG][Time: 14:24:39][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 216: employees list size: 36
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 217: END
+[DEBUG][Time: 14:24:39][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 78: employees list size: 36
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 79: END
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 150: END: ViewSeatPlanByLocationFloor Page
+[DEBUG][Time: 14:24:39][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceView Seat Plan by Loc-Floor
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:24:39][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 46: START
+[DEBUG][Time: 14:24:56][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 84: viewPageChoice: [1] View Seat Plan by Loc-Floor, askAgain: false
+[INFO][Time: 14:24:56][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 86: END
+[INFO][Time: 14:24:56][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 141: START: ViewSeatPlanByLocationFloor Page
+[INFO][Time: 14:24:56][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 39: START
+[INFO][Time: 14:25:39][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 26: START
+[DEBUG][Time: 14:25:39][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 48: askAgain: false
+[INFO][Time: 14:25:39][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 49: END
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 55: START
+[DEBUG][Time: 14:25:44][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 79: askAgain: false
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 80: END
+[DEBUG][Time: 14:25:44][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 58: location: PIC, floorNumber: 2
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: askUserInput] - Line 59: END
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 65: START
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 92: START
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 116: START
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 32: START
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 91: START
+[DEBUG][Time: 14:25:44][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 108: query: SELECT s.seat_id, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant, s.seat_row_number, '-', s.seat_column_number) AS seat_name, (CASE WHEN e.emp_first_name IS NULL THEN 'Vacant' ELSE e.emp_first_name END) as emp_first_name, (CASE WHEN e.emp_last_name IS NULL THEN 'seat' ELSE e.emp_last_name END) as emp_last_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE CONCAT('Local #', s.seat_local_number) END) as seat_local_number FROM seat s LEFT JOIN employee_seat es ON s.seat_id = es.seat_id LEFT JOIN employee e ON es.emp_id = e.emp_id LEFT JOIN employee_project ep ON ep.emp_id = e.emp_id LEFT JOIN project p ON p.proj_alias = ep.proj_alias WHERE s.bldg_id = ? AND s.seat_floor_number = ?GROUP BY s.seat_id ORDER BY s.seat_id
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 109: END
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 115: START
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 148: END
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:25:44][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 84: employees: 36 records
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 85: END
+[DEBUG][Time: 14:25:44][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 120: employees list size: 36
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 121: END
+[DEBUG][Time: 14:25:44][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 216: employees list size: 36
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 217: END
+[DEBUG][Time: 14:25:44][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 78: employees list size: 36
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.ui.ViewSeatPlanByLocationFloor Method: displayList] - Line 79: END
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 150: END: ViewSeatPlanByLocationFloor Page
+[DEBUG][Time: 14:25:44][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceView Seat Plan by Loc-Floor
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:25:44][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 46: START
+[DEBUG][Time: 14:26:12][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 84: viewPageChoice: [2] View Seat Plan by Quadrant, askAgain: false
+[INFO][Time: 14:26:12][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 86: END
+[INFO][Time: 14:26:12][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 154: START: ViewSeatPlanByQuadrant Page
+[INFO][Time: 14:26:12][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: askUserInput] - Line 39: START
+[INFO][Time: 14:26:19][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 26: START
+[DEBUG][Time: 14:26:19][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 48: askAgain: false
+[INFO][Time: 14:26:19][Class: com.pointwest.pls.manager.ViewPageManager Method: validateLocationInput] - Line 49: END
+[INFO][Time: 14:26:21][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 55: START
+[DEBUG][Time: 14:26:21][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 79: askAgain: false
+[INFO][Time: 14:26:21][Class: com.pointwest.pls.manager.ViewPageManager Method: validateFloorInput] - Line 80: END
+[INFO][Time: 14:26:22][Class: com.pointwest.pls.manager.ViewPageManager Method: validateQuadrantInput] - Line 86: START
+[ERROR][Time: 14:26:22][Class: com.pointwest.pls.manager.ViewPageManager Method: validateQuadrantInput] - Line 105: Invalid input!
+[DEBUG][Time: 14:26:22][Class: com.pointwest.pls.manager.ViewPageManager Method: validateQuadrantInput] - Line 109: askAgain: true
+[INFO][Time: 14:26:22][Class: com.pointwest.pls.manager.ViewPageManager Method: validateQuadrantInput] - Line 110: END
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.manager.ViewPageManager Method: validateQuadrantInput] - Line 86: START
+[DEBUG][Time: 14:26:28][Class: com.pointwest.pls.manager.ViewPageManager Method: validateQuadrantInput] - Line 109: askAgain: false
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.manager.ViewPageManager Method: validateQuadrantInput] - Line 110: END
+[DEBUG][Time: 14:26:28][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: askUserInput] - Line 62: location: PIC, floorNumber: 2, quadrant: A
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: askUserInput] - Line 64: END
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: displayList] - Line 69: START
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 92: START
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 116: START
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 32: START
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 91: START
+[DEBUG][Time: 14:26:28][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 108: query: SELECT s.seat_id, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant, s.seat_row_number, '-', s.seat_column_number) AS seat_name, se. emp_first_name, se.emp_last_name, se.seat_local_number FROM seat s LEFT JOIN (SELECT s.seat_id, (CASE WHEN e.emp_first_name IS NULL THEN 'Vacant' ELSE e.emp_first_name END) as emp_first_name, (CASE WHEN e.emp_last_name IS NULL THEN 'seat' ELSE e.emp_last_name END) as emp_last_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE CONCAT('Local #', s.seat_local_number) END) as seat_local_number FROM seat s LEFT JOIN employee_seat es ON s.seat_id = es.seat_id LEFT JOIN employee e ON es.emp_id = e.emp_id LEFT JOIN employee_project ep ON ep.emp_id = e.emp_id LEFT JOIN project p ON p.proj_alias = ep.proj_alias WHERE s.bldg_id = ? AND s.seat_floor_number = ? AND s.seat_quadrant = ?GROUP BY s.seat_id ORDER BY s.seat_id) se ON s.seat_id = se.seat_id WHERE s.bldg_id = ? AND s.seat_floor_number = ?
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.dao.ViewPageDao Method: searchEmployeeQueryBuilder] - Line 109: END
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 115: START
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.dao.ViewPageDao Method: preparedStatementBuilder] - Line 148: END
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:26:28][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 84: employees: 36 records
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.dao.ViewPageDao Method: retrieveEmployeeList] - Line 85: END
+[DEBUG][Time: 14:26:28][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 120: employees list size: 36
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.manager.ViewPageManager Method: getEmployeeList] - Line 121: END
+[DEBUG][Time: 14:26:28][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 216: employees list size: 36
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.ui.ViewPageUI Method: displayList] - Line 217: END
+[DEBUG][Time: 14:26:28][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: displayList] - Line 83: employees list size: 36
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.ui.ViewSeatPlanByQuadrant Method: displayList] - Line 84: END
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 162: END: ViewSeatPlanByQuadrant Page
+[DEBUG][Time: 14:26:28][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceView Seat Plan by Quadrant
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:26:28][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 46: START
+[DEBUG][Time: 14:26:30][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 84: viewPageChoice: [3] Go Back, askAgain: false
+[INFO][Time: 14:26:30][Class: com.pointwest.pls.ui.ViewPageUI Method: askUserInput] - Line 86: END
+[DEBUG][Time: 14:26:30][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: true, subPageChoiceGo Back
+[INFO][Time: 14:26:30][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[DEBUG][Time: 14:26:30][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 174: isLoggedIn: true
+[INFO][Time: 14:26:30][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 175: END: Home Page
+[INFO][Time: 14:26:30][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 66: START: Home Page
+[INFO][Time: 14:26:30][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[DEBUG][Time: 14:26:32][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 83: homePageChoice: [3]Logout, askAgain: false
+[INFO][Time: 14:26:32][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 85: END
+[DEBUG][Time: 14:26:32][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 174: isLoggedIn: false
+[INFO][Time: 14:26:32][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 175: END: Home Page
+[INFO][Time: 14:26:32][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 110: START
+[DEBUG][Time: 14:26:39][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 133: isTerminate: true
+[INFO][Time: 14:26:39][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 134: END
+[DEBUG][Time: 14:26:39][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 181: isTerminate: true
+[INFO][Time: 14:26:39][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 182: END: Login Page / End Page
+[INFO][Time: 14:26:39][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 189: *********************END
+[INFO][Time: 14:26:49][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 30: *********************START
+[INFO][Time: 14:26:49][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 45: START: Login Page
+[INFO][Time: 14:26:54][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 48: START
+[INFO][Time: 14:26:58][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[DEBUG][Time: 14:26:58][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[INFO][Time: 14:26:58][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[INFO][Time: 14:26:58][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[ERROR][Time: 14:26:58][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 41: Username/Password is empty!
+[DEBUG][Time: 14:26:58][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: true, triesCounter: 2
+[INFO][Time: 14:26:58][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[INFO][Time: 14:26:59][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[DEBUG][Time: 14:26:59][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[INFO][Time: 14:26:59][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[INFO][Time: 14:26:59][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[ERROR][Time: 14:26:59][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 41: Username/Password is empty!
+[DEBUG][Time: 14:26:59][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: true, triesCounter: 1
+[INFO][Time: 14:26:59][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[INFO][Time: 14:27:00][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[DEBUG][Time: 14:27:00][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[INFO][Time: 14:27:00][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[INFO][Time: 14:27:00][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[ERROR][Time: 14:27:00][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 41: Username/Password is empty!
+[DEBUG][Time: 14:27:00][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: true, triesCounter: 0
+[INFO][Time: 14:27:00][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[DEBUG][Time: 14:27:00][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 72: Username: null
+[INFO][Time: 14:27:00][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 73: END
+[DEBUG][Time: 14:27:00][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 59: askAgain: false, triesCounter: 0, isLoggedIn: false
+[INFO][Time: 14:27:00][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 110: START
+[DEBUG][Time: 14:27:11][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 133: isTerminate: false
+[INFO][Time: 14:27:11][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 134: END
+[DEBUG][Time: 14:27:11][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 181: isTerminate: false
+[INFO][Time: 14:27:11][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 182: END: Login Page / End Page
+[INFO][Time: 14:27:11][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 45: START: Login Page
+[INFO][Time: 14:27:12][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 48: START
+[INFO][Time: 14:27:26][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[DEBUG][Time: 14:27:26][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[INFO][Time: 14:27:26][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[INFO][Time: 14:27:26][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[DEBUG][Time: 14:27:26][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: false, triesCounter: 3
+[INFO][Time: 14:27:26][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[DEBUG][Time: 14:27:26][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 72: Username: manuel.macapagal
+[INFO][Time: 14:27:26][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 73: END
+[INFO][Time: 14:27:26][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 78: START
+[INFO][Time: 14:27:26][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 99: START
+[INFO][Time: 14:27:26][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 26: START
+[INFO][Time: 14:27:26][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:27:26][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:27:26][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:27:26][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:27:26][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 72: First Name: Manuel, Last Name: Macapagal
+[INFO][Time: 14:27:26][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 73: END
+[DEBUG][Time: 14:27:26][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 104: hasMatched: true
+[INFO][Time: 14:27:26][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 105: END
+[DEBUG][Time: 14:27:26][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 103: hasMatched: true
+[INFO][Time: 14:27:26][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 104: END
+[DEBUG][Time: 14:27:26][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 59: askAgain: true, triesCounter: 3, isLoggedIn: true
+[INFO][Time: 14:27:26][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 66: START: Home Page
+[INFO][Time: 14:27:26][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[DEBUG][Time: 14:27:32][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 83: homePageChoice: [3]Logout, askAgain: false
+[INFO][Time: 14:27:32][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 85: END
+[DEBUG][Time: 14:27:32][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 174: isLoggedIn: false
+[INFO][Time: 14:27:32][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 175: END: Home Page
+[INFO][Time: 14:27:32][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 110: START
+[DEBUG][Time: 14:27:36][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 133: isTerminate: false
+[INFO][Time: 14:27:36][Class: com.pointwest.pls.ui.LoginPageUI Method: confirmTermination] - Line 134: END
+[DEBUG][Time: 14:27:36][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 181: isTerminate: false
+[INFO][Time: 14:27:36][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 182: END: Login Page / End Page
+[INFO][Time: 14:27:36][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 45: START: Login Page
+[INFO][Time: 14:27:37][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 48: START
+[INFO][Time: 14:27:52][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[DEBUG][Time: 14:27:52][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[INFO][Time: 14:27:52][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[INFO][Time: 14:27:52][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[DEBUG][Time: 14:27:52][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: false, triesCounter: 3
+[INFO][Time: 14:27:52][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[DEBUG][Time: 14:27:52][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 72: Username: david.abayon
+[INFO][Time: 14:27:52][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 73: END
+[INFO][Time: 14:27:52][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 78: START
+[INFO][Time: 14:27:52][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 99: START
+[INFO][Time: 14:27:52][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 26: START
+[INFO][Time: 14:27:52][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:27:53][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:27:53][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:27:53][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:27:53][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 72: First Name: null, Last Name: null
+[INFO][Time: 14:27:53][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 73: END
+[DEBUG][Time: 14:27:53][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 104: hasMatched: false
+[INFO][Time: 14:27:53][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 105: END
+[DEBUG][Time: 14:27:53][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 103: hasMatched: false
+[INFO][Time: 14:27:53][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 104: END
+[DEBUG][Time: 14:27:53][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 59: askAgain: true, triesCounter: 2, isLoggedIn: false
+[INFO][Time: 14:27:53][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 48: START
+[INFO][Time: 14:28:07][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[DEBUG][Time: 14:28:07][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[INFO][Time: 14:28:07][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[INFO][Time: 14:28:07][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[DEBUG][Time: 14:28:07][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: false, triesCounter: 2
+[INFO][Time: 14:28:07][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[DEBUG][Time: 14:28:07][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 72: Username: david.abayon
+[INFO][Time: 14:28:07][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 73: END
+[INFO][Time: 14:28:07][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 78: START
+[INFO][Time: 14:28:07][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 99: START
+[INFO][Time: 14:28:07][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 26: START
+[INFO][Time: 14:28:07][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:28:07][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:28:07][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:28:07][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:28:07][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 72: First Name: David Angelo, Last Name: Abayon
+[INFO][Time: 14:28:07][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 73: END
+[DEBUG][Time: 14:28:07][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 104: hasMatched: true
+[INFO][Time: 14:28:07][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 105: END
+[DEBUG][Time: 14:28:07][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 103: hasMatched: true
+[INFO][Time: 14:28:07][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 104: END
+[DEBUG][Time: 14:28:07][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 59: askAgain: true, triesCounter: 2, isLoggedIn: true
+[INFO][Time: 14:28:07][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 66: START: Home Page
+[INFO][Time: 14:28:07][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 45: START
+[DEBUG][Time: 14:28:10][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 83: homePageChoice: [1]Search Employee, askAgain: false
+[INFO][Time: 14:28:10][Class: com.pointwest.pls.ui.HomePageUI Method: askUserInput] - Line 85: END
+[INFO][Time: 14:28:10][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:28:10][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 47: START
+[DEBUG][Time: 14:28:11][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 91: searchPageChoice: [1] Search Employee by ID, askAgain: false
+[INFO][Time: 14:28:11][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 93: END
+[INFO][Time: 14:28:11][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 104: START: SearchByEmployeeIdUI Page
+[INFO][Time: 14:28:11][Class: com.pointwest.pls.ui.SearchByEmployeeIdUI Method: askUserInput] - Line 35: START
+[INFO][Time: 14:29:23][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 26: START
+[DEBUG][Time: 14:29:23][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 44: askAgain: false
+[INFO][Time: 14:29:23][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 45: END
+[DEBUG][Time: 14:29:23][Class: com.pointwest.pls.ui.SearchByEmployeeIdUI Method: askUserInput] - Line 46: employeeId: 16, askAgain: false
+[INFO][Time: 14:29:23][Class: com.pointwest.pls.ui.SearchByEmployeeIdUI Method: askUserInput] - Line 47: END
+[INFO][Time: 14:29:23][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 99: START
+[INFO][Time: 14:29:23][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 101: START
+[INFO][Time: 14:29:23][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 31: START
+[INFO][Time: 14:29:23][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[INFO][Time: 14:29:23][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 44: END
+[INFO][Time: 14:29:23][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 86: START
+[DEBUG][Time: 14:29:23][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 106: query: SELECT e.emp_id, e.emp_first_name, e.emp_last_name, CONCAT(s.bldg_id, s.seat_floor_number, 'F', s.seat_quadrant,  s.seat_column_number, '-', s.seat_row_number) AS seat_name, (CASE WHEN s.seat_local_number = '' THEN 'N/A' ELSE s.seat_local_number END) as seat_local_number, e.emp_shift, GROUP_CONCAT(DISTINCT(CASE WHEN p.proj_name = 'Project Never Exist' THEN NULL ELSE p.proj_name END) SEPARATOR ', ') AS proj_name FROM employee e LEFT JOIN employee_seat es ON e.emp_id = es.emp_id LEFT JOIN seat s ON es.seat_id = s.seat_id LEFT JOIN employee_project ep ON e.emp_id = ep.emp_id LEFT JOIN project p ON ep.proj_alias = p.proj_alias WHERE e.emp_id LIKE ? GROUP BY e.emp_id, seat_name ORDER BY e.emp_id
+[INFO][Time: 14:29:23][Class: com.pointwest.pls.dao.SearchPageDao Method: searchEmployeeQueryBuilder] - Line 107: END
+[INFO][Time: 14:29:23][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 113: START
+[INFO][Time: 14:29:23][Class: com.pointwest.pls.dao.SearchPageDao Method: preparedStatementBuilder] - Line 142: END
+[INFO][Time: 14:29:23][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 50: START
+[INFO][Time: 14:29:23][Class: com.pointwest.pls.dao.BaseDao Method: closeConnection] - Line 76: END
+[DEBUG][Time: 14:29:23][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 79: employees: 17 records
+[INFO][Time: 14:29:23][Class: com.pointwest.pls.dao.SearchPageDao Method: retrieveEmployeeList] - Line 80: END
+[DEBUG][Time: 14:29:23][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 105: employees list size: 17
+[INFO][Time: 14:29:23][Class: com.pointwest.pls.manager.SearchPageManager Method: getEmployeeList] - Line 106: END
+[DEBUG][Time: 14:29:23][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 154: employees list size: 17
+[INFO][Time: 14:29:23][Class: com.pointwest.pls.ui.SearchPageUI Method: displayList] - Line 155: END
+[INFO][Time: 14:29:23][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 112: END: SearchByEmployeeIdUI Page
+[DEBUG][Time: 14:29:23][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 169: isGoBack: false, subPageChoiceSearch Employee by ID
+[INFO][Time: 14:29:23][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 170: END: Sub Page
+[INFO][Time: 14:29:23][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 94: START: Sub Page
+[INFO][Time: 14:29:23][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 47: START
+[DEBUG][Time: 14:29:35][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 91: searchPageChoice: [1] Search Employee by ID, askAgain: false
+[INFO][Time: 14:29:35][Class: com.pointwest.pls.ui.SearchPageUI Method: askUserInput] - Line 93: END
+[INFO][Time: 14:29:35][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 104: START: SearchByEmployeeIdUI Page
+[INFO][Time: 14:29:35][Class: com.pointwest.pls.ui.SearchByEmployeeIdUI Method: askUserInput] - Line 35: START
+[INFO][Time: 14:29:36][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 26: START
+[ERROR][Time: 14:29:36][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 36: Input is empty!
+[DEBUG][Time: 14:29:36][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 44: askAgain: true
+[INFO][Time: 14:29:36][Class: com.pointwest.pls.manager.SearchPageManager Method: validateEmployeeIdInput] - Line 45: END
+[INFO][Time: 15:00:49][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 31: *********************START
+[INFO][Time: 15:00:49][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 46: START: Login Page
+[INFO][Time: 15:00:51][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 48: START
+[INFO][Time: 15:01:00][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 61: START
+[DEBUG][Time: 15:01:00][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 92: isEncrpyted: true
+[INFO][Time: 15:01:00][Class: com.pointwest.pls.manager.LoginPageManager Method: encryptUserPassword] - Line 93: END
+[INFO][Time: 15:01:00][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 27: START
+[DEBUG][Time: 15:01:00][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 54: askAgain: false, triesCounter: 3
+[INFO][Time: 15:01:00][Class: com.pointwest.pls.manager.LoginPageManager Method: validateUserInput] - Line 55: END
+[DEBUG][Time: 15:01:00][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 72: Username: asd
+[INFO][Time: 15:01:00][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 73: END
+[INFO][Time: 15:01:00][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 78: START
+[INFO][Time: 15:01:00][Class: com.pointwest.pls.manager.LoginPageManager Method: checkMatchingLoginCredentials] - Line 99: START
+[INFO][Time: 15:01:00][Class: com.pointwest.pls.dao.LoginPageDao Method: retrieveUserDetails] - Line 26: START
+[INFO][Time: 15:01:00][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 19: START
+[DEBUG][Time: 15:01:00][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 34: Access denied for user 'david.abayon'@'localhost' (using password: YES)
+[ERROR][Time: 15:01:00][Class: com.pointwest.pls.dao.BaseDao Method: openDBConnection] - Line 35: There's an error/issue with regards to the database connection!
+[DEBUG][Time: 15:01:00][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 103: hasMatched: false
+[INFO][Time: 15:01:00][Class: com.pointwest.pls.ui.LoginPageUI Method: displayLoginStatus] - Line 104: END
+[DEBUG][Time: 15:01:00][Class: com.pointwest.pls.main.PeopleLocatorSystem Method: main] - Line 60: askAgain: true, triesCounter: 2, isLoggedIn: false
+[INFO][Time: 15:01:00][Class: com.pointwest.pls.ui.LoginPageUI Method: askUserInput] - Line 48: START

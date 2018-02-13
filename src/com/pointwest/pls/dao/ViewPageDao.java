@@ -6,12 +6,15 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.SQLTimeoutException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import org.apache.log4j.Logger;
 
+import com.pointwest.pls.bean.Building;
 import com.pointwest.pls.bean.Employee;
-import com.pointwest.pls.bean.User;
+import com.pointwest.pls.bean.Seat;
+import com.pointwest.pls.bean.UserInput;
 import com.pointwest.pls.constant.GenericConstants;
 import com.pointwest.pls.constant.SqlConstants;
 import com.pointwest.pls.util.CustomException;
@@ -19,12 +22,65 @@ import com.pointwest.pls.util.CustomRuntimeException;
 
 public class ViewPageDao extends BaseDao {
 	Logger logger = Logger.getLogger(LoginPageDao.class);
-	User user = null;
+	UserInput userInput = null;
 	Connection connection = null;
 	PreparedStatement preparedStatement = null;
 
-	public ViewPageDao(User user) {
-		this.user = user;
+	public ViewPageDao(UserInput userInput) {
+		this.userInput = userInput;
+	}
+
+	// Retrieve the records for location, floor and quadrant choices
+	public HashMap<Building, Seat> retrieveLocationFloorQuadrantChoices() throws CustomException {
+		logger.info(GenericConstants.START);
+
+		ResultSet resultSet = null;
+		HashMap<Building, Seat> locationFloorQuadrantChoices = null;
+
+		connection = getDbConnection();
+
+		try {
+			preparedStatement = connection.prepareStatement(SqlConstants.QUERY_STATEMENT_LOCATION_FLOOR_CHOICES);
+			preparedStatement.setQueryTimeout(SqlConstants.QUERY_TIMEOUT);
+			resultSet = preparedStatement.executeQuery();
+			locationFloorQuadrantChoices = new HashMap<Building, Seat>();
+			while (resultSet.next()) {
+				Building building = new Building();
+				Seat seat = new Seat();
+				building.setBuildingId(resultSet.getString(SqlConstants.BLDG_ID));
+				seat.setSeatFloorNumber(resultSet.getString(SqlConstants.SEAT_FLOOR_NUMBER));
+				seat.setSeatQuadrant(resultSet.getString(SqlConstants.SEAT_QUADRANT));
+				locationFloorQuadrantChoices.put(building, seat);
+			}
+		} catch (NullPointerException e) {
+			CustomRuntimeException customRuntimeException = new CustomRuntimeException(GenericConstants.IO_EXCEPTION,
+					e);
+			logger.debug(e.getMessage());
+			logger.error(customRuntimeException.getMessage());
+			throw customRuntimeException;
+		} catch (SQLTimeoutException e) {
+			CustomException customException = new CustomException(GenericConstants.SQL_EXCEPTION_RETRIEVE_TIME_ERROR,
+					e);
+			logger.debug(e.getMessage());
+			logger.error(customException.getMessage());
+			throw customException;
+		} catch (SQLException e) {
+			CustomException customException = new CustomException(GenericConstants.SQL_EXCEPTION_RETRIEVE_ERROR, e);
+			logger.debug(e.getMessage());
+			logger.error(customException.getMessage());
+			throw customException;
+		} catch (Exception e) {
+			CustomException customException = new CustomException(GenericConstants.EXCEPTION, e);
+			logger.debug(e.getMessage());
+			logger.error(customException.getMessage());
+			throw customException;
+		} finally {
+			closeDbResources(connection, preparedStatement, resultSet);
+		}
+
+		logger.debug("locationFloorChoices map size: " + locationFloorQuadrantChoices.size() + " records");
+		logger.info(GenericConstants.END);
+		return locationFloorQuadrantChoices;
 	}
 
 	// Retrieve the list of employees for chosen option
@@ -33,12 +89,14 @@ public class ViewPageDao extends BaseDao {
 
 		ResultSet resultSet = null;
 		List<Employee> employees = null;
+		String query = null;
 
-		connection = openDBConnection();
-		String query = searchEmployeeQueryBuilder(subPageChoice);
+		connection = getDbConnection();
 
 		try {
+			query = searchEmployeeQueryBuilder(subPageChoice);
 			preparedStatementBuilder(subPageChoice, query);
+			preparedStatement.setQueryTimeout(SqlConstants.QUERY_TIMEOUT);
 			resultSet = preparedStatement.executeQuery();
 			employees = new ArrayList<Employee>();
 			while (resultSet.next()) {
@@ -78,7 +136,7 @@ public class ViewPageDao extends BaseDao {
 			logger.error(customException.getMessage());
 			throw customException;
 		} finally {
-			closeConnection(connection, preparedStatement, resultSet);
+			closeDbResources(connection, preparedStatement, resultSet);
 		}
 
 		logger.debug("employees: " + employees.size() + " records");
@@ -118,16 +176,16 @@ public class ViewPageDao extends BaseDao {
 			switch (subPageChoice) {
 			case GenericConstants.VIEW_SEAT_PLAN_BY_LOC_FLOOR:
 				preparedStatement = connection.prepareStatement(query);
-				preparedStatement.setString(1, user.getViewByLocationInput());
-				preparedStatement.setString(2, user.getViewByFloorInput());
+				preparedStatement.setString(1, userInput.getViewByLocationInput());
+				preparedStatement.setString(2, userInput.getViewByFloorInput());
 				break;
 			case GenericConstants.VIEW_SEAT_PLAN_BY_QUADRANT:
 				preparedStatement = connection.prepareStatement(query);
-				preparedStatement.setString(1, user.getViewByLocationInput());
-				preparedStatement.setString(2, user.getViewByFloorInput());
-				preparedStatement.setString(3, user.getViewByQuadrantInput());
-				preparedStatement.setString(4, user.getViewByLocationInput());
-				preparedStatement.setString(5, user.getViewByFloorInput());
+				preparedStatement.setString(1, userInput.getViewByLocationInput());
+				preparedStatement.setString(2, userInput.getViewByFloorInput());
+				preparedStatement.setString(3, userInput.getViewByQuadrantInput());
+				preparedStatement.setString(4, userInput.getViewByLocationInput());
+				preparedStatement.setString(5, userInput.getViewByFloorInput());
 				break;
 			case GenericConstants.VIEW_SEAT_PLAN_BY_EMPLOYEE:
 				preparedStatement = connection.prepareStatement(query);

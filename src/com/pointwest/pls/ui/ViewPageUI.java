@@ -3,6 +3,7 @@ package com.pointwest.pls.ui;
 import org.apache.log4j.Logger;
 
 import com.pointwest.pls.bean.User;
+import com.pointwest.pls.bean.UserInput;
 import com.pointwest.pls.constant.GenericConstants;
 import com.pointwest.pls.manager.ViewPageManager;
 import com.pointwest.pls.util.CustomException;
@@ -12,9 +13,10 @@ public class ViewPageUI extends SubPageUI {
 	Logger logger = Logger.getLogger(ViewPageUI.class);
 	ViewPageManager viewPageManager = null;
 
-	public ViewPageUI(User user) {
+	public ViewPageUI(User user, UserInput userInput) {
 		this.user = user;
-		this.viewPageManager = new ViewPageManager(this.user);
+		this.userInput = userInput;
+		this.viewPageManager = new ViewPageManager(userInput);
 	}
 
 	@Override
@@ -56,19 +58,19 @@ public class ViewPageUI extends SubPageUI {
 			switch (viewPageChoice.trim()) {
 			case "1":
 				askAgain = false;
-				user.setSubPageChoice(GenericConstants.VIEW_SEAT_PLAN_BY_LOC_FLOOR);
+				userInput.setSubPageChoice(GenericConstants.VIEW_SEAT_PLAN_BY_LOC_FLOOR);
 				System.out.format("%88s", "");
 				System.out.format(GenericConstants.SELECTED_OPTION + "\n", viewPageChoice.trim());
 				break;
 			case "2":
 				askAgain = false;
-				user.setSubPageChoice(GenericConstants.VIEW_SEAT_PLAN_BY_QUADRANT);
+				userInput.setSubPageChoice(GenericConstants.VIEW_SEAT_PLAN_BY_QUADRANT);
 				System.out.format("%88s", "");
 				System.out.format(GenericConstants.SELECTED_OPTION + "\n", viewPageChoice.trim());
 				break;
 			case "3":
 				askAgain = false;
-				user.setSubPageChoice(GenericConstants.GO_BACK);
+				userInput.setSubPageChoice(GenericConstants.GO_BACK);
 				System.out.format("%88s", "");
 				System.out.format(GenericConstants.SELECTED_OPTION + "\n", viewPageChoice.trim());
 				break;
@@ -81,7 +83,7 @@ public class ViewPageUI extends SubPageUI {
 			}
 		} while (askAgain);
 
-		logger.debug("viewPageChoice: [" + viewPageChoice.trim() + "] " + user.getSubPageChoice() + ", askAgain: "
+		logger.debug("viewPageChoice: [" + viewPageChoice.trim() + "] " + userInput.getSubPageChoice() + ", askAgain: "
 				+ askAgain);
 		logger.info(GenericConstants.END);
 	}
@@ -215,5 +217,95 @@ public class ViewPageUI extends SubPageUI {
 
 		logger.debug("employees list size: " + employees.size());
 		logger.info(GenericConstants.END);
+	}
+
+	// Validate Location input
+	protected boolean validateLocationInput(String location) {
+		logger.info(GenericConstants.START);
+
+		boolean askAgain = false;
+
+		switch (location.trim().toUpperCase()) {
+		case GenericConstants.PIC:
+		case GenericConstants.PTC:
+		case GenericConstants.PLC:
+			userInput.setViewByLocationInput(location.trim().toUpperCase());
+			askAgain = false;
+			break;
+		case "":
+			askAgain = true;
+			logger.error(GenericConstants.INPUT_NULL);
+			System.out.format("%117s", GenericConstants.INPUT_NULL + "\n");
+			break;
+		default:
+			askAgain = true;
+			logger.error(GenericConstants.INPUT_INVALID);
+			System.out.format("%117s", GenericConstants.INPUT_INVALID + "\n");
+		}
+
+		logger.debug("askAgain: " + askAgain);
+		logger.info(GenericConstants.END);
+		return askAgain;
+	}
+
+	// Validate Floor input
+	protected boolean validateFloorInput(String floor) {
+		logger.info(GenericConstants.START);
+
+		boolean askAgain = false;
+
+		switch (floor.trim()) {
+		case "2":
+		case "3":
+		case "4":
+		case "9":
+		case "12":
+			userInput.setViewByFloorInput(floor.trim());
+			askAgain = false;
+			break;
+		case "":
+			askAgain = true;
+			logger.error(GenericConstants.INPUT_NULL);
+			System.out.format("%117s", GenericConstants.INPUT_NULL + "\n");
+			break;
+		default:
+			askAgain = true;
+			logger.error(GenericConstants.INPUT_INVALID);
+			System.out.format("%117s", GenericConstants.INPUT_INVALID + "\n");
+		}
+
+		logger.debug("askAgain: " + askAgain);
+		logger.info(GenericConstants.END);
+		return askAgain;
+	}
+
+	// Validate Quadrant input
+	protected boolean validateQuadrantInput(String quadrant) {
+		logger.info(GenericConstants.START);
+
+		boolean askAgain = false;
+
+		switch (quadrant.trim().toUpperCase()) {
+		case "A":
+		case "B":
+		case "C":
+		case "D":
+			userInput.setViewByQuadrantInput(quadrant.trim().toUpperCase());
+			askAgain = false;
+			break;
+		case "":
+			askAgain = true;
+			logger.error(GenericConstants.INPUT_NULL);
+			System.out.format("%117s", GenericConstants.INPUT_NULL + "\n");
+			break;
+		default:
+			askAgain = true;
+			logger.error(GenericConstants.INPUT_INVALID);
+			System.out.format("%117s", GenericConstants.INPUT_INVALID + "\n");
+		}
+
+		logger.debug("askAgain: " + askAgain);
+		logger.info(GenericConstants.END);
+		return askAgain;
 	}
 }

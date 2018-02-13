@@ -3,14 +3,16 @@ package com.pointwest.pls.ui;
 import org.apache.log4j.Logger;
 
 import com.pointwest.pls.bean.User;
+import com.pointwest.pls.bean.UserInput;
 import com.pointwest.pls.constant.GenericConstants;
 
 public class SearchByEmployeeIdUI extends SearchPageUI {
 	Logger logger = Logger.getLogger(SearchByEmployeeIdUI.class);
 
-	public SearchByEmployeeIdUI(User user) {
-		super(user);
+	public SearchByEmployeeIdUI(User user, UserInput userInput) {
+		super(user, userInput);
 		this.user = user;
+		this.userInput = userInput;
 	}
 
 	@Override
@@ -40,10 +42,10 @@ public class SearchByEmployeeIdUI extends SearchPageUI {
 		do {
 			System.out.format("%68s", GenericConstants.ASK_EMPLOYEE_ID);
 			employeeId = scanner.nextLine();
-			askAgain = searchPageManager.validateEmployeeIdInput(employeeId);
+			askAgain = validateEmployeeIdInput(employeeId);
 		} while (askAgain);
 
-		logger.debug("employeeId: " + user.getSearchByEmployeeIdInput() + ", askAgain: " + askAgain);
+		logger.debug("employeeId: " + userInput.getSearchByEmployeeIdInput() + ", askAgain: " + askAgain);
 		logger.info(GenericConstants.END);
 	}
 }

@@ -28,7 +28,7 @@ public interface GenericConstants {
 	String INPUT_INVALID = "Invalid input!";
 	Pattern INPUT_REGEX_EMAIL = Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
 	Pattern INPUT_REGEX_NUMBER = Pattern.compile("^([0-9])+$");
-	Pattern INPUT_REGEX_ALPHABET_CHARS = Pattern.compile("^([A-Za-z ])+$");
+	Pattern INPUT_REGEX_ALPHABET_CHARS = Pattern.compile("^([A-Za-z -])+$");
 
 	String ASK_CHOICE = "Enter your choice: ";
 	String ASK_EMPLOYEE_ID = "Enter Employee ID: ";
